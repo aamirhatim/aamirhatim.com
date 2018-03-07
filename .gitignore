@@ -6,3 +6,4 @@ assets/
 nc_assets/
 *.psd
 *.ai
+.DS_Store
