@@ -1,0 +1,36 @@
+@media screen and (max-aspect-ratio: 16/9) and (max-width: 600px), (max-width: 600px), (orientation: portrait){
+
+#name{
+	font-size: 100pt;
+	width: 760px;
+}
+
+#nav div{
+	font-size: 80pt;
+}
+
+#superlative{
+	font-size: 70pt;
+}
+
+#moduleContainer{
+	right: 3vw;
+	height: 75vh;
+	width: 94vw;
+}
+
+#dropDown img{
+	right: 25px;
+	top: 25px;
+	height: 50px;
+}
+
+.moduleTitle{
+	font-size: 45pt;
+}
+
+.moduleText{
+	font-size: 15pt;
+}
+
+}

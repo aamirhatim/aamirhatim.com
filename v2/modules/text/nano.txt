@@ -1,0 +1,5 @@
+<span class = "descriptionTitle">Nanomedicine & Tissue Engineering</span>
+<br><br>
+At GW, I worked under Dr. Lijie Zhang and her team to research the ability of stem cells to adhere and proliferate on 3D printed scaffolds. I was involved with culturing and centrifuging mesenchymal stem cells (MSCs), and printing the scaffolds using a resin 3D printer. I also redesigned the printing tray which resulted in more consistent scaffolds to test with.
+<br>
+This was my first exposure to research in biomedical engineering. Using the knowlege from my courses as well as my internship at Spine Wave, I was able to get a good grasp of the technologies used and the unique environment of a research lab.

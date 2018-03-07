@@ -1,0 +1,5 @@
+<span class = "descriptionTitle">Spine Wave, Inc.</span>
+<br><br>
+Spine Wave was my first introduction to biomedical engineering in the real world. I worked as a R & D intern with my primary task to design an attachment to aid in the testing of a prototype implant insertion device. I improved my skills of circuit theory and circuit design and I also became proficient in SolidWorks.
+<br>
+Just as importantly, I was exposed to the business side of engineering and understood the many factors which determine what projects could feasible or not depending on what resources were available.

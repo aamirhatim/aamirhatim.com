@@ -1,0 +1,5 @@
+<span class = "descriptionTitle">FAST Enterprises</span>
+<br><br>
+At FAST Enterprises, I worked directly with the Washington DC Office of Tax and Revenue to implement a new tax management system. We also launched MyTax.DC.gov, a web portal for DC taxpayers to electronically file their taxes online. 
+<br>
+I worked on the returns team to design many of the online returns as well as develop software for the client. In my second year I was moved to the production support team, where I helped implement fixes and enhancements to our live software.
