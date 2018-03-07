@@ -4,3 +4,5 @@ php/
 error_log
 assets/
 nc_assets/
+*.psd
+*.ai
