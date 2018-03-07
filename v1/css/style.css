@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* Main CSS */
+
+/* NOTES
+* use .class to set attributes for class elements
+* use #id to set attributes for id elements
+*/
+
+html{
+}
+
+/* FONT CLASSES----------------------------------------------------*/
+.Comfortaa{
+	font-family: 'Comfortaa', cursive;
+}
+
+.Roboto{
+	font-family: 'Roboto', sans-serif;
+}
+/*-----------------------------------------------------------------*/
+
+#preload{
+	display: none;
+}
+
+body{
+	margin: 0px;
+	clear: both;
+	min-width: 1300px;
+}
+
+.title{
+	clear: both;
+	display: block;
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#name{
+	font-family: 'Unica One', cursive;
+	font-size: 40pt;
+}
+
+#superlative{
+	font-family: 'Unica One', cursive;
+	font-size: 20pt;
+}
+
+#shadow{
+	height: 100%;
+	width: 35vw;
+	position: fixed;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.navbar{
+	width: 35vw;
+	height: 100vh;
+	overflow: hidden; /*prevents nav elements from affecting other areas*/
+	position: fixed;
+	transition: 1s;
+	background-image: url('../images/About.jpg');
+	background-size: cover;
+}
+
+.bar{
+	font-family: 'Comfortaa', cursive;
+	padding: 20px 0 5px 0;
+	height: 190px;
+	width: 100px;
+	text-align: right;
+	float: right;
+	margin-right: 10px;
+}
+
+.navItem, .navActive{
+	padding: 5px 0 0px 0;
+	float: left;
+}
+
+.navItem a{
+	font-size: 12pt;
+	text-decoration: none;
+	color: white;
+	opacity: .7;
+	display: block;
+	height: 20px;
+	padding: 0px 0px 0px 0px;
+	width: 100px;
+	transition: opacity .5s;
+}
+
+.navActive a{
+	font-size: 13pt;
+	text-decoration: none;
+	color: white;
+	opacity: 1;
+	display: block;
+	height: 20px;
+	padding: 0px 0px 0px 0px;
+	width: 100px;
+}
+
+.navItem a:hover{
+	color: white;
+	opacity: 1;
+}
+
+.navItem a:visited{
+	text-decoration: none;
+}
+
+.mNav{
+	height: 0px;
+	width: 0px;
+}
+
+#navLogoImg{
+	margin: 0 auto;
+	height: 30px;
+	width: 30px;
+	margin-top: 250px;
+}
+
+/* SOCIAL LINKS ------------------------------------------------*/
+.social{
+	width: 100%;
+	height: 50px;
+	padding: 25px 0 0 0;
+}
+
+#links{
+	width: 210px;
+	margin: 0 auto;
+}
+
+.socialIcon{
+	padding: 0 25px 0 25px;
+}
+
+.socialIcon img{
+	height: 20px;
+	width: 20px;
+	opacity: .5;
+	transition: opacity .3s;
+}
+
+.socialIcon img:hover{
+	opacity: 1;
+}
+/* -------------------------------------------------------------*/
+#about{
+	background: url('../Modules/moduleBG/about.png');
+	background-size: contain;
+	background-position: 500px 100px;
+	background-repeat: no-repeat;
+}
+
+#project{
+	background: url('../Modules/moduleBG/techtiles.png');
+	background-size: contain;
+	background-position: 500px 80px;
+	background-repeat: no-repeat;
+}
+
+.modules{
+	width: 65vw;
+	clear: both;
+	float: right;
+}
+
+#mAbout{
+	height: 0px;
+	width: 0px;
+}
+
+/* SKILLS TABLE ------------------------------------------------*/
+#skills{
+	width: 40vw;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+
+th{
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	font-size: 15pt;
+	vertical-align: top;
+	color: #0066cc;
+	width: 200px;
+	height: 70px;
+}
+
+td{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 12pt;
+	vertical-align: top;
+}
+/*--------------------------------------------------------------*/
+
+/* MODULES -----------------------------------------------------*/
+.moduleTitle{
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	font-size: 25pt;
+	color: #0066cc;
+	line-height: 200%;
+}
+
+.moduleText{
+	width: 40vw;
+	padding: 70px 0 0 0;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13pt;
+	color: #212121;
+	font-weight: 100;
+	line-height: 170%;
+}
+
+.spacer{
+	height: 100px;
+	width: 100%;
+}
+
+.moduleIcon{
+	display: block;
+	width: 300px;
+	padding-top: 30px;
+	margin: auto;
+	opacity: .6;
+}
+
+.emphasize{
+	font-weight: 500;
+	color: #0066cc;
+	font-size: 13pt;
+}
+/* -------------------------------------------------------------*/
+
+/* WORK/SCHOOL MODULE DETAIL------------------------------------*/
+.container{
+	width: 100%;
+	height: 140px;
+	margin-top: 40px;
+	clear: both;
+}
+
+.tiles{
+	display: table;
+	margin: 0 auto;
+}
+
+.workCircle, .schoolCircle{
+	height: 100px;
+	width: 100px;
+	margin: 0px 20px 20px 20px;
+	fill: #0066cc;
+	transition: opacity .5s;
+	transition: fill .5s;
+}
+
+.workCircle:hover, .schoolCircle:hover{
+	opacity: .7;
+	fill: #1ea871;
+}
+
+image{
+	height: 60%;
+	width: 60%;
+	transform: translate(34%, 33%);
+}
+
+#workLogo, #schoolLogo{
+	background-repeat: none;
+	background-size: cover;
+}
+
+.detail{
+	height: 300px;
+	background-color: #0066cc;
+	clear: both;
+}
+
+.text{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding: 5%;
+}
+
+.descriptionTitle{
+	color: white;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	font-size: 25pt;
+}
+
+.logo{
+	position: absolute;
+	width: 60%;
+	height: 85%;
+	opacity: .05;
+}
+/* -------------------------------------------------------------------*/
+
+
+/* PHOTO MODULE ------------------------------------------------------*/
+#photoLink{
+	margin-top: 40px;
+}
+
+#photoLink button{
+	color: #0066cc;
+	border: 2px solid #0066cc;
+	background-color: white;
+	font-family: 'Comfortaa', cursive;
+	font-size: 15pt;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+}
+
+#photoLink button:hover{
+	color: white;
+	background-color: #0066cc;
+	transition: color .5s;
+	transition: background-color .5s;
+}
+
+/* -------------------------------------------------------------------*/
+
+
+/* EMAIL FORM --------------------------------------------------------*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: white;
+	opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: white;
+	opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+}
+
+#contact{
+	display: block;
+	float: right;
+}
+
+.email{
+	width: 65vw;
+	min-width: 800px;
+	background-color: #0066cc;
+	margin-top: 100px;
+}
+
+.contactMessage{
+	width: 420px;
+	height: 100%;
+	color: white;
+	padding-top: 60px;
+	float: left;
+}
+
+#txtContact{
+	float: left;
+}
+
+#contactIcon{
+	margin: 0 auto;
+	height: 30px;
+	width: 30px;
+	display: block;
+	padding-bottom: 20px;
+}
+
+#chatTitle{
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	font-size: 25pt;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#chatText{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding: 0 3vw 0 3vw;
+}
+
+
+.contactForm{
+	width: 450px;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	padding: 30px 0 30px 30px;
+	float: left;
+}
+
+input, textarea{
+	background-color: transparent;
+	color: white;
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+input[name=name], input[name=email]{
+	font-size: 11pt;
+	font-weight: 300;
+	border: none;
+	padding-bottom: 5px;
+}
+
+input[name=subject]{
+	border: none;
+	border-top: 3px solid white;
+	font-size: 15pt;
+	font-weight: 700;
+	padding-top: 5px;
+}
+
+textarea[name=message]{
+	resize: none;
+	border: none;
+	border-bottom: 1px solid white;
+	font-size: 11pt;
+	font-weight: 300;
+	padding-top: 15px;
+}
+
+#submit{
+	border: none;
+	color: white;
+	font-family: 'Comfortaa', cursive;
+	font-size: 25pt;
+	padding-top: 5px;
+}
+/* ------------------------------------------------------------- */
+
+footer{
+font-family: 'Roboto', sans-serif;
+width: 60vw;
+padding-top: 10px;
+float: right;
+}
+
+#logo{
+width: 100%;
+margin-top: 20px;
+}
+
+#logo a{
+width: 40px;
+display: block;
+margin: 0 auto;
+}
+
+#logo a img{
+height: 40px;
+width: 40px;
+}
+
+#copyright{
+text-align: center;
+padding-top: 5px;
+width: 100%;
+float: left;
+}
+
+#footerIcons{
+position: absolute;
+right: 0;
+margin-right: 15px;
+width: 180px;
+float: right;
+text-align: right;
+}
+
+#footerContainer{
+width: 100%;
+}
+
+#footerContainer a{
+width: 25%;
+opacity: .6;
+float: left;
+}
+/*---------------------------------------------------------------------*/

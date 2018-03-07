@@ -1,0 +1,6 @@
+.htaccess
+php/
+*.shtml
+error_log
+assets/
+nc_assets/
