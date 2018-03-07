@@ -16,14 +16,11 @@
     <div id = "nav-circle"></div>
     <div id = "menu">
       <div><a class = "nav-itm" href = "#portfolio">PROJECT</a></div>
-      <!-- <div><a class = "nav-itm title">WORK</a></div> -->
+      <div><a class = "nav-itm title">WORK</a></div>
       <div><a class = "nav-itm" href = "#contact">CHAT</a></div>
       <div><a class = "nav-itm" href = "navLinks/about.html">ME</a></div>
-      <div><a class = "nav-itm" href = "navLinks/work.html">WORK</a></div>
     </div>
   </div>
-
-  <!-- <div id = "test" style = "position: fixed;"></div> -->
 
   <body class = "gradient-layer">
     <div id = "texture-layer"></div>
@@ -35,42 +32,57 @@
       <div class = "section"><h1>I love moments<br>where I can <span class = "emphasize">create</span></h1></div>
 
       <div id = "proj-container">
+
+        <div class = "project" id = "argo">
+          <img src = "img/argo_tile.svg">
+          <a href = "projects/argo.html">
+            <h2>ARGO<h2>
+            <h3>A custom-built, autonomous diff-drive carry-on suitcase that follows you around using AR tags.<br><br>(Winter Project)</h3>
+          </a>
+        </div>
+
         <div class = "project" id = "baxter">
-          <img class = "proj-img" src = "img/baxter_tile.svg">
+          <img src = "img/baxter_tile.svg">
           <a href = "projects/inspector_baxter.html">
-            <div class = "proj-title"><h2>INSPECTOR BAXTER<h2></div>
-            <div class = "proj-desc">
-              <h3>An introductory ROS project that controls Rethink's Baxter via speech input to learn and fetch objects using point cloud data.</h3>
-            </div>
+            <h2>INSPECTOR BAXTER<h2>
+            <h3>An introductory ROS project that controls Rethink's Baxter via speech input to learn and fetch objects using point cloud data.</h3>
           </a>
         </div>
 
         <div class = "project" id = "manipulation">
-          <img class = "proj-img" src = "img/kuka_tile.svg">
+          <img src = "img/kuka_tile.svg">
           <a href = "projects/robotic_manipulation.html">
-            <div class = "proj-title"><h2>ROBOTIC MANIPULATION</h2></div>
-            <div class = "proj-desc"><h3>Using inverse kinematics and control laws to simulate the KUKA youBot, a 5R wheeled robot.</h3></div>
+            <h2>ROBOTIC MANIPULATION</h2>
+            <h3>Using inverse kinematics and control laws to simulate the KUKA youBot, a 5R wheeled robot.</h3>
           </a>
         </div>
 
         <div class = "project" id = "techtiles">
-          <img class = "proj-img" src = "img/techtiles_tile.svg">
+          <img src = "img/techtiles_tile.svg">
           <a href = "projects/techtiles.html">
-            <div class = "proj-title"><h2>TECHTILES</h2></div>
-            <div class = "proj-desc"><h3>A washable, biometric device that measures heart rate, breathing rate, steps taken, distance traveled, and energy expended - all sent to a mobile display.</h3></div>
+            <h2>TECHTILES</h2>
+            <h3>A washable, biometric device that measures heart rate, breathing rate, steps taken, distance traveled, and energy expended - all sent to a mobile display.</h3>
+          </a>
+        </div>
+
+        <div class = "project" id = "splits">
+          <img class = "proj-img" src = "img/splits_tile.svg">
+          <a href = "projects/splits.html">
+            <h2>DOING THE SPLITS</h2>
+            <h3>Using Mathematica to model the dynamics of rigid bodies. This project simulates a humanoid doing the splits along a constrained line.</h3>
           </a>
         </div>
 
         <div class = "project" id = "website">
-          <img class = "proj-img" src = "img/logo_tile.svg">
+          <img src = "img/logo_tile.svg">
           <a href = "projects/website.html">
-            <div class = "proj-title"><h2>AAMIRHATIM.COM</h2></div>
-            <div class = "proj-desc"><h3>The current version of this website was made from scratch (and love) using HTML, CSS, and JQuery.</h3></div>
+            <h2>AAMIRHATIM.COM</h2>
+            <h3>The current version of this website was made from scratch (and love) using HTML, CSS, and JQuery.</h3>
           </a>
         </div>
 
-      </div>
-    </div>
+      </div> <!-- CLOSE PROJECT CONTAINER -->
+    </div> <!-- CLOSE PORTFOLIO -->
 
     <div id = "skills">
       <div class = "section"><h1>What I can <span class = "emphasize">bring</span><br>to the table</h1></div>
@@ -130,9 +142,5 @@
     </div>
 
   </body>
-
-  <footer>
-    <h3>Like this theme? Get it here!</h3>
-  </footer>
 
 </html>

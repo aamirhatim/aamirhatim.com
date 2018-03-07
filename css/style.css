@@ -22,7 +22,7 @@
 }
 
 div, img, table{
-   /*border: 1px solid black;*/
+  /* border: 1px solid black; */
 }
 
 html, body{
@@ -57,14 +57,12 @@ h1{
   font-size: 25pt;
   font-weight: 900;
   text-transform: uppercase;
-  margin: 0;
 }
 
 /* Subtitle */
 h2{
   font-size: 14pt;
   font-weight: 400;
-  margin: 0;
 }
 
 .thin{
@@ -75,7 +73,6 @@ h2{
 h3{
   font-size: 11pt;
   font-weight: 300;
-  margin: 0;
 }
 
 /* Project Subtitle */
@@ -228,17 +225,16 @@ p{
   transition: background-color .5s, opacity .5s;
 }
 
-.proj-title{
+.project h2{
   text-align: center;
-  margin-bottom: var(--tile-margin);
-  margin-top: var(--tile-margin);
+  margin: var(--tile-margin) 0;
 }
 
-.proj-desc{
+.project h3{
   margin: var(--tile-margin);
 }
 
-.proj-img{
+.project img{
   border-radius: var(--corner);
   position: absolute;
 }
@@ -389,10 +385,6 @@ p{
   color: white;
 }
 
-#contact-info h1{
-  padding-bottom: 30px;
-}
-
 #email{
   overflow-x: hidden;
 	margin: 45px 0 45px 0;
@@ -490,11 +482,4 @@ textarea[name = message]:focus{
 #submit:hover{
   color: #2f80d6;
   transition: color .5s;
-}
-
-/* FOOTER -------------------------------*/
-footer{
-  color: white;
-  text-align: center;
-  padding: 0 30px;
 }
