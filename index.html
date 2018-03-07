@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+		<title>Aamir Husain</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Lato:100,300,400,900|Noto+Serif|Pacifico" rel="stylesheet">
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src = "js/nav.js"></script>
+    <script src = "js/scroll.js"></script>
+    <script src = "js/superlatives.js"></script>
+  </head>
+
+  <div id = "nav-btn">
+    <div id = "nav-circle"></div>
+    <div id = "menu">
+      <div><a class = "nav-itm" href = "#portfolio">PROJECT</a></div>
+      <!-- <div><a class = "nav-itm title">WORK</a></div> -->
+      <div><a class = "nav-itm" href = "#contact">CHAT</a></div>
+      <div><a class = "nav-itm" href = "navLinks/about.html">ME</a></div>
+      <div><a class = "nav-itm" href = "navLinks/work.html">WORK</a></div>
+    </div>
+  </div>
+
+  <!-- <div id = "test" style = "position: fixed;"></div> -->
+
+  <body class = "gradient-layer">
+    <div id = "texture-layer"></div>
+
+    <div id = "title-name">aamir husain</div>
+    <div id = "superlatives"></div>
+
+    <div id = "portfolio">
+      <div class = "section"><h1>I love moments<br>where I can <span class = "emphasize">create</span></h1></div>
+
+      <div id = "proj-container">
+        <div class = "project" id = "baxter">
+          <img class = "proj-img" src = "img/baxter_tile.svg">
+          <a href = "projects/inspector_baxter.html">
+            <div class = "proj-title"><h2>INSPECTOR BAXTER<h2></div>
+            <div class = "proj-desc">
+              <h3>An introductory ROS project that controls Rethink's Baxter via speech input to learn and fetch objects using point cloud data.</h3>
+            </div>
+          </a>
+        </div>
+
+        <div class = "project" id = "manipulation">
+          <img class = "proj-img" src = "img/kuka_tile.svg">
+          <a href = "projects/robotic_manipulation.html">
+            <div class = "proj-title"><h2>ROBOTIC MANIPULATION</h2></div>
+            <div class = "proj-desc"><h3>Using inverse kinematics and control laws to simulate the KUKA youBot, a 5R wheeled robot.</h3></div>
+          </a>
+        </div>
+
+        <div class = "project" id = "techtiles">
+          <img class = "proj-img" src = "img/techtiles_tile.svg">
+          <a href = "projects/techtiles.html">
+            <div class = "proj-title"><h2>TECHTILES</h2></div>
+            <div class = "proj-desc"><h3>A washable, biometric device that measures heart rate, breathing rate, steps taken, distance traveled, and energy expended - all sent to a mobile display.</h3></div>
+          </a>
+        </div>
+
+        <div class = "project" id = "website">
+          <img class = "proj-img" src = "img/logo_tile.svg">
+          <a href = "projects/website.html">
+            <div class = "proj-title"><h2>AAMIRHATIM.COM</h2></div>
+            <div class = "proj-desc"><h3>The current version of this website was made from scratch (and love) using HTML, CSS, and JQuery.</h3></div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div id = "skills">
+      <div class = "section"><h1>What I can <span class = "emphasize">bring</span><br>to the table</h1></div>
+      <table>
+        <tr>
+          <td><img src = "img/book.svg"></td>
+          <td><img src = "img/code.svg"></td>
+          <td><img src = "img/gears.svg"></td>
+        </tr>
+
+        <tr>
+          <th>Interests</th>
+          <th>Coding</th>
+          <th>Tools</th>
+        </tr>
+
+        <tr>
+          <td>
+            Machine Learning<br>Artificial Intelligence<br>Computer Vision<br>Robotics<br>3D Printing<br>Web Development<br>Graphic Design<br>Photography
+          </td>
+
+          <td>
+            Python<br>C<br>C++<br>HTML<br>CSS<br>JQuery<br>BASIC<br>SQL
+          </td>
+
+          <td>
+            MATLAB<br>Mathematica<br>SolidWorks<br>ROS<br>Adobe CC<br>Linux<br>Mac<br>Windows
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id = "contact">
+      <div id = "contact-info">
+        <h1 class = "thin">ASK ME ANYTHING!</h1>
+        <h2 class = "thin">Questions? Want my resume? Just wanna say hi? I'd love to get in touch. Fill out the form and I'll get back to you as soon as I can.</h2>
+
+        <div id = "social">
+          <a id = "linkedin" href = "https://www.linkedin.com/in/aamir-husain-19396950" target = "_blank"><img src = "img/linkedin.svg"></a>
+  				<a id = "github" href = "https://github.com/aamir300" target = "_blank"><img src = "img/github.svg"></a>
+  				<a id = "instagram" href = "https://www.instagram.com/aamirhatim/" target = "_blank" ><img src = "img/insta.svg"></a>
+        </div>
+      </div>
+
+      <form id = "email" action = "/php/email_script.php" method = POST>
+        <div id = "email-info">
+					<input type = "text" name = "name" placeholder = "name." required/>
+					<input type = "text" name = "email" placeholder = "email." required/>
+          <input id = "submit" type = "submit" name = "submit" value = "send"/>
+        </div>
+
+        <div id = "email-msg">
+					<input type = "text" name = "subject" placeholder = "subject." autocomplete = "off" required/>
+					<textarea name = "message" placeholder = "message." autocomplete = "off" required></textarea>
+				</div>
+			</form>
+    </div>
+
+  </body>
+
+  <footer>
+    <h3>Like this theme? Get it here!</h3>
+  </footer>
+
+</html>
