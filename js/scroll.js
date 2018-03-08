@@ -13,14 +13,17 @@ $(document).ready(function(){
   //animate on scroll
   $(document).scroll(function() {
     scrollPos = $(document).scrollTop();
-    setLineHeight(scrollPos);
+    if (scrollPos < 500) {
+      setLineHeight(scrollPos);
+    }
     checkHeight(scrollPos, contactDim.top);
     animateSkill(scrollPos, 200);
   });
 
   function setLineHeight(scroll) {
-    $("#superlatives").css("line-height", 2*scroll + 150 + "%");
-    $("#superlatives").css("opacity", 1-(scroll/900));
+    $("#superlative-container").css("top", .5*scroll + "px");
+    $("#superlative-container").css("opacity", 1-(scroll/500));
+    $("#title-name").css("opacity", 1-(scroll/500));
   };
 
   function checkHeight(scroll, height) {
