@@ -19,7 +19,7 @@ $(document).ready(function(){
   });
 
   function setLineHeight(scroll) {
-    $("#superlatives").css("line-height", (scroll/4) + 150 + "%");
+    $("#superlatives").css("line-height", 2*scroll + 150 + "%");
     $("#superlatives").css("opacity", 1-(scroll/900));
   };
 
