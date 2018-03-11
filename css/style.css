@@ -25,6 +25,10 @@ div, img, table{
   /* border: 1px solid black; */
 }
 
+html{
+  min-width: 1200px;
+}
+
 html, body{
   font-family: "Lato", sans-serif;
   padding: 0;
