@@ -1,21 +1,25 @@
 @charset "UTF-8";
 
-div, img{
+*{
   /* border: 1px solid black; */
 }
 
+.proj-title{
+  color: white;
+  opacity: .8;
+}
+
+.proj-title h1{
+  padding: 20px 0 0 70px;
+}
+
 .summary{
+  box-sizing: border-box;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  overflow: auto;
-  background-color: #f7f8f9;
-  background-image: url("../img/bg2.svg");
-  background-repeat: repeat;
-  background-size: 9%;
-  padding: 50px 0 50px 0;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05), 0 0 20px 0 rgba(0, 0, 0, 0.06);
+  padding: 50px 0;
 }
 
 .peep{
@@ -26,34 +30,60 @@ div, img{
 }
 
 .proj-video{
-  width: 46%;
+  align-items: center;
   box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-right: 55px;
+  width: 815px;
 }
 
 iframe{
-  width: 640px;
-  height: 360px;
+  width: 815px;
+  height: 458px;
   border: none;
 }
 
 .skills-list{
-  width: 50%;
   box-sizing: border-box;
-  padding-left: 25px;
+  border-left: 1px solid white;
+  float: right;
+  opacity: .7;
+  width: 20%;
+  padding: 0 0 20px 35px;
 }
 
 .skill{
-  float: left;
   color: white;
-  background-color: var(--gradient2);
-  margin: 10px 15px 0 0;
-  padding: 10px 20px 10px 20px;
   font-size: 17pt;
-  border-radius: 25px;
+  font-weight: 100;
+  line-height: 140%;
+  padding-left: 20px;
+}
+
+.info-container{
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.info-container h5{
+  border-top: 1px solid black;
+  text-align: justify;
+  text-align-last: center;
+  padding: 50px 0 30px 0;
+  width: 70%;
 }
 
 .info{
-  margin: 60px 25%;
+  border-top: 1px solid black;
+  margin: 0 25%;
+  padding: 70px 0;
   text-align: justify;
 }
 
