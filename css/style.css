@@ -26,15 +26,12 @@ div, img, table{
 }
 
 html{
-  display: table;
   background: linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
   background-repeat: no-repeat;
-  /* min-height: 100vh; */
   min-width: 1200px;
 }
 
 body{
-  display: table-cell;
   font-family: "Lato", sans-serif;
   min-height: 100vh;
   padding: 0;
