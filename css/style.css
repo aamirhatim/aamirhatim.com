@@ -28,7 +28,7 @@ div, img, table{
 html{
   background: linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
   background-repeat: no-repeat;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   min-width: 1200px;
 }
 
