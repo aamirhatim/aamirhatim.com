@@ -27,9 +27,12 @@ div, img, table{
 
 html{
   min-width: 1200px;
+  background: linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-html, body{
+body{
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
@@ -49,9 +52,9 @@ html, body{
 }
 
 .gradient-layer{
-  background: linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
+  /* background: linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 /* TYPOGRAPHY */
@@ -101,7 +104,7 @@ p{
 
 .section{
   padding: 70px 0 70px 100px;
-  width: 80%;
+  width: 100%;
   float: left;
   position: relative;
 }
@@ -125,6 +128,7 @@ p{
   height: 50%;
   justify-content: center;
   overflow: hidden;
+  margin-bottom: 200px;
 }
 
 .bracket{
