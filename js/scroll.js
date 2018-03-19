@@ -2,12 +2,12 @@ $(document).ready(function(){
   // $("#test").html();
 
   var scrollPos = $(document).scrollTop();
-  var contactDim = $("#email").position();
+  // var contactDim = $("#email").position();
   var skillHeight = $("#skills").outerHeight(true);
 
   //initial positions
   setLineHeight(scrollPos);
-  checkHeight(scrollPos, contactDim.top);
+  // checkHeight(scrollPos, contactDim.top);
   animateSkill(scrollPos, 200);
 
   //animate on scroll
@@ -16,7 +16,7 @@ $(document).ready(function(){
     if (scrollPos < 500) {
       setLineHeight(scrollPos);
     }
-    checkHeight(scrollPos, contactDim.top);
+    // checkHeight(scrollPos, contactDim.top);
     animateSkill(scrollPos, 200);
   });
 

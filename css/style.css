@@ -29,7 +29,6 @@ html{
   min-width: 1200px;
   background: linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 body{
@@ -404,7 +403,7 @@ p{
   overflow-x: hidden;
 	margin: 45px 0 45px 0;
   float: right;
-  width: 1%;
+  width: 50%;
   padding: 20px;
   box-sizing: border-box;
   background-color: rgba(255,255,255,.8);
