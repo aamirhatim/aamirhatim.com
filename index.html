@@ -1,159 +1,124 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
     <meta charset = "UTF-8">
 		<title>Aamir Husain</title>
     <link rel = "stylesheet" href = "css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Questrial|Lato:100,300,400,900|Noto+Serif|Pacifico" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600" rel="stylesheet">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src = "js/nav.js"></script>
-    <script src = "js/scroll.js"></script>
+    <script src = "js/fades.js"></script>
     <script src = "js/superlatives.js"></script>
   </head>
 
-  <div id = "nav-btn">
-    <div id = "nav-circle"></div>
-    <div id = "menu">
-      <div><a class = "nav-itm" href = "#portfolio">PROJECT</a></div>
-      <div><a class = "nav-itm" href = "navLinks/work.html">WORK</a></div>
-      <div><a class = "nav-itm" href = "#contact">CHAT</a></div>
-      <div><a class = "nav-itm" href = "navLinks/about.html">ME</a></div>
-    </div>
-  </div>
-
-  <body>
-    <div id = "texture-layer"></div>
-
-    <div id = "title-name">aamir husain</div>
-    <div id = "superlative-container">
-      <img class = "bracket" src = "img/Lbracket.svg">
-      <div id = "superlatives"></div>
-      <img class = "bracket" src = "img/Rbracket.svg">
-    </div>
-
-    <div id = "portfolio">
-      <div class = "section"><h1>I love moments<br>where I can <span class = "emphasize">create</span></h1></div>
-
-      <div id = "proj-container">
-
-        <div class = "project" id = "argo">
-          <img src = "img/argo_tile.svg">
-          <a href = "projects/argo.html">
-            <h2>ARGO<h2>
-            <h3>A custom-built, autonomous diff-drive carry-on suitcase that follows you around using AR tags.<br><br>(Winter Project)</h3>
-          </a>
-        </div>
-
-        <div class = "project" id = "baxter">
-          <img src = "img/baxter_tile.svg">
-          <a href = "projects/inspector_baxter.html">
-            <h2>INSPECTOR BAXTER<h2>
-            <h3>An introductory ROS project that controls Rethink's Baxter via speech input to learn and fetch objects using point cloud data.</h3>
-          </a>
-        </div>
-
-        <div class = "project" id = "manipulation">
-          <img src = "img/kuka_tile.svg">
-          <a href = "projects/robotic_manipulation.html">
-            <h2>ROBOTIC MANIPULATION</h2>
-            <h3>Using inverse kinematics and control laws to simulate the KUKA youBot, a 5R wheeled robot.</h3>
-          </a>
-        </div>
-
-        <div class = "project" id = "techtiles">
-          <img src = "img/techtiles_tile.svg">
-          <a href = "projects/techtiles.html">
-            <h2>TECHTILES</h2>
-            <h3>A washable, biometric device that measures heart rate, breathing rate, steps taken, distance traveled, and energy expended - all sent to a mobile display.</h3>
-          </a>
-        </div>
-
-        <div class = "project" id = "splits">
-          <img class = "proj-img" src = "img/splits_tile.svg">
-          <a href = "projects/splits.html">
-            <h2>DOING THE SPLITS</h2>
-            <h3>Using Mathematica to model the dynamics of rigid bodies. This project simulates a humanoid doing the splits along a constrained line.</h3>
-          </a>
-        </div>
-
-        <div class = "project" id = "website">
-          <img src = "img/logo_tile.svg">
-          <a href = "projects/website.html">
-            <h2>AAMIRHATIM.COM</h2>
-            <h3>The current version of this website was made from scratch (and love) using HTML, CSS, and JQuery.</h3>
-          </a>
-        </div>
-
-      </div> <!-- CLOSE PROJECT CONTAINER -->
-    </div> <!-- CLOSE PORTFOLIO -->
-
-    <div id = "skills">
-      <div class = "section"><h1>What I can <span class = "emphasize">bring</span><br>to the table</h1></div>
-      <table>
-        <tr>
-          <td><img src = "img/book.svg"></td>
-          <td><img src = "img/code.svg"></td>
-          <td><img src = "img/gears.svg"></td>
-        </tr>
-
-        <tr>
-          <th>Interests</th>
-          <th>Coding</th>
-          <th>Tools</th>
-        </tr>
-
-        <tr>
-          <td>
-            Machine Learning<br>Artificial Intelligence<br>Computer Vision<br>Robotics<br>3D Printing<br>Web Development<br>Graphic Design<br>Photography
-          </td>
-
-          <td>
-            Python<br>C<br>C++<br>HTML<br>CSS<br>JQuery<br>BASIC<br>SQL
-          </td>
-
-          <td>
-            MATLAB<br>Mathematica<br>SolidWorks<br>ROS<br>Adobe CC<br>Linux<br>Mac<br>Windows
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div id = "contact">
-      <div id = "contact-info">
-        <h1 class = "thin">ASK ME ANYTHING!</h1>
-        <h2 class = "thin">Questions? Want my resume? Just wanna say hi? I'd love to get in touch. Fill out the form and I'll get back to you as soon as I can.</h2>
-
-        <div id = "social">
-          <a id = "linkedin" href = "https://www.linkedin.com/in/aamir-husain-19396950" target = "_blank"><img src = "img/linkedin.svg"></a>
-  				<a id = "github" href = "https://github.com/aamir300" target = "_blank"><img src = "img/github.svg"></a>
-  				<a id = "instagram" href = "https://www.instagram.com/aamirhatim/" target = "_blank" ><img src = "img/insta.svg"></a>
+  <nav>
+    <div id = "nav-container">
+      <div id = "name">
+        <img src = "img/logo_black.svg">
+        <h1>Aamir Husain</h1>
+        <div id = "superlative">
+          <img class = "bracket" src = "img/l_bracket.svg">
+          <h2></h2>
+          <img class = "bracket" src = "img/r_bracket.svg">
         </div>
       </div>
 
-      <form id = "email" action = "/php/email_script.php" method = POST>
-        <div id = "email-info">
-					<input type = "text" name = "name" placeholder = "name." required/>
-					<input type = "text" name = "email" placeholder = "email." required/>
-          <input id = "submit" type = "submit" name = "submit" value = "send"/>
-        </div>
+      <div id = "navbar">
+        <div class = "nav-itm">About</div>
+        <div class = "nav-itm">Portfolio</div>
+        <div class = "nav-itm"><a href = "navLinks/work.html">Work</a></div>
+        <div class = "nav-itm">Contact</div>
+      </div>
 
-        <div id = "email-msg">
-					<input type = "text" name = "subject" placeholder = "subject." autocomplete = "off" required/>
-					<textarea name = "message" placeholder = "message." autocomplete = "off" required></textarea>
-				</div>
-			</form>
+    </div>
+  </nav>
+
+  <body>
+
+    <div id = "portfolio">
+      <div class = "project">
+        <img class = "project-img" src = "img/argo_tile.svg">
+        <a href = "projects/argo.html">
+          <h2>ARGO</h2>
+          <p>An autonomous differential drive robot that was built from the ground up (almost). Argo uses AR tags to track and follow objects in its environment.
+          <br><br>
+          Winter Project (2018)
+        </p>
+        </a>
+      </div>
+
+      <div class = "project">
+        <img class = "project-img" src = "img/baxter_tile.svg">
+        <a href = "projects/baxter.html">
+          <h2>INSPECTOR BAXTER</h2>
+          <p>
+            An introductory ROS project that uses Rethink Robotics' Baxter to manipulate objects via speech commands.
+            <br><br>
+            ME495 Final (2017)
+          </p>
+        </a>
+      </div>
+
+      <div class = "project">
+        <img class = "project-img" src = "img/logo_tile.svg">
+        <a href = "projects/website.html">
+          <h2>AAMIRHATIM.COM</h2>
+          <p>The current version of this site was made from scratch (and love) using HTML, CSS, JQuery, and PHP.</p>
+        </a>
+      </div>
+
+      <div class = "project">
+        <img class = "project-img" src = "img/techtiles_tile.svg">
+        <a href = "projects/techtiles.html">
+          <h2>TECHTILES</h2>
+          <p>
+            A washable, biometric shirt that measures heart rate, breathing rate, steps, distance, and energy - all sent to a mobile display.
+            <br><br>
+            Senior Design (2015)
+          </p>
+        </a>
+      </div>
+
+      <!-- <div class = "project">
+        <img class = "project-img" src = "img/splits_tile.svg">
+        <a href = "projects/argo.html">
+          <h2>DOING THE SPLITS!</h2>
+          <p>Using Mathematica to simulate the dynamics of rigid bodies. This project simulates a humanoid doing the splits on a constrained line.</p>
+        </a>
+      </div> -->
+
+      <div class = "project">
+        <img class = "project-img" src = "img/kuka_tile.svg">
+        <a href = "projects/kuka.html">
+          <h2>ROBOTIC MANIPULATION</h2>
+          <p>
+            Using inverse kinematics and control laws to simulate the KUKA youBot, a 5R wheeled robot.
+            <br><br>
+            ME449 Final (2017)
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div id = "scissors">
+      <img src = "img/scissors.svg">
+      <div id = "line"><div></div></div>
+    </div>
+
+    <div id = "contact">
+      <div class = "contact" id = "contact-text">
+        <h1>ASK ME ANYTHING!</h1>
+        <p>Feel free to ask me anything</p>
+      </div>
+
+      <div class = "contact" id = "contact-form">
+      </div>
     </div>
 
   </body>
 
   <footer>
-    <h3 class = "thin">
-      <i>"Every day is a prototype." - Phil Gilbert, IBM</i>
-      <br><br>
-      Copyright © Aamir Husain<br>
-      Like this style? Get the template <a href = "https://github.com/aamirhatim/website_template" target = "blank">here</a>!
-    </h3>
   </footer>
 
 </html>

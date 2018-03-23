@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	document.getElementById("superlatives").innerHTML = "engineer";
+	$("#superlative h2").html("engineer");
 	var superlative = setInterval(displayTimer, 3000);
 	var i = 0;
 	var arrSuperlatives = ["engineer",
@@ -26,9 +26,9 @@ $(document).ready(function(){
 			i = 0;
 		};
 
-    $("#superlative-container").fadeOut("slow", function() {
-      document.getElementById("superlatives").innerHTML = arrSuperlatives[i];
-      $("#superlative-container").fadeIn();
+    $("#superlative").fadeOut("slow", function() {
+      $("#superlative h2").html(arrSuperlatives[i]);
+      $("#superlative").fadeIn();
     });
 
 		i++;

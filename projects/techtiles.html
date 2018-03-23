@@ -1,151 +1,172 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset = "UTF-8">
-		<title>Aamir Husain | Techtiles</title>
-    <link rel = "stylesheet" href = "../css/style.css">
-    <link rel = "stylesheet" href = "../css/project.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,900|Noto+Serif" rel="stylesheet">
+<head>
+  <meta charset = "UTF-8">
+  <title>Aamir Husain | Techtiles</title>
+  <link rel = "stylesheet" href = "../css/style.css">
+  <link rel = "stylesheet" href = "../css/projects.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600" rel="stylesheet">
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src = "js/fades.js"></script>
+</head>
 
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src = "../js/nav.js"></script>
-  </head>
-
-  <div id = "nav-btn">
-    <div id = "nav-circle"></div>
-    <div id = "menu" style = "height: 120px;">
-      <div><a class = "nav-itm" href = "../index.html">HOME</a></div>
+<nav>
+  <div id = "nav-container">
+    <div id = "name">
+      <img src = "../img/logo_black.svg">
+      <a href = "../index.html"><h1>Aamir Husain</h1></a>
+      <div id = "superlative">
+        <img class = "bracket" src = "../img/l_bracket.svg">
+        <h2>portfolio</h2>
+        <img class = "bracket" src = "../img/r_bracket.svg">
+      </div>
     </div>
+
+    <div id = "navbar">
+      <div class = "nav-itm">About</div>
+      <div class = "nav-itm">Portfolio</div>
+      <div class = "nav-itm"><a href = "navLinks/work.html">Work</a></div>
+      <div class = "nav-itm">Contact</div>
+    </div>
+
+  </div>
+</nav>
+
+<body>
+
+  <div id = "header">
+    <div id = "project-title">
+      <h3>Techtiles</h3>
+      <h4>Techtiles is washable compression shirt that detects heart rate, breathing rate, steps taken, distance traveled, and energy expended.</h4>
+    </div>
+    <iframe class = "header-video" src = "https://youtube.com/embed/g21bp58Fbyo?autoplay=1&rel=0&showinfo=0&color=white"></iframe>
   </div>
 
-  <body>
-    <div id = "texture-layer"></div>
-
-    <div class = "proj-title"><h1>TECHTILES:<br>A Physiolgical Measurement System in Clothing</h1>
-      <!-- <img class = "peep" src = "../img/techtiles.svg"> -->
-    </div>
-
-    <div class = "summary">
-      <div class = "proj-video"><iframe src = "https://youtube.com/embed/g21bp58Fbyo?autoplay=1"></iframe></div>
-
-      <div class = "skills-list">
-        <h1 class = "thin">Key Concepts:</h1>
-        <div class = "skill">Arduino</div>
-        <div class = "skill">CAD</div>
-        <div class = "skill">3D Printing</div>
-        <div class = "skill">Circuit Design</div>
-        <div class = "skill">PCB Design</div>
-        <div class = "skill">Digital Signal Processing</div>
-        <div class = "skill">Biometrics</div>
-        <div class = "skill">Filters</div>
-        <div class = "skill">Bluetooth</div>
-        <div class = "skill">C/C++</div>
-        <div class = "skill">PSPICE</div>
-        <div class = "skill">EAGLE</div>
+  <div class = "description">
+    <div class = "info-box">
+      <!-- <div id = "github-link">
+        <a href = "https://github.com/aamirhatim/aamirhatim.com" target = "blank">
+          <img src = "../img/github.svg">
+          <p>See it on Github</p>
+        </a>
+      </div><br> -->
+      <h6>Skills & Concepts</h6>
+      <div id = "skills-concepts">
+        <div id = "skills">
+          <ul>
+            <li>Arduino</li>
+            <li>CAD</li>
+            <li>3D Printing</li>
+            <li>PCB Design</li>
+            <li>C/C++</li>
+            <li>PSPICE</li>
+            <li>Ultiboard</li>
+          </ul>
+        </div>
+        <div id = "concepts">
+          <ul>
+            <li>Digital Signal Processing</li>
+            <li>Filters</li>
+            <li>Biometrics</li>
+            <li>Bluetooth</li>
+          </ul>
+        </div>
       </div>
+      <br>
     </div>
 
-    <div class = "info-container">
-      <h5>
-        Techtiles is washable compression shirt that detects heart rate, breathing rate, steps taken, distance traveled, and energy expended.
-      </h5>
-      <div class = "info">
-          <h4>OVERVIEW</h4>
-          <p>
-            This project was completed as a capstone senior design project at The George Washington University, winning second place and awarded for being the "most marketable project" at the GW Pelton Award Competition in 2015.
-            <br><br>
-            The goal of Techtiles was to provide users the option of a more comprehensive system for tracking their biometrics through a mobile app. We also wanted to introduce wearable technology that can be completely washable without having to remove all the electronics. We envisioned this device being useful in a variety of applications including firefighting, space travel, and athletics. Techtiles uses three sensors to gather all of its data: an accelerometer, electrocardiogram (ECG), and a stretch sensor. With these, the device can extract useful information like heart rate, breathing rate, steps taken, distance traveled, and energy expended.
-            <br><br>
-            The project was divided into three main categories: Hardware, Data Processing, and App Development.
-          </p>
+    <h4>Overview</h4>
+    <p>
+      This project was completed as a capstone senior design project at The George Washington University, winning second place and awarded for being the "most marketable project" at the GW Pelton Award Competition in 2015.
+      <br><br>
+      The goal of Techtiles was to provide users the option of a more comprehensive system for tracking their biometrics through a mobile app. We also wanted to introduce wearable technology that can be completely washable without having to remove all the electronics. We envisioned this device being useful in a variety of applications including firefighting, space travel, and athletics. Techtiles uses three sensors to gather all of its data: an accelerometer, electrocardiogram (ECG), and a stretch sensor. With these, the device can extract useful information like heart rate, breathing rate, steps taken, distance traveled, and energy expended.
+      <br><br>
+      The project was divided into three main categories: Hardware, Data Processing, and App Development.
+      <br><br><br>
+    </p>
 
-          <div class = "info-box">
-            <h2>Sensors Used</h2>
-            <br>
-            <table>
-              <tr>
-                <td><img src = "../img/accelerometer.svg"></td>
-                <td><img src = "../img/ecg.svg"></td>
-                <td><img src = "../img/resistor.svg"></td>
-              </tr>
-              <tr class = "withImg">
-                <td>Accelerometer</td>
-                <td>ECG</td>
-                <td>Fabric Stretch Sensor</td>
-              </tr>
-            </table>
-            <br><br>
+    <h4>HARDWARE & DESIGN</h4>
+    <p>
+      The Hardware subsystem included choosing the fabric for the shirt ()as well as any stitching), designing the analog filters used for the ECG and breathing sensor, building a custom circuit board, and designing a housing for the non-washable electronic components. The final design for the device is the sleeveless, moisture wicking compression shirt shown below with its electronic housing attachment.
+    </p>
 
-            <h2>Extracted Data</h2>
-            <br>
-            <table>
-              <tr>
-                <td><img src = "../img/heart.svg"></td>
-                <td><img src = "../img/lungs.svg"></td>
-                <td><img src = "../img/steps.svg"></td>
-                <td><img src = "../img/distance.svg"></td>
-                <td><img src = "../img/flame.svg"></td>
-              </tr>
-              <tr class = "withImg">
-                <td>Heart Rate</td>
-                <td>Breathing Rate</td>
-                <td>Steps</td>
-                <td>Distance</td>
-                <td>Energy Expended</td>
-              </tr>
-            </table>
-          </div>
+    <div class = "info-box" style = "width: 70%;">
+      <h6>Sensors Used</h6>
+      <br>
+      <table class = "info-box-table">
+        <tr>
+          <td><img src = "../img/accelerometer.svg"></td>
+          <td><img src = "../img/ecg.svg"></td>
+          <td><img src = "../img/resistor.svg"></td>
+        </tr>
+        <tr>
+          <td>Accelerometer</td>
+          <td>ECG</td>
+          <td>Fabric Stretch Sensor</td>
+        </tr>
+      </table>
+      <br><br>
 
-          <h4>HARDWARE & DESIGN</h4>
-          <p>
-            The Hardware subsystem included choosing the fabric for the shirt ()as well as any stitching), designing the analog filters used for the ECG and breathing sensor, building a custom circuit board, and designing a housing for the non-washable electronic components. The final design for the device is the sleeveless, moisture wicking compression shirt shown below with its electronic housing attachment.
-          </p>
-
-          <img src = "../img/hardware.png">
-
-          <h3>
-            (Top) Compression shirt with respiration sensors and ECG electrodes. (Bottom) Final PCB with Arduino Due and Bluetooth shield connected, placed inside 3D printed housing.
-          </h3>
-
-          <p>
-            The shirt is equipped with two bands of silver coated nylon along the left and right sides of the torso which serve as stretch resistors that measure breathing. This special conductive fabric is washable and stretchable in all directions, making it an excellent choice for the sensor design. A low pass filter was designed to only allow the lower frequencies associated with breathing to pass through.
-            <br><br>
-            The ECG used a basic 2-lead configuration and a ground. Anything more complex, although more accurate, reduced the durability of the device and also provided more information that was needed for this project. The same fabric used for the respiration sensor was used for the ECG electrodes as well, which were made up of three square pieces stitched underneath the shirt.
-            <br><br>
-            Movement was detected using a 3-axis accelerometer. With this data, a program was written to detect peaks of increased g force, indicating a step. By counting these steps as well as their frequency, distance traveled and energy expended could be calculated in real time as well.
-            <br><br>
-            The brain that connected all the components together was the Arduino Pro Mini (seen above). It was chosen for its relatively low power consumption (3.3V) and the availability of analog and digital pins.
-          </p>
-
-          <h4>DATA PROCESSING</h4>
-          <p>
-            Before measuring any real data, an initial calibration phase is run to fine tune any parameters specific to the user such as gait, height, weight, and respiration volume. Once calibration is complete, the Arduino runs averaging and smoothing filters on the incoming data to clean it up more. Since heart rate, steps, and breathing are counted by observing maximum values of a rhythmic data set, this cleaned data is examined for any sharp peaks in the waveform. From here, heart and respiration rate is found by simply dividing the number of peaks counted by the elapsed time. Furthermore, distance is determined by multiplying the number of steps counted by the user's gait, and energy expended is calculated by using the user's weight and their speed (determined by dividing the distance traveled by the elapsed time).
-          </p>
-
-          <img src = "../img/respiration.png">
-
-          <h3>
-            Sample data for respiration. As the user breathes in, the resitance of the sensor changes, resulting in the waveform above. The observed peaks were used in determining repiration rate.
-          </h3>
-
-          <h4>MOBILE DISPLAY</h4>
-          <p>
-            To view the data, a user-friendly Android app was devloped to recieve output biometrics from the shirt via Bluetooth. Using the “android.Bluetooth” API in Android Studio, pairing with the shirt is immediately initiated once the app is opened.
-          </p>
-
-          <img style = "width: 30%; margin-left: 35%;" src = "../img/phone.svg">
-      </div>
+      <h6>Extracted Data</h6>
+      <br>
+      <table class = "info-box-table">
+        <tr>
+          <td><img src = "../img/heart.svg"></td>
+          <td><img src = "../img/lungs.svg"></td>
+          <td><img src = "../img/steps.svg"></td>
+          <td><img src = "../img/distance.svg"></td>
+          <td><img src = "../img/flame.svg"></td>
+        </tr>
+        <tr>
+          <td>Heart Rate</td>
+          <td>Breathing Rate</td>
+          <td>Steps</td>
+          <td>Distance</td>
+          <td>Energy Expended</td>
+        </tr>
+      </table>
     </div>
 
-  </body>
+    <img class = "proj-img" src = "../img/hardware.png">
+
+    <h5>
+      (Top) Compression shirt with respiration sensors and ECG electrodes. (Bottom) Final PCB with Arduino Due and Bluetooth shield connected, placed inside 3D printed housing.
+      <br><br><br>
+    </h5>
+
+    <p>
+      The shirt is equipped with two bands of silver coated nylon along the left and right sides of the torso which serve as stretch resistors that measure breathing. This special conductive fabric is washable and stretchable in all directions, making it an excellent choice for the sensor design. A low pass filter was designed to only allow the lower frequencies associated with breathing to pass through.
+      <br><br>
+      The ECG used a basic 2-lead configuration and a ground. Anything more complex, although more accurate, reduced the durability of the device and also provided more information that was needed for this project. The same fabric used for the respiration sensor was used for the ECG electrodes as well, which were made up of three square pieces stitched underneath the shirt.
+      <br><br>
+      Movement was detected using a 3-axis accelerometer. With this data, a program was written to detect peaks of increased g force, indicating a step. By counting these steps as well as their frequency, distance traveled and energy expended could be calculated in real time as well.
+      <br><br>
+      The brain that connected all the components together was the Arduino Pro Mini (seen above). It was chosen for its relatively low power consumption (3.3V) and the availability of analog and digital pins.
+      <br><br><br>
+    </p>
+
+    <h4>DATA PROCESSING</h4>
+    <p>
+      Before measuring any real data, an initial calibration phase is run to fine tune any parameters specific to the user such as gait, height, weight, and respiration volume. Once calibration is complete, the Arduino runs averaging and smoothing filters on the incoming data to clean it up more. Since heart rate, steps, and breathing are counted by observing maximum values of a rhythmic data set, this cleaned data is examined for any sharp peaks in the waveform. From here, heart and respiration rate is found by simply dividing the number of peaks counted by the elapsed time. Furthermore, distance is determined by multiplying the number of steps counted by the user's gait, and energy expended is calculated by using the user's weight and their speed (determined by dividing the distance traveled by the elapsed time).
+      <br><br>
+    </p>
+
+    <img class = "proj-img" src = "../img/respiration.png">
+
+    <h5>
+      Sample data for respiration. As the user breathes in, the resitance of the sensor changes, resulting in the waveform above. The observed peaks were used in determining repiration rate.
+      <br><br><br>
+    </h5>
+
+    <h4>MOBILE DISPLAY</h4>
+    <p>
+      To view the data, a user-friendly Android app was devloped to recieve output biometrics from the shirt via Bluetooth. Using the “android.Bluetooth” API in Android Studio, pairing with the shirt is immediately initiated once the app is opened.
+      <br><br>
+    </p>
+
+    <img style = "width: 30%; margin-left: 35%;" src = "../img/phone.svg">
+  </div>
 
   <footer>
-    <h3 class = "thin">
-      <i>"Every day is a prototype." - Phil Gilbert, IBM</i>
-      <br><br>
-      Copyright © Aamir Husain<br>
-      Like this style? Get the template <a href = "https://github.com/aamirhatim/website_template" target = "blank">here</a>!
-    </h3>
   </footer>
-
-</html>

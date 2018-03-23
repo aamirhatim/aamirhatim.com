@@ -1,120 +1,224 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset = "UTF-8">
-		<title>Aamir Husain | Argo</title>
-    <link rel = "stylesheet" href = "../css/style.css">
-    <link rel = "stylesheet" href = "../css/project.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,900|Noto+Serif" rel="stylesheet">
+<head>
+  <meta charset = "UTF-8">
+  <title>Aamir Husain | Argo</title>
+  <link rel = "stylesheet" href = "../css/style.css">
+  <link rel = "stylesheet" href = "../css/projects.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600" rel="stylesheet">
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src = "js/fades.js"></script>
+</head>
 
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src = "../js/nav.js"></script>
-  </head>
-
-  <div id = "nav-btn">
-    <div id = "nav-circle"></div>
-    <div id = "menu" style = "height: 120px;">
-      <div><a class = "nav-itm" href = "../index.html">HOME</a></div>
+<nav>
+  <div id = "nav-container">
+    <div id = "name">
+      <img src = "../img/logo_black.svg">
+      <a href = "../index.html"><h1>Aamir Husain</h1></a>
+      <div id = "superlative">
+        <img class = "bracket" src = "../img/l_bracket.svg">
+        <h2>portfolio</h2>
+        <img class = "bracket" src = "../img/r_bracket.svg">
+      </div>
     </div>
+
+    <div id = "navbar">
+      <div class = "nav-itm">About</div>
+      <div class = "nav-itm">Portfolio</div>
+      <div class = "nav-itm"><a href = "navLinks/work.html">Work</a></div>
+      <div class = "nav-itm">Contact</div>
+    </div>
+
+  </div>
+</nav>
+
+<body>
+
+  <div id = "header">
+    <div id = "project-title">
+      <h3>Argo</h3>
+      <h4>Argo is a differential drive autonomous robot that uses AR tags to localize and follow a target in space.</h4>
+    </div>
+    <iframe class = "header-video" src = "https://www.youtube.com/embed/lsNe2xax02w?autoplay=1&rel=0&showinfo=0&color=white"></iframe>
+
   </div>
 
-  <body>
-    <div id = "texture-layer"></div>
-
-    <div class = "proj-title"><h1>ARGO:<br>AN AUTONOMOUS SUITCASE</h1></div>
-
-    <div class = "summary">
-      <div class = "proj-video">
-        <iframe src = "https://youtube.com/embed/AFCoBBVVwmA?autoplay=1"></iframe>
+  <div id = "peep">
+    <div id = "gallery">
+    </div>
+    <div id = "skills-concepts-container">
+        <div class = "info-box">
+        <div id = "github-link">
+          <a href = "https://github.com/aamirhatim/argo" target = "blank">
+            <img src = "../img/github.svg">
+            <p>See it on Github</p>
+          </a>
+        </div><br>
+        <h6>Skills & Concepts</h6>
+        <div id = "skills-concepts">
+          <div id = "skills">
+            <ul>
+              <li>ROS</li>
+              <li>Python</li>
+              <li>PID Control</li>
+              <li>Motor Control</li>
+              <li>Mechatronics</li>
+            </ul>
+          </div>
+          <div id = "concepts">
+            <ul>
+              <li>AR Tags</li>
+              <li>Computer Vision</li>
+              <li>Brushed Motors</li>
+              <li>Object Tracking</li>
+            </ul>
+          </div>
+        </div><br>
       </div>
-
-      <div class = "skills-list">
-        <h1 class = "thin">Key Concepts:</h1>
-        <div class = "skill">ROS</div>
-        <div class = "skill">Python</div>
-        <div class = "skill">AR Tags</div>
-        <div class = "skill">Computer Vision</div>
-        <div class = "skill">Object Tracking</div>
-        <div class = "skill">PID Control</div>
-        <div class = "skill">Motor Control</div>
-        <div class = "skill">Brushed DC Motors</div>
-        <div class = "skill">Mechatronics</div>
-        <div class = "skill">Diff-Drive Robots</div>
-      </div>
-
     </div>
 
-    <div class = "info-container">
-      <h5>
-        Argo uses AR tags to localize a target in space. It uses this information to determine appropriate wheel speeds with a specialized motor controller.
-      </h5>
-      <div class = "info">
+  </div>
 
-        <h4>PROJECT SUBSECTION</h4>
-        <p>
-          Talk about your project here.
-        </p>
+  <div class = "description">
+    <h4>Overview</h4>
+    <p>
+      With the right kind of sensors, we can (reliably) give a robot full control over many of its own actions. This opens up the door to several uses that can make our everyday lives much more convenient - from small house cleaners like the Roomba all the way to massive auto-manufacturing factories that crank out thousands of cars each year. The inspiration for this project came from the hustle and bustle of the airport, a place that can make or break your whole day of traveling depending on your luck. Wouldn't it be nice if you didn't have to carry your luggage around? Even better, wouldn't it be great if your luggage followed <i>you</i> so you could focus more on finding the right gate? The goal of this project was to design an autonomous robot, from scratch*, that can robustly follow a target. By using a RGB camera and an AR tag, Argo is able to track and follow a known target without any wires or internet connection.
+      <br><br><br>
+    </p>
 
-        <div class = "info-box">
-          <h2>Info Box</h2>
-          This is an <b>info box</b>. Add any information to highlight or separate over here. it can contain lists, tables and images.
-        </div>
+    <h4>Hardware</h4>
+    <p>
+      Currently, Argo uses only uses two sensors to get information about itself and the environment: a RGB camera and an encoder on each wheel to measure speed and rotation. Since the original idea for Argo was to function as a carry-on suitcase, it is equipped with motors so that it can haul up to approximately 30 pounds and roll as fast as a human normally walks (about 3 miles per hour). It also has a large enough battery to run the motors for about 4-5 hours until it has to be rolled like a traditional suitcase. Argo uses a Raspberry Pi Model 3 as its CPU.
+    </p>
 
-        <p>Adding text between Info Boxes and full width images are automatically spaced properly.</p>
+    <div class = "info-box">
+      <h6>Components</h6>
+      <ul>
+        <li>Raspberry Pi Model 3</li>
+        <li>Raspbery Pi Camera Modul v2</li>
+        <li>12V Brushed DC Motor w/ 1:50 gearbox</li>
+        <li>12V 2800mAh NiMh rechargeable battery</li>
+        <li>2 14cm Wheels and Ball Caster Wheel</li>
+        <li>RoboClaw 2x15A Brushed Motor Controller</li>
+        <li>Power cutoff switch (never forget!)</li>
+      </ul>
+    </div>
 
-        <h4>ANOTHER SUBSECTION</h4>
-        <img src = "../img/sample_img.jpg">
-        <h3>
-          Add captions for anything - an image, Info Box, or to the regular text.
-        </h3>
+    <h4>Software</h4>
+    <p>
+      Argo uses ROS Kinetic to communicate effectively with all of its sensors. There are several nodes that can be run depending on the mode Argo is set up for (more detail on this below). The RoboClaw controller has it's own proprietary tuning software (IonMotion) which was used for setting up basic motor functionality. The controller also has an extensive library for serial communication with a microcontroller like reading encoder values and setting speed and direction for multiple motors. The Raspberry Pi is running an optimized version of Ubuntu MATE 16.04 on a 32GB microSD card.
+      <br><br>
+      Two packages are required to run Argo. To publish raw camera data to an Image topic, <a href = "https://github.com/dganbold/raspicam_node" target = "blank">raspicam_node</a> package was used. For detecting AR tags, the popular <a href = "https://github.com/ros-perception/ar_track_alvar" target = "blank">ar_track_alvar</a> package by Alvar was used. As an optional package, image_view can be used to view the camera feed, but this can also be done through several other methods. For a complete description on setting up the Raspberry Pi, ROS, and any packages, see the Github documentation.
+    </p>
 
-        <div class = "info-box">
-          <h2>Info Box w/ List</h2>
-          <ol>
-            <li>item 1</li>
-            <br>
-            <li>item 2</li>
-            <br>
-            <li>item 3</li>
-          </ol>
-          <br>
+    <div class = "info-box">
+      <h6>Code Structure</h6>
+      <table class = "info-box-table">
+        <tr>
+          <th>9</th>
+          <th>3</th>
+          <th>1</th>
+        </tr>
+        <tr>
+          <td>nodes</td>
+          <td>launch files</td>
+          <td>service</td>
+        </tr>
+      </table>
+      <br><br>
+
+      <h6>ROS Topics</h6>
+      <ul>
+        <li>/raspicam_node/camera_raw</li>
+        <li>/raspicam_node/camera_info</li>
+        <li>/argo/key_cmd</li>
+        <li>/argo/key_controls</li>
+        <li>/argo/encoders</li>
+        <li>/argo/wheel_speeds</li>
+        <li>/visualization_marker</li>
+      </ul>
+    </div>
+
+    <h4>Operating Modes</h4>
+    <h6>Object Tracking</h6>
+    <p>
+      The primary feature of Argo is the Object Tracking mode. In this mode, Argo uses its camera to find an AR tag. Once located, it uses the tag's depth and horizontal displacement from the center of the camera image to determine its speed and turning angle. Argo first determines its forward or backward speed by observing the percieved depth of the tag. Distances less than 0.5 meters will result in backwards movement and distances larger than 0.7 meters will make Argo move forward. For smooth movement, speed is proportional to the distance. The farther the tag is from Argo, the faster it will move (up to a specified maximum speed) so it can catch up to the target. Once it gets close, it will slow down and stop once it is within the 0.5-0.7 meter stopping range. The same idea is used for backwards movements. The closer the tag is to Argo, the faster it will move away from it until is is within the stopping range. Once linear speed has been determined, the motor controller looks at the x location of the tag. The farther left or right the tag is from Argo's center of view, the more it will turn. Turn commands are denoted as positive and negative speeds of the same magnitude. A left turn will have a positive right wheel speed and a negative left wheel speed. A right turn will have the opposite. These turning speeds are then added to the left and right forward speeds to obtain the final speeds for each wheel.
+      <br><br>
+    </p>
+
+    <h6>Manual Drive</h6>
+    <p>
+      Putting Argo in manual drive lets you teleoperate the robot from a keyboard. To do this, you must either be able to SSH into the robot, or have a wireless keyboard directly connected to it. Use the WSAD keys to move Argo around. Press E to stop and Q to exit manual drive mode. The "Enter" button must be pressed to send a new command, otherwise it will continue to run the last entered command. Any unexpted commands will make Argo stop as a precautionary measure. The A and D keys spin Argo left and right, and the W and S keys move it forwards and backwards.<br><br>
+      To run in Manual mode, launch the manual_mode.launch file. This launch file starts a service (direction_srv) and two nodes (keyboard_cmd, manual_drive). The Direction service is subscribed to the /argo/key_cmd topic which contains keystroke values entered by the user via the keyboard_cmd node. When called, the Direction service simply returns the most recent keystroke. This setup is needed so that the manual_drive node can repeatedly get the last known direction and publish it to the motor controller topic.
+      <br><br>
+    </p>
+
+    <h6>Path Following</h6>
+    <p>
+      To run in Path Following mode, run the path_driver node after running roscore. In this mode, Argo will follow a predefined path (line, circle, figure-eight, or curve). This option was primarily used for experimenting with wheel velocity commands sent to the motor controller, and so it is not fully developed and recommended only for testing purposes. the manual_drive node must be run immediately after exiting the path_driver node to stop the robot, otherwise it will continue running its most recent command. Given a path on the x-y plane, Argo determines its linear and angular velocity which are sent to the motor controller to translate into wheel speeds.
+      <br><br><br>
+    </p>
+
+    <h4>Timeline (Jan 15 - March 23, 2018)</h4>
+    <br>
+    <table style= "width: 120%; font-size: 16pt; margin: 0 auto; table-layout: fixed; position: relative; right: 10%;">
+      <tr>
+        <th><h6>January</h6></th>
+        <th><h6>February</h6></th>
+        <th><h6>March</h6></th>
+      </tr>
+
+      <tr style = "vertical-align: top;">
+        <td>
           <ul>
-            <li>item 1</li>
-            <br>
-            <li>item 2</li>
-            <br>
-            <li>item 3</li>
+            <li>Project idea formulation</li>
+            <li>Requirements and specifications gathering</li>
+            <li>Parts research and ordering</li>
+            <li>Initial construction</li>
           </ul>
-        </div>
+        </td>
 
-        <div class = "info-box">
-          <h2>Info Box w/ Table</h2>
-          <table>
-            <tr>
-              <th>1</th>
-              <th>2</th>
-              <th>3</th>
-            </tr>
-            <tr>
-              <td>add rows/columns</td>
-              <td>resizable</td>
-              <td>data</td>
-            </tr>
-          </table>
-        </div>
+        <td>
+          <ul>
+            <li>Complete first prototype build</li>
+            <li>Research methods in object tracking</li>
+            <li>Research methods in motor control and navigation</li>
+            <li>Begin coding motor controller</li>
+            <li>Begin coding tracking controller</li>
+          </ul>
+        </td>
 
-      </div> <!-- CLOSE INFO -->
-    </div> <!-- CLOSE INFO-CONTAINER -->
+        <td>
+          <ul>
+            <li>Complete basic motor controller with manual drive</li>
+            <li>Abandon tracking based on color or random objects</li>
+            <li>Fully develop AR tag tracking functionality</li>
+            <li>Combine commands from AR tracker with the motor controller</li>
+            <li>Improve tracking performance</li>
+            <li>Begin adding more advanced features like real-time path splining and following</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
 
-  </body>
+    <br><br>
+    <h4>Challenges</h4>
+    <p>
+      There were several problems that came up over the course of the project. Probably the largest one was implementing a tracker that could track objects other than an AR tag. Tracking by color separation was the first attempt, but it was not robust. Moving a few feet in any direction changed the lighting of the environment which meant that color separation had to be re-calibrated every time. Another attempt at general object detection was done using five different object trackers in the OpenCV library (Boosting, MILTrack, Median-Flow, TLD, KCF) but all of them were too slow to perform well in real time on the Raspberry Pi. For more information on this, please see the experiment results <a href = "https://github.com/aamirhatim/tracker_compare_ee432" target = "blank">here</a>.<br><br>
+      A second challenge was determining a good way to create spline trajectories based on tag location over time. A global frame must be established, and likely periodically reset when the robot stops moving, to generate new trajectories to follow. This is certainly a solvable problem, and will be worked on in the very near future.<br><br>
+      Getting reliable image data proved to be difficult with the Raspberry Pi camera module. Although it performed reasonably well indoors, it failed to locate the AR tag when driving near bright windows or going outside - the scene would be completely washed out. The camera frame rate could also be better. There were several instances when the image would become too blurry to detect an object, like when the robot made quick turns, for example. This issue could potentially be solved in software, however. The robot can rely on the last known tag location as a navigation point rather than waiting for a new one if it cannot get it in time.
+      <br><br><br>
+    </p>
+
+    <h4>Future Work</h4>
+    <p>
+      There are three features that are planned be developed in the near future. The first is to solve the spline generating problem and find a way to use that in tandem with visual cues to create more natural robust following behavior. The second is to add depth sensors to Argo for obstacle avoidance. Possible ideas are switching the current RGB camera with an RGB-D camera. This would give highly detailed information about obstacles and it could also be used for better tracking. However, manipulating this point cloud data may be computationally expensive for the Raspberry Pi. Another option is to use mid-range and short-range sonar modules for programming robust reactive responses. The third is to create a new prototype with an actual suitcase. Enough development has been done to safely and realiably build a more final prototype of the project.
+    </p>
+
+  </div>
 
   <footer>
-    <h3 class = "thin">
-      <i>"Every day is a prototype." - Phil Gilbert, IBM</i>
-      <br><br>
-      Copyright © Aamir Husain<br>
-      Like this style? Get the template <a href = "https://github.com/aamirhatim/website_template" target = "blank">here</a>!
-    </h3>
   </footer>
 
 </html>
