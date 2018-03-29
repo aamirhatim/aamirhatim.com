@@ -12,25 +12,7 @@
   </head>
 
   <nav>
-    <div id = "nav-container">
-      <div id = "name">
-        <img src = "../img/logo_black.svg">
-        <h1>Aamir Husain</h1>
-        <div id = "superlative">
-          <img class = "bracket" src = "../img/l_bracket.svg">
-          <h2>work</h2>
-          <img class = "bracket" src = "../img/r_bracket.svg">
-        </div>
-      </div>
-
-      <div id = "navbar">
-        <div class = "nav-itm">About</div>
-        <div class = "nav-itm">Portfolio</div>
-        <div class = "nav-itm"><a href = "navLinks/work.html">Work</a></div>
-        <div class = "nav-itm">Contact</div>
-      </div>
-
-    </div>
+    <?php include "../navbar.php";?>
   </nav>
 
   <body style = "background-color: white;">

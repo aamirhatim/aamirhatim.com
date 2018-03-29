@@ -1,0 +1,29 @@
+PROJECT NAME:
+Robotic Manipulation
+
+PORTFOLIO IMAGE LOCATION:
+img/kuka_tile.svg
+
+PROJECT LOCATION:
+projects/kuka/kuka.php
+
+PORTFOLIO TILE DESCRIPTION:
+Using inverse kinematics and control laws to simulate the KUKA youBot, a 5R wheeled robot.
+
+PORTFOLIO TILE 2ND LINE:
+ME449 Final (2017)
+
+SHORT DESCRIPTION:
+This project uses kinematics and control laws to simulate the movement of the KUKA youBot to reach a desired end-effector configuration.
+
+VIDEO LINK ("none" will not show any video):
+https://youtube.com/embed/LQ2JJwoRYEQ?autoplay=1&rel=0&showinfo=0&loop=1&color=white
+
+SKILLS:
+Mathematica,Feedforward Control,Feedback Control,V-REP,Coordinate Transformations
+
+CONCEPTS:
+URDF,Wheeled Robots,Foward/Inverse Kinematics,Odometry,Time Scaling
+
+GITHUB LINK ("none" will disable the link from appearing):
+none

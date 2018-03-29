@@ -1,0 +1,29 @@
+PROJECT NAME:
+aamirhatim.com
+
+PORTFOLIO IMAGE LOCATION:
+img/logo_tile.svg
+
+PROJECT LOCATION:
+projects/website/website.php
+
+PORTFOLIO TILE DESCRIPTION:
+The current version of this site was made from scratch (and love) using HTML, CSS, JQuery, and PHP.
+
+PORTFOLIO TILE 2ND LINE:
+
+
+SHORT DESCRIPTION:
+This site is a perpetual work in progress, constantly being updated with new ideas inspired by things all around me - or I'm also just being lazy.
+
+VIDEO LINK ("none" will not show any video):
+none
+
+SKILLS:
+HTML,CSS,JQuery,PHP,Adobe Illustrator,Final Cut Pro X
+
+CONCEPTS:
+Web Development,Graphic Design,Human-Computer Interaction
+
+GITHUB LINK ("none" will disable the link from appearing):
+https://github.com/aamirhatim/aamirhatim.com

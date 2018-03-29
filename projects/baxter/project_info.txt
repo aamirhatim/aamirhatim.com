@@ -1,0 +1,29 @@
+PROJECT NAME:
+Inspector Baxter
+
+PORTFOLIO IMAGE LOCATION:
+img/baxter_tile.svg
+
+PROJECT LOCATION:
+projects/baxter/baxter.php
+
+PORTFOLIO TILE DESCRIPTION:
+An introductory ROS project that uses Rethink Robotics' Baxter to manipulate objects via speech commands.
+
+PORTFOLIO TILE 2ND LINE:
+ME495 Final (2017)
+
+SHORT DESCRIPTION:
+Baxter uses point cloud data to identify objects and fetch them upon request via speech commands.
+
+VIDEO LINK ("none" will not show any video):
+https://youtube.com/embed/Mkh_P828sVU?autoplay=1&rel=0&showinfo=0&color=white
+
+SKILLS:
+ROS,C++,Python,Robotic Manipulation
+
+CONCEPTS:
+Point Clouds, Git, Coordinate Transformations
+
+GITHUB LINK ("none" will disable the link from appearing):
+https://github.com/HannahEmnett/InspectorBaxter

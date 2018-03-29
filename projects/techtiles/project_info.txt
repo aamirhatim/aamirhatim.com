@@ -1,0 +1,29 @@
+PROJECT NAME:
+Techtiles
+
+PORTFOLIO IMAGE LOCATION:
+img/techtiles_tile.svg
+
+PROJECT LOCATION:
+projects/techtiles/techtiles.php
+
+PORTFOLIO TILE DESCRIPTION:
+A washable, biometric shirt that measures heart rate, breathing rate, steps, distance, and energy - all sent to a mobile display.
+
+PORTFOLIO TILE 2ND LINE:
+Senior Design (2015)
+
+SHORT DESCRIPTION:
+Techtiles is a washable compression shirt that detects heart rate, breathing rate, steps taken, distance traveled, and energy expended.
+
+VIDEO LINK ("none" will not show any video):
+https://youtube.com/embed/g21bp58Fbyo?autoplay=1&rel=0&showinfo=0&color=white
+
+SKILLS:
+Add,skills,separated,by,commas
+
+CONCEPTS:
+Add,concepts,separated,by,commas
+
+GITHUB LINK ("none" will disable the link from appearing):
+none

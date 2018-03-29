@@ -1,0 +1,29 @@
+PROJECT NAME:
+Argo
+
+PORTFOLIO IMAGE LOCATION:
+img/argo_tile.svg
+
+PROJECT LOCATION:
+projects/argo/argo.php
+
+PORTFOLIO TILE DESCRIPTION:
+An autonomous differential drive robot that was built from the ground up (almost). Argo uses AR tags to track and follow objects in its environment.
+
+PORTFOLIO TILE 2ND LINE:
+Winter Project (2018)
+
+SHORT DESCRIPTION:
+Argo is a differential drive autonomous robot that uses AR tags to localize and follow a target in space.
+
+VIDEO LINK:
+https://www.youtube.com/embed/lsNe2xax02w?autoplay=1&rel=0&showinfo=0&color=white
+
+SKILLS:
+ROS,Python,PID Control,Motor Control,Mechatronics
+
+CONCEPTS:
+AR Tags,Computer Vision,Brushed Motors,Object Tracking
+
+GITHUB LINK:
+https://github.com/aamirhatim/argo
