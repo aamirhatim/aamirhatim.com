@@ -1,5 +1,7 @@
 <p>
   <i>"Every day is a prototype."</i>
   <br>
-  Copywrite © Aamir Husain
+  <address>
+    Copywrite © Aamir Husain
+  </address>
 </p>

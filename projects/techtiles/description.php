@@ -2,9 +2,14 @@
 
 PROJECT DESCRIPTION FORMAT:
 h4: Section title
-h5: Caption
 h6: Subtitle/Info-Box title
 p: Regular text
+
+FIGURES:
+<figure>
+  <img...>
+  <figcaption>Caption</figure>
+</figure>
 
 -->
 
@@ -28,9 +33,9 @@ p: Regular text
   <br>
   <table class = "info-box-table">
     <tr>
-      <td><img src = "../../img/accelerometer.svg"></td>
-      <td><img src = "../../img/ecg.svg"></td>
-      <td><img src = "../../img/resistor.svg"></td>
+      <td><img src = "/img/accelerometer.svg"></td>
+      <td><img src = "/img/ecg.svg"></td>
+      <td><img src = "/img/resistor.svg"></td>
     </tr>
     <tr>
       <td>Accelerometer</td>
@@ -44,11 +49,11 @@ p: Regular text
   <br>
   <table class = "info-box-table">
     <tr>
-      <td><img src = "../../img/heart.svg"></td>
-      <td><img src = "../../img/lungs.svg"></td>
-      <td><img src = "../../img/steps.svg"></td>
-      <td><img src = "../../img/distance.svg"></td>
-      <td><img src = "../../img/flame.svg"></td>
+      <td><img src = "/img/heart.svg"></td>
+      <td><img src = "/img/lungs.svg"></td>
+      <td><img src = "/img/steps.svg"></td>
+      <td><img src = "/img/distance.svg"></td>
+      <td><img src = "/img/flame.svg"></td>
     </tr>
     <tr>
       <td>Heart Rate</td>
@@ -60,12 +65,12 @@ p: Regular text
   </table>
 </div>
 
-<img class = "proj-img" src = "../../img/hardware.png">
-
-<h5>
-  (Top) Compression shirt with respiration sensors and ECG electrodes. (Bottom) Final PCB with Arduino Due and Bluetooth shield connected, placed inside 3D printed housing.
-  <br><br><br>
-</h5>
+<figure>
+  <img class = "proj-img" src = "/img/hardware.png">
+  <figcaption>
+    (Top) Compression shirt with respiration sensors and ECG electrodes. (Bottom) Final PCB with Arduino Due and Bluetooth shield connected, placed inside 3D printed housing.
+  </figcaption>
+</figure>
 
 <p>
   The shirt is equipped with two bands of silver coated nylon along the left and right sides of the torso which serve as stretch resistors that measure breathing. This special conductive fabric is washable and stretchable in all directions, making it an excellent choice for the sensor design. A low pass filter was designed to only allow the lower frequencies associated with breathing to pass through.
@@ -84,12 +89,12 @@ p: Regular text
   <br><br>
 </p>
 
-<img class = "proj-img" src = "../../img/respiration.png">
-
-<h5>
-  Sample data for respiration. As the user breathes in, the resitance of the sensor changes, resulting in the waveform above. The observed peaks were used in determining repiration rate.
-  <br><br><br>
-</h5>
+<figure>
+  <img class = "proj-img" src = "/img/respiration.png">
+  <figcaption>
+    Sample data for respiration. As the user breathes in, the resitance of the sensor changes, resulting in the waveform above. The observed peaks were used in determining repiration rate.
+  </figcaption>
+</figure>
 
 <h4>MOBILE DISPLAY</h4>
 <p>
@@ -97,4 +102,6 @@ p: Regular text
   <br><br>
 </p>
 
-<img style = "width: 30%; margin-left: 35%;" src = "../../img/phone.svg">
+<figure>
+  <img style = "width: 30%; margin-left: 35%;" src = "/img/phone.svg">
+</figure>

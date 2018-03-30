@@ -4,7 +4,7 @@
   $photo = $about[1];
   $bio = $about[4];
   ?>
-  
+
   <head>
     <?php include("../../head.php");?>
 		<title>Aamir Husain | About</title>
@@ -25,10 +25,10 @@
         </p>
       </div>
     </div>
+
+    <footer>
+      <?php include "../../footer.php";?>
+    </footer>
   </body>
 
-  <footer>
-    <?php include "../../footer.php";?>
-  </footer>
-
-  </html>
+</html>

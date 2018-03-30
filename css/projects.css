@@ -10,7 +10,18 @@
   --video-width: 900px;
 }
 
-#header{
+figure{
+  margin: 80px 0;
+}
+
+figcaption{
+  font-size: 12pt;
+  font-weight: 500;
+  margin: 0 auto;
+  width: 70%;
+}
+
+header{
   align-items: center;
   color: var(--font-color);
   box-sizing: border-box;
@@ -26,11 +37,6 @@
   margin-top: 100px;
   padding: 50px 0;
   width: 60%;
-}
-
-#vert-line{
-  border-right: 2px solid var(--font-color);
-  height: 300px;
 }
 
 .header-video{
@@ -50,13 +56,7 @@
 
 #skills-concepts-container{
   min-width: 600px;
-  width: 45%
-}
-
-#gallery{
-  /* background-color: red; */
-  /* height: 100px; */
-  /* width: 55%; */
+  width: 45%;
 }
 
 #github-link{
@@ -85,16 +85,11 @@
   width: 50%;
 }
 
-.description{
+#description{
   margin: 0 auto;
   min-width: 500px;
   padding: 80px 0;
   width: 50%;
-}
-
-.description h5{
-  margin: 0 auto;
-  width: 70%;
 }
 
 .proj-img{

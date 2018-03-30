@@ -2,9 +2,14 @@
 
 PROJECT DESCRIPTION FORMAT:
 h4: Section title
-h5: Caption
 h6: Subtitle/Info-Box title
 p: Regular text
+
+FIGURES:
+<figure>
+  <img...>
+  <figcaption>Caption</figure>
+</figure>
 
 -->
 
@@ -49,11 +54,12 @@ p: Regular text
 </p>
 
 <h4>COMPUTER VISION</h4>
-<img class = "proj-img" src = "../../img/point_clouds.png">
-<h5>
-  Sample point cloud data from the depth sensor along with the location of each object's centroid (denoted by the reference frame). For the image above, the cluster extraction node is hard coded to recognize a maximum of four objects.
-  <br><br><br>
-</h5>
+<figure>
+  <img class = "proj-img" src = "/img/point_clouds.png">
+  <figcaption>
+    Sample point cloud data from the depth sensor along with the location of each object's centroid (denoted by the reference frame). For the image above, the cluster extraction node is hard coded to recognize a maximum of four objects.
+  </figcaption>
+</figure>
 
 <p>
   An ASUS XtionPRO LIVE is used to view Baxter's environment. Point cloud locations and the centroid of each object is published to a topic that the Master node subscribes to. This part of the project relies heavily on the perception_pcl ROS package to compute multiple point clouds of various objects on a flat surface. The a launch file reads in raw point cloud data from the XtionPRO and filters it to a more manageable dataset using the filters described below. A cluster extractor node takes the filtered point cloud data and extracts point clusters. Finally, the centroid, height, width, and width:height ratio are computed, with centroid values transformed to Baxter's frame of reference.
@@ -61,11 +67,22 @@ p: Regular text
 
 <div class = "info-box">
   <h6>Point Cloud Filtering</h6>
-  CropBox: filters out any points that are not within a specified volume. This filter was used to remove any points outside of the table with objects on it.
-  <br><br>
-  VoxelGrid: down-samples a set of points by averaging the points within a specified unit volume into a single point. This filter reduces the resolution of the data, making data processing less computationally intensive.
-  <br><br>
-  StatisticalOutlierRemoval: removes any random stray points to produce cleaner data.
+  <dl>
+    <dt>CropBox</dt>
+    <dd>
+      Filters out any points that are not within a specified volume. This filter was used to remove any points outside of the table with objects on it.
+    </dd>
+    <br>
+    <dt>VoxelGrid</dt>
+    <dd>
+      Down-samples a set of points by averaging the points within a specified unit volume into a single point. This filter reduces the resolution of the data, making data processing less computationally intensive.
+    </dd>
+    <br>
+    <dt>StatisticalOutlierRemoval</dt>
+    <dd>
+      Removes any random stray points to produce cleaner data.
+    </dd>
+  </dl>
 </div>
 
 <h4>KINEMATICS</h4>

@@ -8,39 +8,38 @@
     <script src = "js/superlatives.js"></script>
   </head>
 
-  <nav>
-    <?php include "navbar.php";?>
-  </nav>
-
   <body>
-    <div id = "portfolio">
-      <?php
-      $project_name = "argo";
-      include("projects/load_tile.php");
+    <nav>
+      <?php include "navbar.php";?>
+    </nav>
 
-      $project_name = "baxter";
-      include("projects/load_tile.php");
+    <main>
+      <section id = "portfolio">
+        <?php
+        $project_name = "argo";
+        include("projects/load_tile.php");
 
-      $project_name = "website";
-      include("projects/load_tile.php");
+        $project_name = "baxter";
+        include("projects/load_tile.php");
 
-      $project_name = "techtiles";
-      include("projects/load_tile.php");
+        $project_name = "website";
+        include("projects/load_tile.php");
 
-      $project_name = "kuka";
-      include("projects/load_tile.php");
+        $project_name = "techtiles";
+        include("projects/load_tile.php");
 
-      // $project_name = "splits";
-      // include("projects/load_tile.php");
-      ?>
-    </div>
+        $project_name = "kuka";
+        include("projects/load_tile.php");
+        ?>
+      </section>
+    </main>
 
     <div id = "scissors">
       <img src = "img/scissors.svg">
       <div id = "line"><div></div></div>
     </div>
 
-    <div id = "contact">
+    <section id = "contact">
       <div class = "contact" id = "contact-text">
         <h1>ASK ME ANYTHING!</h1>
         <p>Feel free to ask me anything</p>
@@ -48,11 +47,11 @@
 
       <div class = "contact" id = "contact-form">
       </div>
-    </div>
-  </body>
+    </section>
 
-  <footer>
-    <?php include "footer.php";?>
-  </footer>
+    <footer>
+      <?php include "footer.php";?>
+    </footer>
+  </body>
 
 </html>
