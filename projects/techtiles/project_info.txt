@@ -20,10 +20,10 @@ VIDEO LINK ("none" will not show any video):
 https://youtube.com/embed/g21bp58Fbyo?autoplay=1&rel=0&showinfo=0&color=white
 
 SKILLS:
-Add,skills,separated,by,commas
+Arduino,CAD,PCB Design,C/C++,PSPICE,Ultiboard
 
 CONCEPTS:
-Add,concepts,separated,by,commas
+Digital Signal Processing,Filters,Biometrics,Bluetooth,Android Programming,3D Printing
 
 GITHUB LINK ("none" will disable the link from appearing):
 none

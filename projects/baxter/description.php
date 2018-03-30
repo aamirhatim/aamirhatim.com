@@ -3,12 +3,12 @@
 PROJECT DESCRIPTION FORMAT:
 h4: Section title
 h5: Caption
-h6: Info-Box title
+h6: Subtitle/Info-Box title
 p: Regular text
 
 -->
 
-<h4>Overview</h4>
+<h4>OVERVIEW</h4>
 <p>
   The goal of this project was to have Baxter identify objects using a point cloud and classify them by their shape. The project has three phases: a training phase where Baxter learns the objects, a fetching phase where Baxter picks up objects that are asked for by the user, and a sorting phase where Baxter sorts objects based on their classification. Below is a general description of the four basic components of this project: a master node that coordinates communication, a speech processing node, a point cloud processing node, and a movement node.
   <br><br><br>
@@ -30,7 +30,7 @@ p: Regular text
   </table>
 </div>
 
-<h4>Executive Control (Master Node)</h4>
+<h4>EXECUTIVE CONTROL (MASTER NODE)</h4>
 <p>
   The Master node is the co-ordinator of the whole program execution. It has three main input sources: (1) sensory data in the form of filtered point cloud data, (2) speech commands translated into integers for the state representation and strings for object names, and (3) status update messages.
   <br><br>
@@ -42,13 +42,13 @@ p: Regular text
   <br><br><br>
 </p>
 
-<h4>Speech Recognition</h4>
+<h4>SPEECH RECOGNITION</h4>
 <p>
   The speech recognition node listens for specific keywords from the user and updates Baxter's operating state accordingly. Speech recognition capability is done using PocketSphinx, Carnegie Mellon University's open source large vocabulary, speaker-independent continuous speech recognition engine.
   <br><br><br>
 </p>
 
-<h4>Computer Vision</h4>
+<h4>COMPUTER VISION</h4>
 <img class = "proj-img" src = "../../img/point_clouds.png">
 <h5>
   Sample point cloud data from the depth sensor along with the location of each object's centroid (denoted by the reference frame). For the image above, the cluster extraction node is hard coded to recognize a maximum of four objects.
@@ -68,7 +68,7 @@ p: Regular text
   StatisticalOutlierRemoval: removes any random stray points to produce cleaner data.
 </div>
 
-<h4>Kinematics</h4>
+<h4>KINEMATICS</h4>
 <p>
   Baxter's movements were controlled using the MoveIt! ROS package developed by Mike Ferguson. The node uses path planning, including collision detection, to reach the goal. The node responsible for moving Baxter receives the centroid and the object id from the Master node, uses MoveIt! to pick up the object, and goes to a predetermined joint location for lifting the object up.
 </p>

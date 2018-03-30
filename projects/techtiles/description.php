@@ -3,12 +3,12 @@
 PROJECT DESCRIPTION FORMAT:
 h4: Section title
 h5: Caption
-h6: Info-Box title
+h6: Subtitle/Info-Box title
 p: Regular text
 
 -->
 
-<h4>Overview</h4>
+<h4>OVERVIEW</h4>
 <p>
   This project was completed as a capstone senior design project at The George Washington University, winning second place and awarded for being the "most marketable project" at the GW Pelton Award Competition in 2015.
   <br><br>
@@ -20,7 +20,7 @@ p: Regular text
 
 <h4>HARDWARE & DESIGN</h4>
 <p>
-  The Hardware subsystem included choosing the fabric for the shirt ()as well as any stitching), designing the analog filters used for the ECG and breathing sensor, building a custom circuit board, and designing a housing for the non-washable electronic components. The final design for the device is the sleeveless, moisture wicking compression shirt shown below with its electronic housing attachment.
+  The Hardware subsystem included choosing the fabric for the shirt (as well as any stitching), designing the analog filters used for the ECG and breathing sensor, building a custom circuit board, and designing a housing for the non-washable electronic components. The final design for the device is the sleeveless, moisture wicking compression shirt shown below with its electronic housing attachment.
 </p>
 
 <div class = "info-box" style = "width: 70%;">

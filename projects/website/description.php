@@ -3,7 +3,7 @@
 PROJECT DESCRIPTION FORMAT:
 h4: Section title
 h5: Caption
-h6: Info-Box title
+h6: Subtitle/Info-Box title
 p: Regular text
 
 -->
@@ -13,6 +13,13 @@ p: Regular text
   What started out as a curiosity project soon became what I thought was a necessity. Rather than updating a paper resume and periodically throwing it at whoever may glance my way, building a website could instead serve as a dynamic resume where I can show my skills and creativity through a brand new medium.
   <br><br>
   I debated using pre-made templates for their ease of use and clean looks on different sized screens, but I had a desire to learn the basics of web development from the ground up. I quickly became hooked, spiking my interests in graphic design and aesthetics of digital art.
+  <br><br><br>
+</p>
+
+<h4>CURRENT VERSION</h4>
+<h6>Version 5 - Getting Cozy with PHP</h6>
+<p>
+  This version is clean on the inside and out. Previous versions of my site were not modular whatsoever. Redundant code, different standards, it was hard to maintain. For Version 5 I wanted to change that. I made extensive use of PHP, plugging in reusable code via server-side commands rather than re-typing it for every new page. I also simplified adding new pages by setting up text file parsing for an overall easier experience rather than unnecessarily getting too deep in the weeds of HTML.
   <br><br><br>
 </p>
 
