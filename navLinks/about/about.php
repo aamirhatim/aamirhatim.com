@@ -12,7 +12,10 @@
   </head>
 
   <nav>
-    <?php include "../../navbar.php";?>
+    <?php
+    $nav_page = 'about';
+    include "../../navbar.php";
+    ?>
   </nav>
 
   <body>

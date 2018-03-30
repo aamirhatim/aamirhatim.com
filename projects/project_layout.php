@@ -13,7 +13,10 @@
 
   <body>
     <nav>
-      <?php include "../../navbar.php";?>
+      <?php
+      $nav_page = 'portfolio';
+      include "../../navbar.php";
+      ?>
     </nav>
 
     <header>

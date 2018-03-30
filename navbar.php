@@ -4,7 +4,7 @@
     <a href = "/index.php"><h1>Aamir Husain</h1></a>
     <div id = "superlative">
       <img class = "bracket" src = "/img/l_bracket.svg">
-      <h2></h2>
+      <h2><?php echo $nav_page; ?></h2>
       <img class = "bracket" src = "/img/r_bracket.svg">
     </div>
   </div>
