@@ -4,6 +4,7 @@
   <head>
     <?php include "head.php";?>
 		<title>Aamir Husain</title>
+    <link rel = "stylesheet" href = "css/contact.css">
     <script src = "js/fades.js"></script>
     <script src = "js/superlatives.js"></script>
   </head>
@@ -40,13 +41,7 @@
     </div>
 
     <section id = "contact">
-      <div class = "contact" id = "contact-text">
-        <h1>ASK ME ANYTHING!</h1>
-        <p>Feel free to ask me anything</p>
-      </div>
-
-      <div class = "contact" id = "contact-form">
-      </div>
+      <?php include('contact.php'); ?>
     </section>
 
     <footer>

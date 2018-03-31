@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset = "UTF-8">
+    <?php include('../head.php'); ?>
 		<title>Aamir Husain | Work</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600" rel="stylesheet">
-    <link rel = "stylesheet" href = "../css/style.css">
-    <link rel = "stylesheet" href = "../css/work.css">
-
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel = "stylesheet" href = "/css/work.css">
     <script src = "../js/nav.js"></script>
   </head>
 
   <nav>
-    <?php include "../navbar.php";?>
+    <?php
+    $nav_page = "work";
+    include "../navbar.php";
+    ?>
   </nav>
 
   <body style = "background-color: white;">

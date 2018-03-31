@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 *{
-    /*border: 1px solid black; */
+    /*border: 1px solid black;*/
 }
 
 :root{
@@ -16,6 +16,7 @@ html{
 }
 
 h1{
+  font-size: 25pt;
   font-weight: 500;
   margin: 0;
 }
@@ -242,37 +243,15 @@ nav img{
   width: 100%;
 }
 
-#contact{
-  clear: both;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 400px;
-  width: 100%;
-}
-
-.contact{
-  box-sizing: border-box;
-  min-width: 500px;
-  width: 50%;
-}
-
-#contact-text{
-  /* background-color: green; */
-  padding: 4%;
-}
-
-#contact-form{
-  /* background-color: blue; */
-}
-
 footer{
   background-color: #a5a5a5;
   background-image: url("../img/footer_bg.svg");
+  background-attachment: fixed;
   background-repeat: repeat;
   background-size: 20%;
   box-shadow: inset 0 10px 10px rgba(0,0,0,.15);
-  clear: both;
+  color: white;
   display: block;
-  height: 100px;
+  padding: 40px 0;
+  text-align: center;
 }
