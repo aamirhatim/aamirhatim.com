@@ -15,6 +15,8 @@
     </nav>
 
     <main>
+      <div id = "quote"><h6><i>"Every day is a prototype."</i></h6></div>
+
       <section id = "portfolio">
         <?php
         $project_name = "argo";
