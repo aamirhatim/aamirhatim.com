@@ -23,9 +23,8 @@
 #about-img{
   bottom: -5px;
   left: 70px;
-  min-width: 400px;
   opacity: .4;
   position: fixed;
-  width: 30%;
+  width: 450px;
   z-index: -1;
 }
