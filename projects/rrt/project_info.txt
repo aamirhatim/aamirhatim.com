@@ -1,0 +1,29 @@
+PROJECT NAME:
+Path Planning
+
+PORTFOLIO IMAGE LOCATION:
+img/rrt_tile.svg
+
+PROJECT LOCATION:
+projects/rrt/project.php
+
+PORTFOLIO TILE DESCRIPTION:
+Introduction to motion planning using the Rapidly-Exploring Random Tree (RRT) algorithm.
+
+PORTFOLIO TILE 2ND LINE:
+MSR Orientation (September 2017)
+
+SHORT DESCRIPTION:
+This project uses RRTs to explore spaces and avoid collisions from a bitmap image and from randomly generated circles.
+
+VIDEO LINK ("none" will not show any video):
+none
+
+SKILLS:
+Python,RRT,Vector Geometry,Data Structures,Algorithms
+
+CONCEPTS:
+Motion Planning,Machine Learning,Artificial Intelligence
+
+GITHUB LINK ("none" will disable the link from appearing):
+https://github.com/aamirhatim/rrt

@@ -33,6 +33,9 @@
 
         $project_name = "kuka";
         include("projects/load_tile.php");
+
+        $project_name = "rrt";
+        include("projects/load_tile.php");
         ?>
       </section>
     </main>
