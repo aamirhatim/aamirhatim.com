@@ -20,19 +20,20 @@
   </nav>
 
   <body>
-    <div id = "about-img">
-      <img src = <?php echo '"../../img/'.$photo.'"'; ?>>>
-    </div>
-
-    <div id = "about-container" class = "container-row">
-      <!-- <img class = "tile" src = <?php echo '"../../img/'.$photo.'"'; ?>> -->
-      <div id = "about-txt" class = "container-column">
-        <h4><?php echo $title; ?></h4>
-        <p>
-          <?php echo $bio; ?>
-        </p>
+    <main>
+      <div id = "about-img">
+        <img src = <?php echo '"../../img/'.$photo.'"'; ?>>
       </div>
-    </div>
+
+      <div id = "about-container" class = "container-row">
+        <div id = "about-txt" class = "container-column">
+          <h4><?php echo $title; ?></h4>
+          <p>
+            <?php echo $bio; ?>
+          </p>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <?php include "../../footer.php";?>
