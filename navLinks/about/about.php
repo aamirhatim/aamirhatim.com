@@ -2,13 +2,14 @@
 <html>
   <?php $about = file('about.txt');
   $photo = $about[1];
-  $bio = $about[4];
+  $title = $about[4];
+  $bio = $about[7];
   ?>
 
   <head>
     <?php include("../../head.php");?>
 		<title>Aamir Husain | About</title>
-    <link rel = "stylesheet" href = "../../css/about.css">
+    <link rel = "stylesheet" href = "/css/about.css">
   </head>
 
   <nav>
@@ -19,10 +20,14 @@
   </nav>
 
   <body>
+    <div id = "about-img">
+      <img src = <?php echo '"../../img/'.$photo.'"'; ?>>>
+    </div>
+
     <div id = "about-container" class = "container-row">
-      <img class = "tile" src = <?php echo '"../../img/'.$photo.'"'; ?>>
+      <!-- <img class = "tile" src = <?php echo '"../../img/'.$photo.'"'; ?>> -->
       <div id = "about-txt" class = "container-column">
-        <h4>About</h4>
+        <h4><?php echo $title; ?></h4>
         <p>
           <?php echo $bio; ?>
         </p>
