@@ -5,10 +5,11 @@
 }
 
 *{
-    /*border: 1px solid black;*/
+    /* border: 1px solid black; */
 }
 
 #contact{
+  align-items: center;
   clear: both;
   display: flex;
   flex-wrap: wrap;
@@ -27,18 +28,34 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 100px 200px;
+  padding: 20px 150px;
 }
 
 #contact-text h1{
   margin-bottom: 20px;
 }
 
+#links{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  min-width: 150px;
+  width: 70%;
+}
+
+#links a{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 50px;
+}
+
 #contact-form{
+  align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 100px;
+  padding: 20px 50px;
 }
 
 form *{
@@ -47,6 +64,10 @@ form *{
   font-family: "Oswald", sans-serif;
   margin-bottom: 20px;
   width: 80%;
+}
+form img{
+  opacity: .5;
+  width: 100px;
 }
 
 textarea,input[type = text]{
