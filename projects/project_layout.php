@@ -25,20 +25,6 @@
     <main>
       <section id = "peep">
         <?php include("load_gallery.php"); ?>
-        <!-- <div id = "gallery">
-          <div id = "large-thumb">
-            <div class = "thumbnail-large"></div>
-          </div>
-          <div id = "small-thumb">
-            <div class = "thumbnail"></div>
-            <div class = "thumbnail"></div>
-            <div class = "thumbnail"></div>
-            <div class = "thumbnail"></div>
-            <div class = "thumbnail"></div>
-            <div class = "thumbnail"></div>
-          </div>
-        </div> -->
-
         <div id = "skills-concepts-container">
             <div class = "info-box">
               <?php include("load_github_link.php");?>
