@@ -79,15 +79,17 @@ header{
 #small-thumb img{
   box-sizing: border-box;
   height: 150px;
-  width: 150px;
   margin: 5px;
+  object-fit: cover;
+  width: 150px;
 }
 
 #large-thumb img{
   box-sizing: border-box;
   height: 310px;
-  width: 310px;
   margin: 5px;
+  object-fit: cover;
+  width: 310px;
 }
 
 #skills-concepts-container{
