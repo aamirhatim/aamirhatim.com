@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 *{
-   /* border: 1px solid black; */
+    /*border: 1px solid black;*/
 }
 
 :root{
@@ -56,6 +56,38 @@ header{
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+}
+
+#gallery{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+#small-thumb{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 480px;
+}
+
+#large-thumb{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 320px;
+}
+
+#small-thumb img{
+  box-sizing: border-box;
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+}
+
+#large-thumb img{
+  box-sizing: border-box;
+  height: 310px;
+  width: 310px;
+  margin: 5px;
 }
 
 #skills-concepts-container{

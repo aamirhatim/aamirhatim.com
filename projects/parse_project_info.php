@@ -10,4 +10,6 @@ $video = trim($project_info[19]);
 $skills = explode(',', $project_info[22]);
 $concepts = explode(',', $project_info[25]);
 $github = trim($project_info[28]);
+$small_thumb = explode(',', $project_info[31]);
+$large_thumb = explode(',', $project_info[34]);
 ?>
