@@ -27,3 +27,9 @@ Web Development,Graphic Design,Human-Computer Interaction
 
 GITHUB LINK ("none" will disable the link from appearing):
 https://github.com/aamirhatim/aamirhatim.com
+
+SMALL IMAGES:
+none
+
+LARGE IMAGES:
+none

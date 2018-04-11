@@ -27,3 +27,9 @@ Point Clouds, Git, Coordinate Transformations
 
 GITHUB LINK ("none" will disable the link from appearing):
 https://github.com/HannahEmnett/InspectorBaxter
+
+SMALL IMAGES:
+none
+
+LARGE IMAGES:
+none
