@@ -20,7 +20,7 @@ VIDEO LINK ("none" will not show any video):
 none
 
 SKILLS:
-Mathematica, Hamiltonian, Impact laws, Euler-Lagrange
+Mathematica, Control laws, Lagrangian, Euler-Lagrange Equations
 
 CONCEPTS:
 Lagrangian Dynamics, Constrained Dynamics, Coordinate transformations
