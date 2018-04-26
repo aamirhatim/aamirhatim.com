@@ -28,6 +28,9 @@
         $project_name = "website";
         include("projects/load_tile.php");
 
+        // $project_name = "splits";
+        // include("projects/load_tile.php");
+
         $project_name = "techtiles";
         include("projects/load_tile.php");
 
@@ -35,6 +38,9 @@
         include("projects/load_tile.php");
 
         $project_name = "rrt";
+        include("projects/load_tile.php");
+
+        $project_name = "speakers";
         include("projects/load_tile.php");
         ?>
       </section>

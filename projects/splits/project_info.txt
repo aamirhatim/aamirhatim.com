@@ -1,0 +1,35 @@
+PROJECT NAME:
+Doing the Splits
+
+PORTFOLIO IMAGE LOCATION:
+img/splits_tile.svg
+
+PROJECT LOCATION:
+projects/splits/project.php
+
+PORTFOLIO TILE DESCRIPTION:
+Using Mathematica to simulate the dynamics of rigid bodies.
+
+PORTFOLIO TILE 2ND LINE:
+ME 314 - Dynamics (2017)
+
+SHORT DESCRIPTION:
+This project uses Mathematics to simulate a humanoid doing the splits along a constrained line.
+
+VIDEO LINK ("none" will not show any video):
+none
+
+SKILLS:
+Mathematica, Hamiltonian, Impact laws, Euler-Lagrange
+
+CONCEPTS:
+Lagrangian Dynamics, Constrained Dynamics, Coordinate transformations
+
+GITHUB LINK ("none" will disable the link from appearing):
+none
+
+SMALL IMAGES:
+none
+
+LARGE IMAGES:
+none
