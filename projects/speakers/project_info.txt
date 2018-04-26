@@ -1,0 +1,35 @@
+PROJECT NAME:
+Desktop Speaker Set
+
+PORTFOLIO IMAGE LOCATION:
+img/speaker_tile.svg
+
+PROJECT LOCATION:
+projects/speakers/project.php
+
+PORTFOLIO TILE DESCRIPTION:
+A custom designed, 2.1 channel desktop speaker set that uses active filters to play music through two tweeters and a subwoofer.
+
+PORTFOLIO TILE 2ND LINE:
+Summer Project (2013)
+
+SHORT DESCRIPTION:
+These speakers use active filters to separate higher frequencies to two satellite speakers and lower frequencies to a subwoofer.
+
+VIDEO LINK ("none" will not show any video):
+none
+
+SKILLS:
+Circuit Design, Speaker Design, Analog Filters
+
+CONCEPTS:
+Hardware Design, Prototyping, Filters, Requirements Gathering
+
+GITHUB LINK ("none" will disable the link from appearing):
+none
+
+SMALL IMAGES:
+speaker1.jpg,speaker2.jpg,speaker3.jpg,speaker4.jpg,speaker6.jpg,speaker7.jpg
+
+LARGE IMAGES:
+speaker5.jpg
