@@ -17,3 +17,10 @@ FIGURES:
 <p>
   It is incredibly useful to be able to model real world situations on the computer, especially if the thing you are trying to model is not easily accessible for experimentation. This project uses the basics of Lagrangian dynamics to model a set of rigid bodies in the shape of a human, and control it in such a way so that it does a split along a constrained line which serves as as the ground.
 </p>
+<br><br><br>
+
+<h4>OBJECTIVE</h4>
+<p>
+  The goal of this project was to have a biped model follow a trajectory:
+  $$(x+1)$$
+</p>
