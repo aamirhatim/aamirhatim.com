@@ -42,6 +42,7 @@
               </div>
               <div class = "school-hover" style = "background-color: #4E2A84">GO CATS!</div>
             </div>
+
             <div class = "school-tile">
               <div class = "school-txt">
                 <h1>Bachelor of Science</h1>
@@ -52,6 +53,7 @@
               <div class = "school-hover" style = "background-color: #004065">RAISE HIGH!</div>
             </div>
           </div>
+
         </div>
       </div>
     </main>
