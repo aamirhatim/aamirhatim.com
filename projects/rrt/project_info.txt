@@ -23,7 +23,7 @@ SKILLS:
 Python,RRT,Vector Geometry,Data Structures,Algorithms
 
 CONCEPTS:
-Motion Planning,Machine Learning,Artificial Intelligence
+Path Planning,Machine Learning,Artificial Intelligence
 
 GITHUB LINK ("none" will disable the link from appearing):
 https://github.com/aamirhatim/rrt
