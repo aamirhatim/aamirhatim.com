@@ -16,15 +16,6 @@
 
   <body style = "background-color: white;">
 
-    <div id = "demographics">
-      <h1>AAMIR HUSAIN</h1>
-      <h2>
-        aamirhatim@gmail.com
-        <br>
-        Chicago, IL
-      </h2>
-    </div>
-
     <div id = "buzzwords">
       <div class = "job-skill">Robotics</div>
       <div class = "job-skill">Circuit Design</div>
@@ -55,8 +46,8 @@
 
       <div class = "job-container">
         <div class = "job-title">
-          <h1>developer & consultant</h1>
-          <h1 class = "thin">FAST Enterprises</h1>
+          <h1>Developer & Consultant</h1>
+          <h1 class = "thin">| FAST Enterprises</h1>
         </div>
 
         <div class = "date">
@@ -65,6 +56,7 @@
 
         <div class = "city">
           <h2>Washington, DC</h2>
+          <br>
         </div>
 
         <div class = "job-desc">
@@ -88,8 +80,8 @@
 
       <div class = "job-container">
         <div class = "job-title">
-          <h1>technology assistant</h1>
-          <h1 class = "thin">Himmelfarb Health Sciences</h1>
+          <h1>Technology Assistant</h1>
+          <h1 class = "thin">| Himmelfarb Health Sciences</h1>
         </div>
 
         <div class = "date">
@@ -98,6 +90,7 @@
 
         <div class = "city">
           <h2>Washington, DC</h2>
+          <br>
         </div>
 
         <div class = "job-desc">
@@ -119,8 +112,8 @@
 
       <div class = "job-container">
         <div class = "job-title">
-          <h1>research assistant</h1>
-          <h1 class = "thin">Nanomedicine & Tissue Engineering Lab</h1>
+          <h1>Research Assistant</h1>
+          <h1 class = "thin">| Nanomedicine & Tissue Engineering Lab</h1>
         </div>
 
         <div class = "date">
@@ -129,6 +122,7 @@
 
         <div class = "city">
           <h2>Washington, DC</h2>
+          <br>
         </div>
 
         <div class = "job-desc">
@@ -151,8 +145,8 @@
 
       <div class = "job-container">
         <div class = "job-title">
-          <h1>r & d intern</h1>
-          <h1 class = "thin">Spine Wave, Inc.</h1>
+          <h1>R & D Intern</h1>
+          <h1 class = "thin">| Spine Wave, Inc.</h1>
         </div>
 
         <div class = "date">
@@ -161,6 +155,7 @@
 
         <div class = "city">
           <h2>Shelton, CT</h2>
+          <br>
         </div>
 
         <div class = "job-desc">
@@ -184,8 +179,8 @@
 
         <div class = "job-container">
           <div class = "job-title">
-            <h1>hardware design lead</h1>
-            <h1 class = "thin">Capstone Senior Design Project</h1>
+            <h1>Hardware Design Lead</h1>
+            <h1 class = "thin">| Capstone Senior Design Project</h1>
           </div>
 
           <div class = "date">
@@ -194,6 +189,7 @@
 
           <div class = "city">
             <h2>George Washington University</h2>
+            <br>
           </div>
 
           <div class = "job-desc">
@@ -216,8 +212,8 @@
 
         <div class = "job-container">
           <div class = "job-title">
-            <h1>vp of marketing</h1>
-            <h1 class = "thin">GW Class Council</h1>
+            <h1>VP of Marketing</h1>
+            <h1 class = "thin">| GW Class Council</h1>
           </div>
 
           <div class = "date">
@@ -226,6 +222,7 @@
 
           <div class = "city">
             <h2>George Washington University</h2>
+            <br>
           </div>
 
           <div class = "job-desc">
@@ -245,8 +242,8 @@
 
         <div class = "job-container">
           <div class = "job-title">
-            <h1>content team</h1>
-            <h1 class = "thin">TEDxFoggyBottom</h1>
+            <h1>Content Team</h1>
+            <h1 class = "thin">| TEDxFoggyBottom</h1>
           </div>
 
           <div class = "date">
@@ -255,6 +252,7 @@
 
           <div class = "city">
             <h2>George Washington University</h2>
+            <br>
           </div>
 
           <div class = "job-desc">

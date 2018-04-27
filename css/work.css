@@ -4,12 +4,6 @@ div, img, table{
    /*border: 1px solid black;*/
 }
 
-#demographics{
-  float: left;
-  padding: 20px;
-  border-left: 10px dashed black;
-}
-
 #buzzwords{
   display: flex;
   flex-wrap: wrap;
@@ -18,6 +12,10 @@ div, img, table{
   margin: 0 auto;
   padding-top: 50px;
   margin-bottom: 40px;
+}
+
+.section{
+  margin-left: 50px;
 }
 
 .job-skill{
