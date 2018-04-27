@@ -80,38 +80,6 @@
 
       <div class = "job-container">
         <div class = "job-title">
-          <h1>Technology Assistant</h1>
-          <h1 class = "thin">| Himmelfarb Health Sciences</h1>
-        </div>
-
-        <div class = "date">
-          <h2><i>Jun 2014 - Dec 2014</i></h2>
-        </div>
-
-        <div class = "city">
-          <h2>Washington, DC</h2>
-          <br>
-        </div>
-
-        <div class = "job-desc">
-          <p>
-            Provided routine consultation to GWU Medical Students for accessing academic computer programs.
-            <br><br>
-            Helped maintain and troubleshoot computers, printers and scanners.
-            <br><br>
-            Performed administrative librarian duties such as renting out computer equipment and checking out textbooks.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class = "entry">
-      <div class = "job-icon">
-        <img src = "../img/gwLogo.svg">
-      </div>
-
-      <div class = "job-container">
-        <div class = "job-title">
           <h1>Research Assistant</h1>
           <h1 class = "thin">| Nanomedicine & Tissue Engineering Lab</h1>
         </div>
