@@ -18,6 +18,7 @@ FIGURES:
   It is incredibly useful to be able to model real world situations on the computer, especially if the thing you are trying to model is not easily accessible for experimentation. This project uses the basics of Lagrangian dynamics to model a set of rigid bodies in the shape of a human, and control it in such a way so that it does a split along a constrained line which serves as as the ground.
   <figure>
     <img src = "/img/splits.gif">
+    <figurecaption>Animation of the simulated trajectory followed by the biped.<figcaption>
   </figure>
 </p>
 
