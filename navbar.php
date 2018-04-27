@@ -13,6 +13,6 @@
     <div class = "nav-itm"><a href = "/index.php">Portfolio</a></div>
     <div class = "nav-itm"><a href = "/navLinks/about/about.php">About</a></div>
     <div class = "nav-itm"><a href = "/navLinks/work.php">Work</a></div>
-    <div class = "nav-itm">Contact</div>
+    <div class = "nav-itm"><a href = "/index.php#contact">Contact</a></div>
   </div>
 </div>
