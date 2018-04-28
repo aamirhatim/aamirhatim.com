@@ -20,10 +20,10 @@ VIDEO LINK ("none" will not show any video):
 none
 
 SKILLS:
-Mechatronics,C,PID Control,Circuit Design,UART,Microcontrollers
+C,PID Control,Circuit Design,SPI,UART,MATLAB
 
 CONCEPTS:
-DC Motors,Feedback Control,H-Bridges
+Mechatronics,DC Motors,Feedback Control,H-Bridges,Microcontrollers
 
 GITHUB LINK ("none" will disable the link from appearing):
 https://github.com/aamirhatim/motor_controller
