@@ -14,6 +14,7 @@ FIGURES:
 -->
 
 <h1>OVERVIEW</h1>
+<br>
 <p>
   One of the fundamental aspects of robotics and mechatronics is having the ability to control movement. Just like how we keep track of our muscle movements (eyes, touch, etc.), a robot needs a set of sensors so it knows its current state at any moment. This project uses mainstream sensors like encoders and current sensors to provide position and movement information about a spinning motor. The motor also has a MATLAB GUI so that a user can control the motor's speed and direction, maintain a position angle, follow an input trajectory, read encoder information, and read the motor's current draw. The PIC32MX250F128B microcontroller was used on board the <a href = "http://hades.mech.northwestern.edu/index.php/NU32">NU32</a> board designed at Northwestern University for implementation.
 </p>
@@ -31,9 +32,11 @@ FIGURES:
 </div>
 
 <h1>SOFTWARE IMPLEMENTATION</h1>
+<br>
 <p>
   The controller uses two feedback loops: an inner high-frequency 5kHz current controller that controls the PWM output to the motor, and an outer low-frequency 200Hz position controller that controls the location of the motor relative to some reference value.
 </p>
+<br>
 
 <h6>The Current Controller</h6>
 <p>

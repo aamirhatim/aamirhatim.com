@@ -29,7 +29,7 @@ GITHUB LINK ("none" will disable the link from appearing):
 https://github.com/aamirhatim/motor_controller
 
 SMALL IMAGES:
-motor2.jpg,motor3.jpg,motor4.jpg,motor5.jpg
+motor2.jpg,motor3.jpg,motor4.jpg,motor5.jpg,motor6.jpg
 
 LARGE IMAGES:
 motor1.jpg
