@@ -25,6 +25,9 @@
         $project_name = "baxter";
         include("projects/load_tile.php");
 
+        $project_name = "motor_controller";
+        include("projects/load_tile.php");
+
         $project_name = "kuka";
         include("projects/load_tile.php");
 

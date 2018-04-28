@@ -1,0 +1,35 @@
+PROJECT NAME:
+DC Motor Control
+
+PORTFOLIO IMAGE LOCATION:
+img/your_image.extension
+
+PROJECT LOCATION:
+projects/motor_controller/project.php
+
+PORTFOLIO TILE DESCRIPTION:
+A closed-loop PID DC motor controller with a MATLAB user interface for low level control.
+
+PORTFOLIO TILE 2ND LINE:
+ME333 Final (2018)
+
+SHORT DESCRIPTION:
+A closed-loop feedback control system for a DC motor that allows for low level control like encoder reading, position control, speed and direction control, and trajectory following.
+
+VIDEO LINK ("none" will not show any video):
+none
+
+SKILLS:
+Mechatronics,C,PID Control,Circuit Design,UART,Microcontrollers
+
+CONCEPTS:
+DC Motors,Feedback Control,H-Bridges
+
+GITHUB LINK ("none" will disable the link from appearing):
+https://github.com/aamirhatim/motor_controller
+
+SMALL IMAGES:
+motor2.jpg,motor3.jpg,motor4.jpg,motor5.jpg
+
+LARGE IMAGES:
+motor1.jpg
