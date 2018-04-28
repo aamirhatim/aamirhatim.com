@@ -4,7 +4,6 @@
     <?php include('../head.php'); ?>
 		<title>Aamir Husain | Work</title>
     <link rel = "stylesheet" href = "/css/work.css">
-    <script src = "../js/nav.js"></script>
   </head>
 
   <nav>
@@ -14,7 +13,16 @@
     ?>
   </nav>
 
-  <body style = "background-color: white;">
+  <body>
+
+    <div id = "resume">
+      <h1>Downloads:</h1>
+      <a href = "/Aamir_Husain_Resume.pdf"><h1 class = "thin">Resume</h1></a>
+
+      <!-- <div id = "cv">
+        <a href = "/Aamir_husain_CV.pdf"><h1>Download CV</h1></a>
+      </div> -->
+    </div>
 
     <div id = "buzzwords">
       <div class = "job-skill">Robotics</div>

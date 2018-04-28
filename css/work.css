@@ -18,6 +18,15 @@ div, img, table{
   margin-left: 50px;
 }
 
+#resume{
+  display: flex;
+  justify-content: center;
+}
+
+#resume a{
+  margin: 0 20px;
+}
+
 .job-skill{
   float: left;
   color: #9b9b9b;
