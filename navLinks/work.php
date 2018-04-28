@@ -146,40 +146,7 @@
       </div>
     </div>
 
-    <div class = "section"><h1>EXPERIENCE<h1></div>
-
-      <div class = "entry">
-        <div class = "job-icon">
-          <img src = "../img/techtiles_bw.svg">
-        </div>
-
-        <div class = "job-container">
-          <div class = "job-title">
-            <h1>Hardware Design Lead</h1>
-            <h1 class = "thin">| Capstone Senior Design Project</h1>
-          </div>
-
-          <div class = "date">
-            <h2><i>Jan 2014 - May 2015</i></h2>
-          </div>
-
-          <div class = "city">
-            <h2>George Washington University</h2>
-            <br>
-          </div>
-
-          <div class = "job-desc">
-            <p>
-              Designed a biometric shirt incorporating a fabric stretch sensor, accelerometer and 3 lead ECG to measure heart rate, breathing rate, steps taken, distance traveled and energy expended. Programs used: Eagle PCB Design, AutoCAD, Arduino IDE.
-              <br><br>
-              Developed a mobile app to wirelessly receive and display biometric data.
-              <br><br>
-              Second place in Pelton Senior Design Competition.
-
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class = "section"><h1>VOLUNTEER<h1></div>
 
       <div class = "entry">
         <div class = "job-icon">
