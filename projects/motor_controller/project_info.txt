@@ -2,7 +2,7 @@ PROJECT NAME:
 DC Motor Control
 
 PORTFOLIO IMAGE LOCATION:
-img/your_image.extension
+projects/motor_controller/img/thumb/motor1.jpg
 
 PROJECT LOCATION:
 projects/motor_controller/project.php
