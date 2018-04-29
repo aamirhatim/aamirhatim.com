@@ -18,10 +18,7 @@
     <div id = "resume">
       <h1>Downloads:</h1>
       <a href = "/Aamir_Husain_Resume.pdf"><h1 class = "thin">Resume</h1></a>
-
-      <!-- <div id = "cv">
-        <a href = "/Aamir_husain_CV.pdf"><h1>Download CV</h1></a>
-      </div> -->
+      <a href = "/Aamir_husain_CV.pdf"><h1 class = "thin">CV</h1></a>
     </div>
 
     <div id = "buzzwords">
@@ -146,7 +143,7 @@
       </div>
     </div>
 
-    <div class = "section"><h1>VOLUNTEER<h1></div>
+    <div class = "section"><h1>LEADERSHIP & VOLUNTEERING<h1></div>
 
       <div class = "entry">
         <div class = "job-icon">
