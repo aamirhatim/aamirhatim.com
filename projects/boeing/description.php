@@ -15,7 +15,7 @@ FIGURES:
 
 <h4>OVERVIEW</h4>
 <p>
-  When working with large or hevy objects, it's often times better to handle them with the help of a machine. However, it would be fantastic if a machine, or a group of machines, can take on the task without any human intervention. The end goal of this project is to be able to simultaneously and wirelessly control three mobile robots capable of cooperatively manipulating large objects. As a continuation of a project from last year's MSR cohort, this year will focus on finalizing the design for a single robot, making two more of them, and setting up communication/mapping capabilities for each robot. Information about last year's progress can be found <a href = "https://echeng22.github.io/robotics/Mobile-Base.html">here</a>.
+  When working with large or heavy objects, it's often times better to handle them with the help of a machine. However, it would be fantastic if a machine, or a group of machines, can take on the task without any human intervention. The end goal of this project is to be able to simultaneously and wirelessly control three mobile robots capable of cooperatively manipulating large objects. As a continuation of a project from last year's MSR cohort, this year will focus on finalizing the design for a single robot, making two more of them, and setting up communication/mapping capabilities for each robot. Information about last year's progress can be found <a href = "https://echeng22.github.io/robotics/Mobile-Base.html">here</a>.
   <br><br><br>
 </p>
 
