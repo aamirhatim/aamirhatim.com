@@ -187,6 +187,7 @@ nav img{
 }
 
 .project{
+  border-radius: 5px;
   box-sizing: border-box;
   box-shadow: 0 0 100px rgba(0,0,0,.2);
   display: flex;

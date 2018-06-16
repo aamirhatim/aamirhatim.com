@@ -19,6 +19,9 @@
 
       <section id = "portfolio">
         <?php
+        $project_name = "boeing";
+        include("projects/load_tile.php");
+
         $project_name = "argo";
         include("projects/load_tile.php");
 

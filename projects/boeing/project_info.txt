@@ -1,0 +1,35 @@
+PROJECT NAME:
+Mulit-Robot Teleoperation & Mapping
+
+PORTFOLIO IMAGE LOCATION:
+img/your_image.extension
+
+PROJECT LOCATION:
+projects/boeing/project.php
+
+PORTFOLIO TILE DESCRIPTION:
+Simultaneous operation of three omni-directional bases equipped with delta arms.
+
+PORTFOLIO TILE 2ND LINE:
+MSR Final Project (2018)
+
+SHORT DESCRIPTION:
+Simultaneous operation of three omni-directional robots used for mapping and manipulating large objects.
+
+VIDEO LINK ("none" will not show any video):
+none
+
+SKILLS:
+ROS,Python,Circuit Design
+
+CONCEPTS:
+SLAM,Mechatronics,Mobile Robots
+
+GITHUB LINK ("none" will disable the link from appearing):
+none
+
+SMALL IMAGES:
+none
+
+LARGE IMAGES:
+none
