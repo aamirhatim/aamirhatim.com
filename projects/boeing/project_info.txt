@@ -2,7 +2,7 @@ PROJECT NAME:
 Mulit-Robot Teleoperation & Mapping
 
 PORTFOLIO IMAGE LOCATION:
-img/your_image.extension
+img/boeing_tile.svg
 
 PROJECT LOCATION:
 projects/boeing/project.php
