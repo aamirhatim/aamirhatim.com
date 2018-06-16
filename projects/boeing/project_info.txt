@@ -1,5 +1,5 @@
 PROJECT NAME:
-Mulit-Robot Teleoperation & Mapping
+Multi-Robot Teleoperation & Mapping
 
 PORTFOLIO IMAGE LOCATION:
 img/boeing_tile.svg
