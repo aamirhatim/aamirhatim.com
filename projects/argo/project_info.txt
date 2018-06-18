@@ -33,3 +33,6 @@ argo1.jpg,argo3.jpg,argo4.jpg,argo5.jpg,argo6.jpg,argo7.jpg
 
 LARGE IMAGES:
 argo2.jpg
+
+KEYS:
+ros,mechatronics,cv,python,highlight

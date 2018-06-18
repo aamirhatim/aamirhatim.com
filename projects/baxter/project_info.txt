@@ -33,3 +33,6 @@ none
 
 LARGE IMAGES:
 none
+
+KEYS:
+cv,ros,python,highlight

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 *{
-    /*border: 1px solid black;*/
+    /* border: 1px solid black; */
 }
 
 :root{
@@ -169,12 +169,63 @@ nav img{
   transition: padding-bottom .2s;
 }
 
-#quote{
-  box-sizing: border-box;
+#dropdown{
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 40px 0;
   text-align: center;
-  opacity: .3;
-  padding: 80px 0 50px;
-  width: 100%;
+}
+
+#filter-choice{
+  border: 1px solid var(--font-color);
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: none;
+  cursor: pointer;
+  display: block;
+  opacity: .5;
+  padding: 10px 0 10px 20px;
+  position: relative;
+  transition: box-shadow .5s;
+  width: 250px;
+}
+
+#filter-choice img{
+  float: right;
+  padding: 5px 15px 5px 0;
+  width: 15px;
+}
+
+#filter-choice:hover{
+  box-shadow: 0 0 8px rgba(0,0,0,.4);
+  transition: box-shadow .5s;
+}
+
+.dropdown-filters{
+  background-color: rgba(255,255,255,.9);
+  border-radius: 25px;
+  box-sizing: border-box;
+  display: none;
+  padding-top: 10px;
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+}
+
+#filters div{
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+#filters div:hover{
+  background-color: var(--font-color);
+  border-radius: 25px;
+  color: white;
+  opacity: .7;
+}
+
+.dropdown-show{
+  display: block;
 }
 
 #portfolio{
@@ -187,9 +238,9 @@ nav img{
 }
 
 .project{
-  border-radius: 5px;
+  border-radius: 15px;
   box-sizing: border-box;
-  box-shadow: 0 0 100px rgba(0,0,0,.2);
+  box-shadow: 0 0 80px rgba(0,0,0,.2);
   display: flex;
   height: var(--tile-size);
   margin: 40px;
@@ -206,7 +257,7 @@ nav img{
 }
 
 .project img{
-  border-radius: 5px;
+  border-radius: 15px;
   height: inherit;
   position: absolute;
   width: inherit;
@@ -214,7 +265,7 @@ nav img{
 
 .project a{
   background-color: white;
-  border-radius: 5px;
+  border-radius: 15px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

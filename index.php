@@ -7,6 +7,7 @@
     <link rel = "stylesheet" href = "css/contact.css">
     <script src = "js/fades.js"></script>
     <script src = "js/superlatives.js"></script>
+    <script src = "js/filter.js"></script>
   </head>
 
   <body>
@@ -15,7 +16,26 @@
     </nav>
 
     <main>
-      <div id = "quote"><h6><i>"Every day is a prototype."</i></h6></div>
+
+      <div id = "dropdown">
+        <div id = "filter-container">
+          <div id = "filter-choice">
+            Highlights
+            <img src = "/img/dropdown.svg">
+          </div>
+          <div id = "filters" class = "dropdown-filters">
+            <div id = "all">All</div>
+            <div id = "highlight">Highlights</div>
+            <div id = "mechatronics">Mechatronics</div>
+            <div id = "ml">Machine Learning</div>
+            <div id = "python">Python</div>
+            <div id = "ros">ROS</div>
+            <div id = "c">C</div>
+            <div id = "cv">Computer Vision</div>
+            <div id = "mathematica">Mathematica</div>
+          </div>
+        </div>
+      </div>
 
       <section id = "portfolio">
         <?php

@@ -4,9 +4,14 @@ $(document).ready(function(){
   var delay_time = 200;
 
   $(".project").each(function() {
-    $(this).delay(delay_time)
-    .animate({opacity: [1, "swing"]}, 1500);
-    delay_time += 150;
+    if ($(this).hasClass('highlight')) {
+      $(this).delay(delay_time)
+      .animate({opacity: [1, "swing"]}, 1500);
+      delay_time += 150;
+    }
+    else {
+      $(this).hide();
+    };
   });
 
 });

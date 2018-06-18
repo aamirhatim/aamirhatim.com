@@ -3,7 +3,7 @@
   <p>Questions? Need to see my resume? Just stopping by to say hi? I'd love to hear from you! Fill out the form and I'll get back to you as soon as I can.</p>
 
   <div id = "links">
-    <!-- <a href = "/Aamir_Husain_Resume.pdf" target = "blank"><img src = "/img/github_black.svg"></a> -->
+    <a href = "/Aamir_Husain_Resume.pdf" target = "blank"><img src = "/img/resume.svg"></a>
     <a href = "https://github.com/aamirhatim" target = "_blank"><img src = "/img/github_black.svg"></a>
     <a href = "https://www.linkedin.com/in/aamir-husain-19396950/" target = "_blank"><img src = "/img/linkedin.svg"></a>
     <a href = "https://www.instagram.com/aamirhatim/" target = "_blank"><img src = "/img/insta.svg"></a>
