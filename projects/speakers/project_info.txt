@@ -36,3 +36,6 @@ speaker5.jpg
 
 KEYS:
 none
+
+COLOR SCHEME:
+#E98F00,#FFEE2A

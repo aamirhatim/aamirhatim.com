@@ -36,3 +36,6 @@ argo2.jpg
 
 KEYS:
 ros,mechatronics,cv,python,highlight
+
+COLOR SCHEME:
+#FF0700,#FFC794

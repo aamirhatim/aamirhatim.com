@@ -36,3 +36,6 @@ none
 
 KEYS:
 highlight
+
+COLOR SCHEME:
+#FF542A,#FFB53F

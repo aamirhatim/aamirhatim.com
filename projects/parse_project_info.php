@@ -12,4 +12,5 @@ $concepts = explode(',', $project_info[25]);
 $github = trim($project_info[28]);
 $small_thumb = explode(',', $project_info[31]);
 $large_thumb = explode(',', $project_info[34]);
+$color_scheme = explode(',', $project_info[40]);
 ?>

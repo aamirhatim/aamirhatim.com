@@ -36,3 +36,6 @@ none
 
 KEYS:
 cv,ros,python,highlight
+
+COLOR SCHEME:
+#15BAFF,#00FFBB

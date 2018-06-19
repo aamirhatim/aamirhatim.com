@@ -36,3 +36,6 @@ none
 
 KEYS:
 mathematica
+
+COLOR SCHEME:
+#5F00E9,#8D00E9

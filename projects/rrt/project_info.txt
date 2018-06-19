@@ -36,3 +36,6 @@ none
 
 KEYS:
 ml,python,highlight
+
+COLOR SCHEME:
+#4A00AA,#7900AA

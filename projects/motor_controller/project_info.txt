@@ -36,3 +36,6 @@ motor1.jpg
 
 KEYS:
 mechatronics,c,highlight
+
+COLOR SCHEME:
+#FF2A65,#FF94CD

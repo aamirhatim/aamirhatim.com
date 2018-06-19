@@ -1,5 +1,5 @@
 PROJECT NAME:
-Multi-Robot Teleoperation & Mapping
+The "Boeing" Project
 
 PORTFOLIO IMAGE LOCATION:
 img/boeing_tile.svg
@@ -14,7 +14,7 @@ PORTFOLIO TILE 2ND LINE:
 MSR Final Project (2018)
 
 SHORT DESCRIPTION:
-Simultaneous operation of three omni-directional robots used for mapping and manipulating large objects.
+Simultaneous operation of three omni-directional robots used for mapping the environment and manipulating large objects.
 
 VIDEO LINK ("none" will not show any video):
 none
@@ -36,3 +36,6 @@ none
 
 KEYS:
 mechatronics,highlight
+
+COLOR SCHEME:
+#45D400,#96FF94
