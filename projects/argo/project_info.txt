@@ -8,13 +8,13 @@ PROJECT LOCATION:
 projects/argo/argo.php
 
 PORTFOLIO TILE DESCRIPTION:
-An autonomous differential drive robot that was built from the ground up (almost). Argo uses AR tags to track and follow objects in its environment.
+An autonomous differential drive suitcase that was built from the ground up (almost). Argo uses AR tags to track and follow objects in its environment.
 
 PORTFOLIO TILE 2ND LINE:
 Winter Project (2018)
 
 SHORT DESCRIPTION:
-Argo is a differential drive autonomous robot that uses AR tags to localize and follow a target in space.
+Argo is a differential drive autonomous suitcase that uses AR tags to localize and follow a target in space.
 
 VIDEO LINK:
 https://www.youtube.com/embed/lsNe2xax02w?autoplay=1&rel=0&showinfo=0&color=white

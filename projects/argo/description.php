@@ -72,10 +72,28 @@ FIGURES:
   </ul>
 </div>
 
+<h6>Speed control</h6>
+<p>
+  Argo uses a few different controllers to determine the best speed to spin each wheel. The key to generating smooth turns and speed transitions was by implementing several <a href = "https://en.wikipedia.org/wiki/Gompertz_function">Gomertz equations</a> - a special type of sigmoid (this could likely be replaced by a simpler logistic function as well). The output of this function is treated as a percentage of Argo's maximum speed.
+  $$f(t)=ae^{-be^{-ct}}$$
+  The first step is to figure out if Argo needs to move forwards or backwards. Each direction uses its own fine-tuned sigmoid to calculate how fast it should move depending on how far or how close the AR tag is. The next step is to determine if Argo needs to turn. Another sigmoid as well as a cosine function are used to determine how sharp of a turn Argo should make depending on its current straight-line speed. The further away the tag is from Argo's center, the faster it should turn. However, the faster Argo is moving, the more it should reduce its turn speed so it does not lose track of the target or tip over. The result is a single turn speed which is then added to one wheel's straight-line speed and subtracted from the other depending on what direction Argo must turn. Now that the right and left wheel speeds have been calculated, these two values are sent to a PID controller which determines the actual speed to send to each motor.
+  $$U=k_p(error_p)+k_d(error_d)+k_i(error_i)$$
+  <br><br>
+</p>
+
+<h6>Safety and edge cases</h6>
+<p>
+  On top of having smooth motor control, Argo has a few features to prevent it from making erratic changes in speed, following other random objects, or running away.
+  <br><br>
+  Argo uses a basic two-point averager for the AR tag's location to reduce the influence of noisy incoming data from the camera. A heartbeat function is running in the background which stops all motor functions if a tag has not been spotted for a specified amount of time. This prevents any runaway situations if Argo loses track of a target for any reason. Argo is also programmed to only respond a specific tag pattern. Anything else that resembles another pattern is simply ignored. Finally, Argo stops all motor functions if the battery gets below a specified value to prevent inconsistent motor commands and speed calculations.
+  <br><br><br>
+</p>
+
 <h4>OPERATING MODES</h4>
 <h6>Object Tracking</h6>
 <p>
-  The primary feature of Argo is the Object Tracking mode. In this mode, Argo uses its camera to find an AR tag. Once located, it uses the tag's depth and horizontal displacement from the center of the camera image to determine its speed and turning angle. Argo first determines its forward or backward speed by observing the percieved depth of the tag. Distances less than 0.5 meters will result in backwards movement and distances larger than 0.7 meters will make Argo move forward. For smooth movement, speed is proportional to the distance. The farther the tag is from Argo, the faster it will move (up to a specified maximum speed) so it can catch up to the target. Once it gets close, it will slow down and stop once it is within the 0.5-0.7 meter stopping range. The same idea is used for backwards movements. The closer the tag is to Argo, the faster it will move away from it until is is within the stopping range. Once linear speed has been determined, the motor controller looks at the x location of the tag. The farther left or right the tag is from Argo's center of view, the more it will turn. Turn commands are denoted as positive and negative speeds of the same magnitude. A left turn will have a positive right wheel speed and a negative left wheel speed. A right turn will have the opposite. These turning speeds are then added to the left and right forward speeds to obtain the final speeds for each wheel.
+  The primary feature of Argo is the Object Tracking mode. In this mode, Argo uses its camera to find an AR tag. Once located, it uses the tag's depth and horizontal displacement from the center of the camera image to determine its speed and turning angle. Distances less than 0.5 meters will make Argo move backwards and distances larger than 0.7 meters will make Argo move forward. See the above secion on speed control to learn more about how individual wheel speeds are calculated.<br><br>
+  To run in Object Tracking mode, simply launch the find_tag.launch file. This file starts the camera and AR tag tracker, and then initializes the motor controller.
   <br><br>
 </p>
 
@@ -92,13 +110,14 @@ FIGURES:
   <br><br><br>
 </p>
 
-<h4>TIMELINE (JAN 15 - MAR 23, 2018)</h4>
+<h4>TIMELINE (JAN 15 - April 14, 2018)</h4>
 <br>
 <table style= "width: 120%; font-size: 16pt; margin: 0 auto; table-layout: fixed; position: relative; right: 10%;">
   <tr>
     <th><h6>January</h6></th>
     <th><h6>February</h6></th>
     <th><h6>March</h6></th>
+    <th><h6>April</h6></th>
   </tr>
 
   <tr style = "vertical-align: top;">
@@ -131,13 +150,22 @@ FIGURES:
         <li>Begin adding more advanced features like real-time path splining and following</li>
       </ul>
     </td>
+
+    <td>
+      <ul>
+        <li>Fit components into suitcase</li>
+        <li>Add edge cases and safety protocols to code</li>
+        <li>Consolidate code functionality into a single launch file</li>
+        <li>Add LEDs for easy debugging and device status</li>
+      </ul>
+    </td>
   </tr>
 </table>
 
 <br><br>
 <h4>CHALLENGES</h4>
 <p>
-  There were several problems that came up over the course of the project. Probably the largest one was implementing a tracker that could track objects other than an AR tag. Tracking by color separation was the first attempt, but it was not robust. Moving a few feet in any direction changed the lighting of the environment which meant that color separation had to be re-calibrated every time. Another attempt at general object detection was done using five different object trackers in the OpenCV library (Boosting, MILTrack, Median-Flow, TLD, KCF) but all of them were too slow to perform well in real time on the Raspberry Pi. For more information on this, please see the experiment results <a href = "https://github.com/aamirhatim/tracker_compare_ee432" target = "blank">here</a>.<br><br>
+  There were several problems that came up over the course of the project. Probably the largest one was implementing a tracker that could track objects other than an AR tag. Tracking by color separation was the first attempt, but it was not nearly as robust as it needed to be for basic tracking. Moving a few feet in any direction drastically changed the lighting of the environment which meant that color separation had to be re-calibrated every time. Another attempt at general object detection was done using five different object trackers in the OpenCV library (Boosting, MILTrack, Median-Flow, TLD, KCF) but all of them were too slow to perform well in real time on the Raspberry Pi. For more information on this, please see the experiment results <a href = "https://github.com/aamirhatim/tracker_compare_ee432" target = "blank">here</a>.<br><br>
   A second challenge was determining a good way to create spline trajectories based on tag location over time. A global frame must be established, and likely periodically reset when the robot stops moving, to generate new trajectories to follow. This is certainly a solvable problem, and will be worked on in the very near future.<br><br>
   Getting reliable image data proved to be difficult with the Raspberry Pi camera module. Although it performed reasonably well indoors, it failed to locate the AR tag when driving near bright windows or going outside - the scene would be completely washed out. The camera frame rate could also be better. There were several instances when the image would become too blurry to detect an object, like when the robot made quick turns, for example. This issue could potentially be solved in software, however. The robot can rely on the last known tag location as a navigation point rather than waiting for a new one if it cannot get it in time.
   <br><br><br>
@@ -145,5 +173,6 @@ FIGURES:
 
 <h4>FUTURE WORK</h4>
 <p>
-  There are three features that are planned be developed in the near future. The first is to solve the spline generating problem and find a way to use that in tandem with visual cues to create more natural robust following behavior. The second is to add depth sensors to Argo for obstacle avoidance. Possible ideas are switching the current RGB camera with an RGB-D camera. This would give highly detailed information about obstacles and it could also be used for better tracking. However, manipulating this point cloud data may be computationally expensive for the Raspberry Pi. Another option is to use mid-range and short-range sonar modules for programming robust reactive responses. The third is to create a new prototype with an actual suitcase. Enough development has been done to safely and realiably build a more final prototype of the project.
+  There are three features that are planned be developed in the near future. The first is to solve the spline generating problem and find a way to use that in tandem with visual cues to create more natural robust following behavior. The second is to add depth sensors to Argo for obstacle avoidance. Possible ideas are switching the current RGB camera with an RGB-D camera. This would give highly detailed information about obstacles and it could also be used for better tracking. However, manipulating this point cloud data may be computationally expensive for the Raspberry Pi. Another option is to use mid-range and short-range sonar modules for programming robust reactive responses. <s>The third is to create a new prototype with an actual suitcase. Enough development has been done to safely and realiably build a more final prototype of the project.</s> Rather than using a Raspberry Pi, using another more powerful mobile processor would certainly perform at a higher frame rate.
+  <br><br><i>5/14/2018: A working suitcasae has been contructed.</i>
 </p>
