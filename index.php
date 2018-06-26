@@ -45,16 +45,16 @@
         $project_name = "argo";
         include("projects/load_tile.php");
 
+        $project_name = "day_zero";
+        include("projects/load_tile.php");
+
         $project_name = "baxter";
         include("projects/load_tile.php");
 
-        // $project_name = "network";
-        // include("projects/load_tile.php");
-
-        $project_name = "motor_controller";
+        $project_name = "network";
         include("projects/load_tile.php");
 
-        $project_name = "day_zero";
+        $project_name = "motor_controller";
         include("projects/load_tile.php");
 
         $project_name = "kuka";

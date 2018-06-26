@@ -35,7 +35,7 @@ LARGE IMAGES:
 none
 
 KEYS:
-mechatronics,highlight
+mechatronics,highlight,ros,python
 
 COLOR SCHEME:
 #45D400,#96FF94
