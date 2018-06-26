@@ -1,0 +1,41 @@
+PROJECT NAME:
+Day Zero Predictor
+
+PORTFOLIO IMAGE LOCATION:
+img/day_zero_tile.svg
+
+PROJECT LOCATION:
+projects/day_zero/project.php
+
+PORTFOLIO TILE DESCRIPTION:
+Using machine learning to predict when a country will reach "Day Zero" - the time when its water supply is fully depleted.
+
+PORTFOLIO TILE 2ND LINE:
+EECS349 Final (2018)
+
+SHORT DESCRIPTION:
+We can help spread global awareness for water conservation by putting machine learning to work.
+
+VIDEO LINK ("none" will not show any video):
+none
+
+SKILLS:
+PANDAS,Python,Weka
+
+CONCEPTS:
+Machine Learning,Data Processing
+
+GITHUB LINK ("none" will disable the link from appearing):
+https://github.com/aamirhatim/day_zero_predictor/tree/master/project_data
+
+SMALL IMAGES:
+none
+
+LARGE IMAGES:
+none
+
+KEYS:
+highlight,ml,python
+
+COLOR SCHEME:
+#00E9B2,#55FF8A
