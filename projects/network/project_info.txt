@@ -1,0 +1,41 @@
+PROJECT NAME:
+Designing a Neural Network
+
+PORTFOLIO IMAGE LOCATION:
+img/network_tile.svg
+
+PROJECT LOCATION:
+projects/network/project.php
+
+PORTFOLIO TILE DESCRIPTION:
+Building a neural network library from scratch.
+
+PORTFOLIO TILE 2ND LINE:
+EECS495 (2018)
+
+SHORT DESCRIPTION:
+Learning how to build a library from scratch to implement different kinds of neural networks.
+
+VIDEO LINK ("none" will not show any video):
+none
+
+SKILLS:
+Python,CNN,RNN,Regression
+
+CONCEPTS:
+Neural Networks,Machine Learning,Backpropagation
+
+GITHUB LINK ("none" will disable the link from appearing):
+https://github.com/aamirhatim/deep_learning/tree/master/hw3/dl_lib
+
+SMALL IMAGES:
+none
+
+LARGE IMAGES:
+none
+
+KEYS:
+highlight,ml,python
+
+COLOR SCHEME:
+#0047BF,#00C5E9
