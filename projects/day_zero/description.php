@@ -236,7 +236,7 @@ dd{
 <br>
 
 <figcaption>
-  NOTE: All models were generated using 10-Fold cross validation in Weka. The Details column provides information on what configuration gave the best results for the tested algorithm.
+  NOTE: All models were generated using 10-Fold cross validation in Weka
 </figcaption>
 <br><br>
 
