@@ -7,3 +7,4 @@ nc_assets/
 *.psd
 *.ai
 .DS_Store
+raw_img/*

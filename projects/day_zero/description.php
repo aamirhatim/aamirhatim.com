@@ -41,10 +41,6 @@ table, tr, td{
 dl{
   font-size: 13pt;
 }
-
-dd{
-  font-weight: 100;
-}
 </style>
 
 <table class = "thin">

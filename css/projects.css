@@ -6,8 +6,8 @@
 
 :root{
   --font-color: #303030;
-  --video-height: 506px;
-  --video-width: 900px;
+  --video-height: 444px;
+  --video-width: 790px;
 }
 
 figure{
@@ -105,22 +105,31 @@ header{
   padding: 5px;
 }
 
-.header-video{
-  border: none;
-  height: var(--video-height);
-  margin: 30px 0;
-  width: var(--video-width);
-}
-
 #peep{
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
 }
 
 #gallery{
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  top: -40px;
+}
+
+.header-video{
+  border: none;
+  height: var(--video-height);
+  padding-bottom: 20px;
+  width: var(--video-width);
+}
+
+#pics{
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -202,4 +211,8 @@ header{
 
 .info-box-table th{
   font-size: 30pt;
+}
+
+dl dd{
+  font-weight: 100;
 }

@@ -17,7 +17,7 @@ SHORT DESCRIPTION:
 Argo is a differential drive autonomous suitcase that uses AR tags to localize and follow a target in space.
 
 VIDEO LINK:
-https://www.youtube.com/embed/lsNe2xax02w?autoplay=1&rel=0&showinfo=0&color=white
+https://www.youtube.com/embed/lsNe2xax02w?autoplay=1
 
 SKILLS:
 ROS,Python,PID Control,Motor Control,Mechatronics

@@ -25,9 +25,6 @@
       echo '<h4>'.$proj_desc.'</h4>';
       include("load_github_link.php");
       echo '</div>';
-      // if (trim($video) != "none") {
-      //   echo '<iframe class = "header-video" src = "'.$video.'"></iframe>';
-      // }
       ?>
 
       <div id = "skills-concepts-container">
