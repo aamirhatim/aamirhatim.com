@@ -174,5 +174,5 @@ FIGURES:
 <h4>FUTURE WORK</h4>
 <p>
   There are three features that are planned be developed in the near future. The first is to solve the spline generating problem and find a way to use that in tandem with visual cues to create more natural robust following behavior. The second is to add depth sensors to Argo for obstacle avoidance. Possible ideas are switching the current RGB camera with an RGB-D camera. This would give highly detailed information about obstacles and it could also be used for better tracking. However, manipulating this point cloud data may be computationally expensive for the Raspberry Pi. Another option is to use mid-range and short-range sonar modules for programming robust reactive responses. <s>The third is to create a new prototype with an actual suitcase. Enough development has been done to safely and realiably build a more final prototype of the project.</s> Rather than using a Raspberry Pi, using another more powerful mobile processor would certainly perform at a higher frame rate.
-  <br><br><i>5/14/2018: A working suitcasae has been contructed.</i>
+  <br><br><i>5/14/2018: A working suitcase has been contructed.</i>
 </p>
