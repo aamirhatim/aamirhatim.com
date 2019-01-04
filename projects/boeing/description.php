@@ -12,6 +12,73 @@ FIGURES:
 </figure>
 
 -->
+<p style = "text-align: center;">Part I: Fall 2018 Final Project write-up</p>
+<br><br><br>
+
+<h4>OVERVIEW</h4>
+<p>
+    This project continues the previous work done by other MSR students and the work done by Matthew Elwin to design a system in which multiple omni-directional robots collaboratively work together to pick up and move objects to a desired destination. The primary goals for this quarter were to construct three omni-directional mobile bases and develop a set of packages that can perform robot odometry, track the robot's location, execute freeform control of all the robots, and control an X number of robots as a single rigid body.
+    <br><br><br>
+</p>
+
+<h4>BUILDING THE MOBILE BASES</h4>
+<h6>Mechanical</h6>
+<p>
+    The mobile base was built using a robot kit purchased from SuperDroid robots. Some modifications were needed to meet our requirements for the project, like turning the chassis upside down to have easier access to the motors, altering the position of the batteris for better space management, drilling extra holes in the chassis for peripheral attachments, etc. Once one robot fully constructed, the other two were built with a special focus on cable management and optimal component positioning for ease of access and efficient use of space. Each robot has the following components: on-board computer (Intel NUC), 24V-15V isolated DC/DC converter, Sabertooth motor driver (x2), Tiva microcontrollers (x3), IMU, brushed DC motor with encoder (x4).
+    <br><br>
+</p>
+<h6>Electrical</h6>
+<p>
+    The original version of the mobile base used an Arduino and a Kangaroo motor controller to operate the robot, but it was decided at the start of the quarter to replace these components with a setup of Tiva microcontrollers. There were a few reasons for this change. One was to standardize the electrical components used across the whole system: the mobile base and the delta arm that will eventually be placed on top. The arm already used a robust communications protocol using Tiva boards and so it would be easier to integrate it with the mobile base if everything was using the same setup. Another reason was to fix timing and latency issues that arose with the Arduino/Kangaroo combination. The libraries used with this setup required massive amounts of overhead just to make it run, and the frequency at which commands were being sent were not reliable.
+    <br>
+    For the final version of the mobile base, two Tiva boards were used to measure wheel velocities (two wheels per Tiva) and send motor commands via serial communication. A third Tiva, the "omni" Tiva, was used to convert input twist commands to individual wheel velocities that get sent to the two "wheel" Tiva's previously mentioned. The omni Tiva was also responsible for relaying calculated twists to the on-board computer for odometry calculations.
+    <br><br><br>
+</p>
+
+<h4>SOFTWARE</h4>
+<h6>Low Level Code</h6>
+<p>
+    Low level code involves code responsible for communication between the Tiva boards and directly interfacing with motors. The communication protocol uses UART to send data between the NUC and the Tiva, between multiple Tiva's, and between the Tiva and motor controllers. It also implements the steps described in Kevin Lynch's Modern Robotics textbook to calculate odometry of a four-wheeled mecanum robot, and to transform a twist from one reference frame to another.
+    <br><br>
+</p>
+
+<h6>Higher Level Code & ROS</h6>
+<p>
+    ROS was used to develop packages for high level formation control, visualization, data bagging, manual robot control, and sensor integration. A high level description of the most important aspects are described below.
+    <br><br>
+    <b>Client:</b>
+    <br>
+    The client node is how the user interfaces with the whole system. It provides options for controlling robots (individually or all together), setting their locations, and sending velocity commands.
+    <br><br>
+    <b>Odometry Calculation:</b>
+    <br>
+    Each robot is constantly reading its own velocity to know where it is relative to its starting point. This is done by getting the velocity of each wheel, converting them to a twist using a four-wheeled omni-directional car model, and then using odometry update laws to calculate where the robot has travelled for a given linear and angular velocity. The robot's wheel odometry is one of the primary methods of relative localization, but this system uses three other methods as well. The robot's IMU and laser scanner both gather their own odometry data that can be fused with the odometry gathered from the wheels to get a more comprehensive, and ideally more accurate, representation of where the robot is in its environment. The third method is an external camera setup that overlooks the robot's environment and uses AR tags for tracking.
+    <br><br>
+    <b>Formation Control:</b>
+    <br>
+    Along with having the ability to move all robots at the same time relative to themsleves, this package also has a feature to control multiple robots as a single rigid body, or formation. To do this, the user first specifies the the point from which the rigid body's movements will be executed. Knowing the transformation between the robots and this pivot point, as well as the transformation between the robot and a world frame coordinate, we can use planar rigid body dynamics to convert an input twist at the pivot to an output twist at any other point on the rigid body. In this case, each robot's location would be one of those points. This output twist is then represented in the robot's own coordinate frame so that it knows how to command its wheels.
+    <br><br>
+    <b>Data Visualization</b>
+    <br>
+    The data visualizer does just that - it records positional data for a desired time frame and then displays the information with a set of graphs. This was especially helpful seeing the performance of how one odometry method compares to another.
+    <br><br>
+    <b>Velocity Smoothing</b>
+    <br>
+    Executing raw twist commands result in very fast and agile maneuverability, but it also results in a significant amount of slipping and inaccurate odometry calculations. One way to prevent this is to add a filter to the robot's velocity so that it does not accelerate too quickly. This system runs a few instances of a twist filter that can control for max speed and acceleration for both linear and angular components of a twist. These "smoothed" twists are what the robot ultimately executes.
+    <br><br><br>
+</p>
+
+<h4>IMPROVEMENTS</h4>
+<p>
+    A main area of improvemement is code structure. We should certainly work to continue to make the code more modular and standardized. Having an object oriented structure allows for easy "plug and play" scenarios for testing out new features, debugging existing ones, and creating a more scalable system. In many areas the code is also constructed to work for a maximum of three robots. Ideally, we would want a system that could control an arbitrary number of robots (within reason).
+    <br>
+    A second area that needs more development is sensor integration and odometry fusion. Although we are able to get odometry data from several differet sources, we have only just started fusing these pieces of information together to see if we can improve our current odometry performance. With more reliable odometry we can get better localization, better formation control, and a more robust mobile robot overall.
+    <br><br><br>
+</p>
+
+<p style = "text-align: center;">-----------------------------------------------------------------------------------------------------------------<br>
+Part II: Spring 2018 write-up</p>
+<br><br><br>
 
 <h4>OVERVIEW</h4>
 <p>
