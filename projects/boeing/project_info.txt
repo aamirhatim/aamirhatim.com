@@ -17,7 +17,7 @@ SHORT DESCRIPTION:
 Simultaneous operation of three omni-directional robots used for mapping the environment and manipulating large objects.
 
 VIDEO LINK ("none" will not show any video):
-https://www.youtube.com/embed/N5jkggRLIUI?autoplay=1
+https://www.youtube.com/embed/xSkom9F3TOs
 
 SKILLS:
 ROS,Python,Circuit Design
