@@ -55,7 +55,14 @@ FIGURES:
     For the final version of the mobile base, two Tiva boards were used to measure wheel velocities (two wheels per Tiva) and send motor commands via serial communication. A third Tiva, the "omni" Tiva, was used to convert input twist commands to individual wheel velocities that get sent to the two "wheel" Tiva's previously mentioned. The omni Tiva was also responsible for relaying calculated twists to the on-board computer for odometry calculations.
     <br><br>
     Two custom boards were designed to connect the Tiva boards to each other, the on-board PC, and to the motor drivers. The omni custom board created a communication line between the PC and the omni Tiva. It also created communication lines between the two wheel Tiva boards by using RS-485 chips and ethernet cabling. The wheel custom board created two isolated circuits, one for the motors powered with 24V, and another for all the logic components running on 15V. This board also had a communication line from the the wheel Tiva to the Sabertooth motor controllers. All boards had an input for an emergency stop as well.
-    <br><br><br>
+    <br>
+
+    <figure>
+        <img src = "img/omni_block_diagram.svg" width = "600px">
+        <figcaption>
+            High level diagram of the communication connections on a single omni robot.
+        </figcaption>
+    </figure>
 </p>
 
 <h4>SOFTWARE</h4>
@@ -72,7 +79,15 @@ FIGURES:
     <b>Client:</b>
     <br>
     The client node is how the user interfaces with the whole system. It provides options for controlling robots (individually or all together), setting their locations, and sending velocity commands.
-    <br><br>
+    <br>
+
+    <figure>
+        <img src = "img/omni_control_setup.svg" width = "300px">
+        <figcaption>
+            High level diagram of multi-robot control.
+        </figcaption>
+    </figure>
+
     <b>Odometry Calculation:</b>
     <br>
     Each robot is constantly reading its own velocity to know where it is relative to its starting point. This is done by getting the velocity of each wheel, converting them to a twist using a four-wheeled omni-directional car model, and then using odometry update laws to calculate where the robot has travelled for a given linear and angular velocity. The robot's wheel odometry is one of the primary methods of relative localization, but this system uses three other methods as well. The robot's IMU and laser scanner both gather their own odometry data that can be fused with the odometry gathered from the wheels to get a more comprehensive, and ideally more accurate, representation of where the robot is in its environment. The third method is an external camera setup that overlooks the robot's environment and uses AR tags for tracking.
@@ -80,15 +95,39 @@ FIGURES:
     <b>Formation Control:</b>
     <br>
     Along with having the ability to move all robots at the same time relative to themsleves, this package also has a feature to control multiple robots as a single rigid body, or formation. To do this, the user first specifies the the point from which the rigid body's movements will be executed. Knowing the transformation between the robots and this pivot point, as well as the transformation between the robot and a world frame coordinate, we can use planar rigid body dynamics to convert an input twist at the pivot to an output twist at any other point on the rigid body. In this case, each robot's location would be one of those points. This output twist is then represented in the robot's own coordinate frame so that it knows how to command its wheels.
-    <br><br>
+    <br>
+
+    <figure>
+        <img src = "img/omni_control_modes.svg" width = "500px">
+        <figcaption>
+            Left: Rigid body control - input twists for a specified pivot point are translated to different twists for each robot to maintain a formation. Right: Freeform control - input twist is executed by all robots relative to their own positions.
+        </figcaption>
+    </figure>
+
     <b>Data Visualization</b>
     <br>
     The data visualizer does just that - it records positional data for a desired time frame and then displays the information with a set of graphs. This was especially helpful seeing the performance of how one odometry method compares to another.
-    <br><br>
+
+    <figure>
+        <img src = "img/tracking_omni_1.png" width = "800px">
+        <figcaption>
+            Left: Visualization of wheel odometry and AR-tag tracking. Right: Difference in x, y, and theta over time.
+        </figcaption>
+    </figure>
+
+    <br>
     <b>Velocity Smoothing</b>
     <br>
     Executing raw twist commands result in very fast and agile maneuverability, but it also results in a significant amount of slipping and inaccurate odometry calculations. One way to prevent this is to add a filter to the robot's velocity so that it does not accelerate too quickly. This system runs a few instances of a twist filter that can control for max speed and acceleration for both linear and angular components of a twist. These "smoothed" twists are what the robot ultimately executes.
-    <br><br>
+    <br>
+
+    <figure>
+        <img src = "img/twist_filter_diagram.svg" width = "600px">
+        <figcaption>
+            A twist is read from an input source, filtered to satisfy acceleration and speed constraints, and then sent as an output twist to the omni robot.
+        </figcaption>
+    </figure>
+
     <b>Localization and Mapping</b>
     <br>
     We use Gmapping and AMCL to map out the robot's environment with the Hokuyo laser scanner and IMU.
