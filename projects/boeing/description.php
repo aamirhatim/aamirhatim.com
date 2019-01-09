@@ -94,7 +94,7 @@ FIGURES:
     <br><br>
     <b>Formation Control:</b>
     <br>
-    Along with having the ability to move all robots at the same time relative to themsleves, this package also has a feature to control multiple robots as a single rigid body, or formation. To do this, the user first specifies the the point from which the rigid body's movements will be executed. Knowing the transformation between the robots and this pivot point, as well as the transformation between the robot and a world frame coordinate, we can use planar rigid body dynamics to convert an input twist at the pivot to an output twist at any other point on the rigid body. In this case, each robot's location would be one of those points. This output twist is then represented in the robot's own coordinate frame so that it knows how to command its wheels.
+    Along with having the ability to move all robots at the same time relative to themselves, this package also has a feature to control multiple robots as a single rigid body, or formation. To do this, the user first specifies the the point from which the rigid body's movements will be executed. Knowing the transformation between the robots and this pivot point, as well as the transformation between the robot and a world frame coordinate, we can use planar rigid body dynamics to convert an input twist at the pivot to an output twist at any other point on the rigid body. In this case, each robot's location would be one of those points. This output twist is then represented in the robot's own coordinate frame so that it knows how to command its wheels.
     <br>
 
     <figure>
