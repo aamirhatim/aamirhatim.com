@@ -17,8 +17,8 @@ if (trim($keys[0]) != 'none') {
 echo 'project">';
 echo '<img class = "project-img" src = "'.$proj_tile.'">';
 echo '<a href = "'.$tile_loc.'">';
-echo '<h2>'.strtoupper($title).'</h2>';
+echo '<h5>'.strtoupper($title).'</h5>';
 echo '<p>'.$tile_desc;
-echo '<br><br>';
+echo '</p><p>';
 echo $tile_extra.'</p></a></div>';
 ?>

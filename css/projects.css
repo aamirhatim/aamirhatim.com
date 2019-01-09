@@ -17,11 +17,13 @@ figure{
 }
 
 figcaption{
-  font-size: 12pt;
-  font-weight: 500;
+  font-size: 11pt;
+  font-style: italic;
+  font-weight: 100;
   margin: 10px auto;
+  opacity: 0.6;
   text-align: center;
-  width: 70%;
+  width: 90%;
 }
 
 header{
@@ -31,7 +33,7 @@ header{
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
-  padding: 120px 0;
+  padding: 80px 0;
   width: 100%;
 }
 
@@ -41,7 +43,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 100px;
+  padding-left: 80px;
   width: 55%;
 }
 
@@ -68,7 +70,7 @@ header{
 }
 
 #skills-concepts-container{
-  width: 45%;
+    width: 45%;
 }
 
 #skills-concepts-content{
@@ -78,11 +80,10 @@ header{
   border-radius: 15px 0 0 15px;
   box-shadow: 0 0 100px rgba(0,0,0,.2);
   opacity: .85;
-  padding: 30px 50px 30px 0;
+  padding: 20px 30px 20px 0;
 }
 
-#skills-concepts-content p{
-  font-size: 18pt;
+#skills-concepts-content h6{
   text-align: center;
 }
 
@@ -91,18 +92,16 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 500px;
+  width: 400px;
 }
 
 #skills, #concepts{
-  font-size: 14pt;
-  font-weight: 300;
-  width: 40%;
+    font-weight: 200;
 }
 
 #skills li, #concepts li{
-  list-style-type: circle;
-  padding: 5px;
+    list-style-type: circle;
+    padding: 2px;
 }
 
 #peep{
@@ -166,25 +165,23 @@ header{
 #description{
   margin: 0 auto;
   min-width: 500px;
-  padding: 80px 0;
-  width: 50%;
+  padding-bottom: 200px;
+  width: 62%;
 }
 
 .proj-img{
   margin: 0 5%;
-  width: 90%;
 }
 
 .info-box{
   align-items: center;
-  border-radius: 5px;
-  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
-  font-size: 16pt;
-  margin: 50px auto;
-  padding: 25px;
-  width: 70%;
+  margin: 40px auto;
+  padding: 20px;
+  width: 60%;
 }
 
 .info-box h4{
@@ -200,7 +197,8 @@ header{
 }
 
 .info-box li{
-  list-style-type: circle;
+    font-weight: 200;
+    list-style-type: circle;
 }
 
 .info-box-table{

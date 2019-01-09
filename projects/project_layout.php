@@ -29,7 +29,7 @@
 
       <div id = "skills-concepts-container">
         <div id = "skills-concepts-content">
-          <p>SKILLS & CONCEPTS</p>
+          <h6>SKILLS & CONCEPTS</h6>
           <div id = "skills-concepts">
             <?php include("load_skills_concepts.php");?>
           </div>
