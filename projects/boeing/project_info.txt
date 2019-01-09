@@ -20,10 +20,10 @@ VIDEO LINK ("none" will not show any video):
 https://www.youtube.com/embed/xSkom9F3TOs
 
 SKILLS:
-ROS,Python,Circuit Design
+ROS,Python,C/C++,UART,Circuit Design
 
 CONCEPTS:
-SLAM,Mechatronics,Mobile Robots
+SLAM,Mechatronics,Mobile Robots,Odometry,Sensor Integration
 
 GITHUB LINK ("none" will disable the link from appearing):
 none
