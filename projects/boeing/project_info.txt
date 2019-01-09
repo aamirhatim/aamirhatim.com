@@ -29,10 +29,10 @@ GITHUB LINK ("none" will disable the link from appearing):
 none
 
 SMALL IMAGES:
-none
+boeing_2.jpg,boeing_3.jpg,boeing_4.jpg,boeing_5.jpg,boeing_6.jpg,boeing_7.jpg
 
 LARGE IMAGES:
-none
+boeing_1.jpg
 
 KEYS:
 mechatronics,highlight,ros,python
