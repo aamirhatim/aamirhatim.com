@@ -12,26 +12,49 @@ FIGURES:
 </figure>
 
 -->
-<p style = "text-align: center;">Part I: Fall 2018 Final Project write-up</p>
-<br><br><br>
 
 <h4>OVERVIEW</h4>
 <p>
-    This project continues the previous work done by other MSR students and the work done by Matthew Elwin to design a system in which multiple omni-directional robots collaboratively work together to pick up and move objects to a desired destination. The primary goals for this quarter were to construct three omni-directional mobile bases and develop a set of packages that can perform robot odometry, track the robot's location, execute freeform control of all the robots, and control an X number of robots as a single rigid body.
+    When it comes to moving large objects, coordination becomes vital as risk to damage increases. If not everyone is working together, it could lead to disatrous consequences on a factory floor. One method to mitigate this risk is to have a fleet of autonomous agents that can take the place of humans in doing these tasks. The benefits of this are two-fold. First, the likelihood of injury decreases since there are no humans directly involved in moving. Second, performance increases when using robots that can react and communicate more quickly than its average human counterpart, which also allows humans to focus on other important tasks that need to be done.
+    <br><br>
+    The goal of this ongoing project is to create an autonomous fleet of mobile robots, each one made up of an omni-directional mobile base and a delta arm, that are capable of sensing their environment and move together as a single unit (like a rigid body) as well as relative to their own positions (like a fleet) so that they can collaboratively work together to pick up and move large, unwieldy objects to a desired destination - all without human intervetion. During the Spring and Fall quarters of 2018, my partner, <a href = "https://swiz23.github.io/Portfolio/">Solomon Wiznitzer</a> and I worked alongside our advisor <a href = "https://nxr.northwestern.edu/people/matthew-elwin">Matthew Elwin</a> to get closer towards this end goal. Continuing the work of previous MSR students, we were able to construct three mobile bases, control them both as a fleet and as a rigid body, and integrate multiple on-board sensors for localization and odometry.
+    <br><br>
+    Special thanks also to <a href = "https://nxr.northwestern.edu/people/jarvis-schultz">Jarvis Schultz</a>, <a href = "https://nxr.northwestern.edu/people/bill-hunt">Bill Hunt</a>, and the <a href = "https://nxr.northwestern.edu">Northwestern NxR Lab</a> for the invaluable help and support to make this project happen.
     <br><br><br>
 </p>
 
 <h4>BUILDING THE MOBILE BASES</h4>
+<p><i>Note: Complete build instructions, as well as a bill of materials, CAD models, schematics, etc., are documented in the project's GitHub repository. Please contact Matthew Elwin for more information.</i></p>
+<br><br>
+
 <h6>Mechanical</h6>
 <p>
-    The mobile base was built using a robot kit purchased from SuperDroid robots. Some modifications were needed to meet our requirements for the project, like turning the chassis upside down to have easier access to the motors, altering the position of the batteris for better space management, drilling extra holes in the chassis for peripheral attachments, etc. Once one robot fully constructed, the other two were built with a special focus on cable management and optimal component positioning for ease of access and efficient use of space. Each robot has the following components: on-board computer (Intel NUC), 24V-15V isolated DC/DC converter, Sabertooth motor driver (x2), Tiva microcontrollers (x3), IMU, brushed DC motor with encoder (x4).
+    The mobile base was built using a <a href = "https://www.superdroidrobots.com/shop/item.aspx/programmable-mecanum-wheel-vectoring-robot-ig52-db/1788/">robot kit</a> purchased from SuperDroid robots. Some modifications were needed to meet our requirements for the project, like turning the chassis upside down to have easier access to the motors, altering the position of the batteris for better space management, drilling extra holes in the chassis for peripheral attachments, etc. Once one robot was fully constructed and operational, two more were built with a special focus on cable management and optimal component positioning for ease of access and efficient use of space.
     <br><br>
 </p>
+
+<div class = "info-box">
+    <h6>Key Components for the Mobile Base</h6>
+    <ul>
+        <li>12V 18Ah SLA batteries (x2)</li>
+        <li>Intel NUC7i7BNH PC</li>
+        <li>24V-15V isolated DC/DC converter</li>
+        <li>Sabertooth motor driver (x2)</li>
+        <li>Tiva C LaunchPad boards (x3)</li>
+        <li>Inertial Measurement Unit (IMU) + magnetometer</li>
+        <li>Brushed DC motor with encoder (x4)</li>
+        <li>Electrostatic discharge drag chains (x2)</li>
+        <li>Emergency stop button (never forget!)</li>
+    </ul>
+</div>
+
 <h6>Electrical</h6>
 <p>
-    The original version of the mobile base used an Arduino and a Kangaroo motor controller to operate the robot, but it was decided at the start of the quarter to replace these components with a setup of Tiva microcontrollers. There were a few reasons for this change. One was to standardize the electrical components used across the whole system: the mobile base and the delta arm that will eventually be placed on top. The arm already used a robust communications protocol using Tiva boards and so it would be easier to integrate it with the mobile base if everything was using the same setup. Another reason was to fix timing and latency issues that arose with the Arduino/Kangaroo combination. The libraries used with this setup required massive amounts of overhead just to make it run, and the frequency at which commands were being sent were not reliable.
-    <br>
+    The original version of the mobile base used an Arduino and a Kangaroo motor controller to operate the robot, but it was decided at the start of the quarter to replace these components with a setup of <a href = "http://processors.wiki.ti.com/index.php/Tiva_C_Series_TM4C123G_LaunchPad">Tiva C LaunchPad</a> boards. There were a few reasons for this change. One was to standardize the electrical components used across the whole system: the mobile base and the delta arm that will eventually be placed on top. The arm already used a robust communications protocol using Tiva boards and so it would be easier to integrate it with the mobile base if everything was using the same setup. Another reason was to fix timing and latency issues that arose with the Arduino/Kangaroo combination. The libraries used with this setup required massive amounts of overhead just to make it run, and the frequency at which commands were being sent were not reliable.
+    <br><br>
     For the final version of the mobile base, two Tiva boards were used to measure wheel velocities (two wheels per Tiva) and send motor commands via serial communication. A third Tiva, the "omni" Tiva, was used to convert input twist commands to individual wheel velocities that get sent to the two "wheel" Tiva's previously mentioned. The omni Tiva was also responsible for relaying calculated twists to the on-board computer for odometry calculations.
+    <br><br>
+    Two custom boards were designed to connect the Tiva boards to each other, the on-board PC, and to the motor drivers. The omni custom board created a communication line between the PC and the omni Tiva. It also created communication lines between the two wheel Tiva boards by using RS-485 chips and ethernet cabling. The wheel custom board created two isolated circuits, one for the motors powered with 24V, and another for all the logic components running on 15V. This board also had a communication line from the the wheel Tiva to the Sabertooth motor controllers. All boards had an input for an emergency stop as well.
     <br><br><br>
 </p>
 
@@ -65,6 +88,10 @@ FIGURES:
     <b>Velocity Smoothing</b>
     <br>
     Executing raw twist commands result in very fast and agile maneuverability, but it also results in a significant amount of slipping and inaccurate odometry calculations. One way to prevent this is to add a filter to the robot's velocity so that it does not accelerate too quickly. This system runs a few instances of a twist filter that can control for max speed and acceleration for both linear and angular components of a twist. These "smoothed" twists are what the robot ultimately executes.
+    <br><br>
+    <b>Localization and Mapping</b>
+    <br>
+    We use Gmapping and AMCL to map out the robot's environment with the Hokuyo laser scanner and IMU.
     <br><br><br>
 </p>
 
@@ -74,79 +101,4 @@ FIGURES:
     <br>
     A second area that needs more development is sensor integration and odometry fusion. Although we are able to get odometry data from several differet sources, we have only just started fusing these pieces of information together to see if we can improve our current odometry performance. With more reliable odometry we can get better localization, better formation control, and a more robust mobile robot overall.
     <br><br><br>
-</p>
-
-<p style = "text-align: center;">-----------------------------------------------------------------------------------------------------------------<br>
-Part II: Spring 2018 write-up</p>
-<br><br><br>
-
-<h4>OVERVIEW</h4>
-<p>
-  When working with large or heavy objects, it's often times better to handle them with the help of a machine. However, it would be fantastic if a machine, or a group of machines, can take on the task without any human intervention. The end goal of this project is to be able to simultaneously and wirelessly control three mobile robots capable of cooperatively manipulating large objects. As a continuation of a project from last year's MSR cohort, this year will focus on finalizing the design for a single robot, making two more of them, and setting up communication/mapping capabilities for each robot. Information about last year's progress can be found <a href = "https://echeng22.github.io/robotics/Mobile-Base.html">here</a>.
-  <br><br><br>
-</p>
-
-<h4>SPRING 2018 PROGRESS</h4>
-<p>
-  The primary agenda for this quarter was to to take the current setup of the mobile base and make improvements so that it was easier to use and more robust. There were a number of documented issues in the link provided above, and a few more were brought up over the course of this quarter. Once the new design is confirmed to work, we will order parts to build two additional robots.
-  <br><br>
-</p>
-
-<h6>Getting a new chassis</h6>
-<p>
-  The current model often fails in keeping the wheel shaft firmly mounted to the sprocket that turns it. This results in wheel slipping even during regular operation. The kit used to build the base, provided by <a href = "https://www.superdroidrobots.com/shop/item.aspx/programmable-mecanum-wheel-vectoring-robot-ig52-db/1788/">SuperDroid</a>, has since updated their kit to address this issue. Unfortunately, we could not simply just buy a few new parts to retrofit our current base, so we had to purchase a complete wheel and chassis set. Ordering individual parts to fit our current model was considered, but it proved to be difficult to find a reliable setup we needed at a reasonable price.
-  <br><br>
-</p>
-
-<h6>Purchase an on-board computer</h6>
-<p>
-  The robot was previously controlled using a laptop with ensor readings from an Arduino were passed along to the computer for computation. This is useful for prototyping but it becomes a hassle when it comes to making this robot fully "untethered." After some deliberation, we decided to use the <a href = "https://www.intel.com/content/www/us/en/products/boards-kits/nuc/kits/nuc7i7bnh.html">Intel NUC7i7BNH</a> for its ease of use, compatibility with ROS, size, computation power, and price tag. The NUC will be mounted on the mobile base and powered by the same battery that drives the motors. An isolated DC/DC converter takes the 24V from the batery and outputs an isolated 15V to power the NUC.
-  <br><br>
-</p>
-
-<h6>Design and isolated circuit</h6>
-<p>
-  The previous version of the base has all of its components connected to a common ground. Though it may be okay to operate the device like this, we would ideally like to have the motors and their drivers/controllers completely isolated from our other electronics (NUC, Arduino). To address this problem, we purchased an isolated DC/DC converter (mentioned above) to power the NUC. On the motor communication side, we used two optoisolator chips (one for each motor/controller/driver unit) to isolate the Arduino from the Kangaroo motor controllers.
-  <br><br>
-</p>
-
-<h6>Design an emergency stop switch</h6>
-<p>
-  We want to be able to safely disengage the robot, which does not necessarily mean cutting off power to the whole machine. Having the ability to keep the computer on would be huge plus so that we can run an emergency shutoff procedure if the button is ever pressed. The Kangaroo controllers have a built in automatic emergency stop that is activated if connection on its S1 pin is severed. We confirmed this feature and implemented it on the PCB shield. Each optoisolator has an output enable/disable pin which can be used to sever our S1 connection to the Kangaroo. The switch is positioned such that when it is not activated, the enable/disable pin is pulled to high, enabling output to the Kangaroo. When the button is pressed, the pin is driven low to sever the connection. A logic line is also connected to the switch that goes back into the Arduino and the robot arm that i to be mounted on top of the base. This allows the computer to know when the button has been pressed so that we can run any shutoff procedures in software.
-  <br><br><br>
-</p>
-
-<figure>
-  <img class = "proj-img" src = "/img/mobile_base.png">
-  <figcaption>Schematic of the mobile base including the Arduino and emergency stop switch</figure>
-</figure>
-<br><br>
-
-<h6>Make the Arduino shield</h6>
-<p>
-  A custom Arduino shield was made to hold the optoisolators, emergency stop switch, and communication lines to the motor controllers. This prototype board was milled here at the Northwestern mechanical engineering department. Once a workable version of this board is finalized, we will have more professionally made for the remaining robots.
-  <br><br><br>
-</p>
-
-<figure>
-  <img class = "proj-img" src = "/img/arduino_shield.png">
-  <figcaption>Arduino shield PCB layout (designed by <a href = "https://swiz23.github.io/Portfolio/">Solomon Wiznitzer</a>)</figure>
-</figure>
-<br><br>
-
-<h6>Set up a clean physical circuit design</h6>
-<p>
-  Once the schematic for the complete mobile base was finalized, the next step was to design the physical layout of the base - the connectors we would use, type of wire, location of components, what mounts to make/buy. The current setup was put together as an initial working prototype, but now that we have come up with several improvements, the construction should be redone so that it is cleaner, safer, and much more robust.
-  <br><br><br>
-</p>
-
-<h4>SUMMER 2018 PLANS</h4>
-<p>
-  Plans for this summer are to hopefully complete building the new version of the mobile base as well as verify the PCB shield works. Once we confirm everything works as expected, we will go ahead and order the parts to build the remaining two robots. Ideally, it would be fantastic to have all three robots completed by the end of the summer, but we will see how that goes.
-  <br><br><br>
-</p>
-
-<h4>AGENDA FOR FALL 2018</h4>
-<p>
-  The plan for the fall quarter is to begin diving into the software components of the projects: using sensor data and ROS to do localization, pose estimation, and mapping. The details of what we plan to focus on are still being discussed.
 </p>
