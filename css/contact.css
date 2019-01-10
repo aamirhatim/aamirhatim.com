@@ -74,8 +74,8 @@ textarea,input[type = text]{
   background-color: rgba(0,0,0,.05);
   border: none;
   border-radius: 7px;
-  font-size: 14pt;
-  padding: 15px;
+  font-size: 13pt;
+  padding: 10px;
 }
 
 textarea:focus,input[type = text]:focus{

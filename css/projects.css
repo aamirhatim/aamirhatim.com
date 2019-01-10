@@ -10,6 +10,11 @@
   --video-width: 790px;
 }
 
+li{
+    font-weight: 200;
+    list-style-type: circle;
+}
+
 figure{
   align-items: center;
   display: flex;
@@ -100,7 +105,6 @@ header{
 }
 
 #skills li, #concepts li{
-    list-style-type: circle;
     padding: 2px;
 }
 
