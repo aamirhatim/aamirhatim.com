@@ -1,5 +1,5 @@
 PROJECT NAME:
-The "Boeing" Project
+The Omni Project
 
 PORTFOLIO IMAGE LOCATION:
 img/boeing_tile.svg

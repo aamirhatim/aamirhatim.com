@@ -18,7 +18,7 @@ FIGURES:
   With the right kind of sensors, we can (reliably) give a robot full control over many of its own actions. This opens up the door to several uses that can make our everyday lives much more convenient - from small house cleaners like the Roomba all the way to massive auto-manufacturing factories that crank out thousands of cars each year. The inspiration for this project came from the hustle and bustle of the airport, a place that can make or break your whole day of traveling depending on your luck. Wouldn't it be nice if you didn't have to carry your luggage around? Even better, wouldn't it be great if your luggage followed <i>you</i> so you could focus more on finding the right gate? The goal of this project was to design an autonomous robot, from scratch*, that can robustly follow a target. By using a RGB camera and an AR tag, Argo is able to track and follow a known target without any wires or internet connection.
 </p>
 
-<h4>HARDWARE</h4>
+<h4>Hardware</h4>
 <p>
   Currently, Argo uses only uses two sensors to get information about itself and the environment: a RGB camera and an encoder on each wheel to measure speed and rotation. Since the original idea for Argo was to function as a carry-on suitcase, it is equipped with motors so that it can haul up to approximately 30 pounds and roll as fast as a human normally walks (about 3 miles per hour). It also has a large enough battery to run the motors for about 4-5 hours until it has to be rolled like a traditional suitcase. Argo uses a Raspberry Pi Model 3 as its CPU.
 </p>
