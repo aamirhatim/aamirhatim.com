@@ -8,7 +8,7 @@ PROJECT LOCATION:
 projects/argo/argo.php
 
 PORTFOLIO TILE DESCRIPTION:
-An autonomous differential drive suitcase that was built from the ground up (almost). Argo uses AR tags to track and follow objects in its environment.
+An autonomous differential drive suitcase that uses AR tags to track and follow objects in its environment.
 
 PORTFOLIO TILE 2ND LINE:
 Winter Project (2018)
@@ -23,7 +23,7 @@ SKILLS:
 ROS,Python,PID Control,Motor Control,Mechatronics
 
 CONCEPTS:
-AR Tags,Computer Vision,Brushed Motors,Object Tracking
+AR Tags,Computer Vision,Brushed Motors,Object Tracking, Human-Robot Interaction
 
 GITHUB LINK:
 https://github.com/aamirhatim/argo

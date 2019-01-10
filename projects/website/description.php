@@ -13,25 +13,23 @@ FIGURES:
 
 -->
 
-<h4>OVERVIEW</h4>
+<h4>Overview</h4>
 <p>
   What started out as a curiosity project soon became what I thought was a necessity. Rather than updating a paper resume and periodically throwing it at whoever may glance my way, building a website could instead serve as a dynamic resume where I can show my skills and creativity through a brand new medium.
-  <br><br>
+</p><p>
   I debated using pre-made templates for their ease of use and clean looks on different sized screens, but I had a desire to learn the basics of web development from the ground up. I quickly became hooked, spiking my interests in graphic design and aesthetics of digital art.
-  <br><br><br>
 </p>
 
-<h4>CURRENT VERSION</h4>
+<h4>Current Version</h4>
 <h6>Version 5 - Getting Cozy with PHP</h6>
 <p>
   This version is clean on the inside and out. Previous versions of my site were not modular whatsoever. Redundant code, different standards, it was hard to maintain. For Version 5 I wanted to change that. I made extensive use of PHP, plugging in reusable code via server-side commands rather than re-typing it for every new page. I also simplified adding new pages by setting up text file parsing for an overall easier experience rather than unnecessarily getting too deep in the weeds of HTML.
-  <br><br><br>
 </p>
 
-<h4>PREVIOUS VERSIONS</h4>
+<h4>Previous Versions</h4>
 <p>
   Every once in a while I decide to scrap my current design and start from scratch again. Every time I learn something new, and I refine my tastes in web design. Check out previous versions of my site below.
-  <br><br>
+</p><p>
   NOTE: These versions are no longer maintained, so there may be some parts and features missing!
 </p>
 

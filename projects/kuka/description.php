@@ -13,16 +13,14 @@ FIGURES:
 
 -->
 
-<h4>OVERVIEW</h4>
+<h4>Overview</h4>
 <p>
   There are several ways to get a robot fom point A to point B, and they all rely heavily on the principles behind forward and inverse kinematics, rigid body motion, controls, and joint configurations. This project provided an introduction to these fundamentals of robotic control. All simulations were calculated using Mathematica and visualized with V-REP, a virtual robot simulator.
-  <br><br><br>
 </p>
 
-<h4>END-EFFECTOR CONFIGURATION</h4>
+<h4>End-Effector Configuration</h4>
 <p>
   There are several steps involved in determining the best path for a robot to follow to reach a desired end-effector configuration. The robot's task space, work space, joint limitations, and wheel configuration must be taken into account to find a feasible solution. There could be the chance that the desired end-effector configuration is impossible for the robot to achieve in real life. Noise, sensor error, and computing limitations make it challenging to create the perfect simulation, so error control must also be implemented to ensure the robot stays on the desired path towards the final configuration.
-  <br><br><br>
 </p>
 
 <div class = "info-box">
@@ -42,5 +40,4 @@ FIGURES:
     <br>
     <li>Repeat this process for the next time step, using the configuration found in step 6 as the new set of initial conditions needed for step 1.</li>
   </ol>
-</div>
 </div>
