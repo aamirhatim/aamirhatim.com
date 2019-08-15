@@ -36,6 +36,33 @@ $PROJECT_LIST = array (
         'An autonomous differential drive suitcase that uses AR tags to track and follow objects in its environment',
         'https://github.com/aamirhatim/argo',
         'https://www.youtube.com/embed/L7owzQ5A6ZQ'
+    ),
+
+    'day-zero' => new ProjectInfo(
+        'day-zero',
+        'Day Zero Predictor',
+        'EECS349 Final (2018)',
+        'Using machine learning to predict when a country will reach "Day Zero" - the time when its water supply is fully depleted',
+        'https://github.com/aamirhatim/day_zero_predictor/tree/master/project_data',
+        ''
+    ),
+
+    'baxter' => new ProjectInfo(
+        'baxter',
+        'Inspector Baxter',
+        'ME495 Final (2017)',
+        'An introductory ROS project that uses Rethink Robotics\' Baxter to manipulate objects via speech commands',
+        'https://github.com/aamirhatim/InspectorBaxter',
+        'https://www.youtube.com/watch?v=Mkh_P828sVU'
+    ),
+
+    'techtiles' => new ProjectInfo(
+        'techtiles',
+        'Techtiles: Washable Biometrics',
+        'Capstone Senior Design (2015)',
+        'A washable, biometric shirt that measures heart rate, breathing rate, steps, distance, and energy - all sent to a mobile display',
+        '',
+        'https://youtube.com/embed/g21bp58Fbyo'
     )
 );
 

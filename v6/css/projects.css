@@ -28,6 +28,15 @@
     box-shadow: -10px 0 20px rgba(0,0,0,0.1);
     flex-grow: 1;
     height: 100%;
+    overflow: hidden;
     width: 40px;
-    transition: flex-grow .5s;
+    transition: flex-grow .4s;
+}
+
+.proj-panel:hover {
+    flex-grow: 1.05;
+}
+
+.panel-contents {
+    width: 400px;
 }
