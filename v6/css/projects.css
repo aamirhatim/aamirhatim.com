@@ -6,7 +6,28 @@
     display: flex;
 }
 
+#highlights {
+    display: flex;
+    justify-content: center;
+}
+
 .tile {
     height: 200px;
     width: 200px;
+}
+
+#accordion {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    min-width: 900px;
+    width: 80vw; 
+}
+
+.proj-panel {
+    box-shadow: -10px 0 20px rgba(0,0,0,0.1);
+    flex-grow: 1;
+    height: 100%;
+    width: 40px;
+    transition: flex-grow .5s;
 }
