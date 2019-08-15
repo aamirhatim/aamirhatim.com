@@ -15,5 +15,5 @@
   <input type = "text" name = "name" placeholder = "name." required/>
   <input type = "text" name = "email" placeholder = "email." required/>
   <textarea name = "message" placeholder = "message." autocomplete = "off" required></textarea>
-  <input type = "submit" name = "submit" value = "send"/>
+  <!-- <input type = "submit" name = "submit" value = "send"/> -->
 </form>
