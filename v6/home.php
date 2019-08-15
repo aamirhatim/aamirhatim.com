@@ -10,6 +10,10 @@
 <body>
     <!-- Landing Page -->
     <?php require 'modules/landing.html';?>
+
+    <!-- Projects -->
+    <?php require 'modules/projects.php' ?>
+    
 </body>
 
 </html>
