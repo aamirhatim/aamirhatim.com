@@ -13,7 +13,10 @@
 
     <!-- Projects -->
     <?php require 'modules/projects.php' ?>
-    
+
+    <!-- Footer -->
+    <?php require 'modules/footer.html' ?>
+
 </body>
 
 </html>

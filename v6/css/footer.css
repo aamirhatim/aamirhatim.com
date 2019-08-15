@@ -1,0 +1,22 @@
+footer {
+    height: 150px;
+    width: 100%;
+}
+
+#footer-break {
+    align-items: center;
+    display: flex;
+}
+
+#scissors {
+    width: 40px;
+}
+
+#break-line {
+    border-top: 2px dashed black;
+    flex-grow: 1;
+}
+
+.footer-link {
+    width: 25px;
+}
