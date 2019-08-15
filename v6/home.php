@@ -8,14 +8,14 @@
 </head>
 
 <body>
-    <!-- Landing Page -->
-    <?php require 'modules/landing.html';?>
+    <?php
 
-    <!-- Projects -->
-    <?php require 'modules/projects.php' ?>
+    require 'modules/nav.html';         // Navigation
+    require 'modules/landing.html';     // Landing page
+    require 'modules/projects.html';    // Projects
+    require 'modules/footer.html';      // Footer       
 
-    <!-- Footer -->
-    <?php require 'modules/footer.html' ?>
+    ?>
 
 </body>
 
