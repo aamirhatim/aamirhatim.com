@@ -17,29 +17,7 @@ class ProjectInfo {
         $this->github = $github;
         $this->video = $video;
     }
-
-    function get_article() {
-        $filename = 'projects/' . $this->name . '.html';
-        include $filename;
-    }
 }
-
-// class ProjectManager {
-//     var $PROJECTS;
-
-//     function __construct($projects)
-//     {
-//         $this->PROJECTS = $projects;
-//     }
-
-//     function load_project_tiles() {
-//         foreach ($this->PROJECTS as $p) {
-//             echo "<div class='proj-tile'>" . "\n";
-//             $p->get_project_tile();
-//             echo "</div>" . "\n";
-//         }
-//     }
-// }
 
 $PROJECT_LIST = array (
     'omni' => new ProjectInfo(
@@ -61,7 +39,6 @@ $PROJECT_LIST = array (
     )
 );
 
-// $PROJECT_MANAGER = new ProjectManager($PROJECT_LIST);
 echo json_encode($PROJECT_LIST);
 
 ?>
