@@ -37,23 +37,24 @@ document.addEventListener('DOMContentLoaded', function() {
     var selected_proj;
     if (base) {
         base.addEventListener('click', function(event) {
-            console.log(event.target.classList);
-            if (event.target.classList.contains('panel-active')) {
-                event.target.style.flexGrow = '1';
-                event.target.classList.remove('panel-active');
-            } else {
-                event.target.style.flexGrow = '20';
-                event.target.classList.add('panel-active');
-            }
-
-            if (selected_proj) {
-                if (selected_proj != event.target) {
-                    selected_proj.style.flexGrow = '1';
-                    selected_proj.classList.remove('panel-active');
+            if (event.target.classList.contains('proj-panel')) {
+                if (event.target.classList.contains('panel-active')) {
+                    event.target.style.flexGrow = '1';
+                    event.target.classList.remove('panel-active');
+                } else {
+                    event.target.style.flexGrow = '20';
+                    event.target.classList.add('panel-active');
                 }
+    
+                if (selected_proj) {
+                    if (selected_proj != event.target) {
+                        selected_proj.style.flexGrow = '1';
+                        selected_proj.classList.remove('panel-active');
+                    }
+                }
+    
+                selected_proj = event.target;
             }
-
-            selected_proj = event.target;
         });
     }
 })
