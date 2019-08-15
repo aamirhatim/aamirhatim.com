@@ -37,7 +37,7 @@ FIGURES:
   <ul>
     <li><a href = "../../v4/v4.html" target = "blank">Version 4: Vibrant colors and subtle scrolling effects</a></li>
     <br>
-    <li><a href = "../../tile_version/tile.html" target = "blank">Version 3: Experimenting with tiled layouts</a></li>
+    <li><a href = "../../v3/tile.html" target = "blank">Version 3: Experimenting with tiled layouts</a></li>
     <br>
     <li><a href = "../../v2/v2.html" target = "blank">Version 2: A quirky one-pager with sliding cards</a></li>
     <br>
