@@ -1,5 +1,3 @@
-.htaccess
-php/
 *.shtml
 error_log
 assets/
