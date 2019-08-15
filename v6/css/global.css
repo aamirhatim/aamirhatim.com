@@ -1,0 +1,12 @@
+* {
+    /* border: 1px solid grey; */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+}
