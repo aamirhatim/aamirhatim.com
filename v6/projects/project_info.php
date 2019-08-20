@@ -63,6 +63,24 @@ $PROJECT_LIST = array (
         'A washable, biometric shirt that measures heart rate, breathing rate, steps, distance, and energy - all sent to a mobile display',
         '',
         'https://youtube.com/embed/g21bp58Fbyo'
+    ),
+
+    'motor' => new ProjectInfo(
+        'motor',
+        'Motor Controller',
+        'ME333 Final (2018)',
+        'A closed-loop PID DC motor controller with a MATLAB user interface for low level control',
+        'https://github.com/aamirhatim/motor_controller',
+        ''
+    ),
+
+    'website' => new ProjectInfo(
+        'website',
+        'aamirhatim.com',
+        'Ongoing Project',
+        'The current version of this site was made from scratch (and love) using HTML, CSS, PHP, and Javascript',
+        'https://github.com/aamirhatim/aamirhatim.com',
+        ''
     )
 );
 
