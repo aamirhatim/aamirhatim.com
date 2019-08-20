@@ -1,4 +1,4 @@
-function fill_template(data) {
+function fill_accordion_template(data) {
     var t, item;
 
     // Get template
@@ -6,12 +6,28 @@ function fill_template(data) {
 
     // Populate template
     node = document.importNode(t, true);
-    node.querySelector('.proj-title').textContent = data['title'];
-    node.querySelector('.proj-subtitle').textContent = data['subtitle'];
-    node.querySelector('.proj-text').textContent = data['description'];
+    node.querySelector('.panel-title').textContent = data['title'];
+    node.querySelector('.panel-subtitle').textContent = data['subtitle'];
+    node.querySelector('.panel-text').textContent = data['description'];
 
     // Activate template
     document.querySelector('#accordion').appendChild(node);
+};
+
+function fill_grid_template(data) {
+    var t, item;
+
+    // Get template
+    t = document.querySelector('#grid-template').content;
+
+    // Populate template
+    node = document.importNode(t, true);
+    node.querySelector('.grid-title').textContent = data['title'];
+    node.querySelector('.grid-subtitle').textContent = data['subtitle'];
+    node.querySelector('.grid-text').textContent = data['description'];
+
+    // Activate template
+    document.querySelector('#grid').appendChild(node);
 };
 
 function load_projects() {
@@ -20,8 +36,16 @@ function load_projects() {
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var projects = JSON.parse(this.responseText);
+            var count = 0;
             for ([key, value] of Object.entries(projects)) {
-                fill_template(value);
+                if (count < 6) {
+                    // Fill accordion
+                    fill_accordion_template(value);
+                    count += 1;
+                } else {
+                    // Fill grid
+                    fill_grid_template(value);
+                }
             }
         }
     };
@@ -57,4 +81,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-})
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toggle = false;
+    document.getElementById('more-proj').addEventListener('click', function() {
+        var grid = document.getElementById('grid');
+        if (toggle) {
+            grid.style.display = 'flex';
+            toggle = !toggle;
+        } else {
+            grid.style.display = 'none';
+            toggle = !toggle;
+        }        
+    });
+});
