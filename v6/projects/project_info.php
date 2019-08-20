@@ -84,6 +84,8 @@ $PROJECT_LIST = array (
     )
 );
 
-echo json_encode($PROJECT_LIST);
+if ($_GET['get_list']) {
+    echo json_encode($PROJECT_LIST);
+}
 
 ?>
