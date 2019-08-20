@@ -3,28 +3,32 @@
     <script src='js/project_tiles.js'></script>
 </head>
 
-<!-- <template id='tile-template'>
-    <div class='tile'>
-        <div class='proj-title'></div>
-        <div class='proj-text'></div>
-        <div class='proj-subtitle'></div>
-    </div>
-</template> -->
-
 <section id='projects'>
-    <div id='tiles'></div>
     <div id='highlights'>
         <div id='accordion'>
             <template id='panel-template'>
                 <div class='proj-panel'>
                     <div class='panel-contents'>
-                        <div class='proj-title'></div>
-                        <div class='proj-text'></div>
-                        <div class='proj-subtitle'></div>
+                        <div class='panel-title'></div>
+                        <div class='panel-text'></div>
+                        <div class='panel-subtitle'></div>
+                        <a href='projects/sample.php'>Read more</a>
                     </div>
                 </div>
             </template>
         </div>
+    </div>
+
+    <div id='more-proj'>See More</div>
+
+    <div id='grid'>
+        <template id='grid-template'>
+            <div class='tile'>
+                <div class='grid-title'></div>
+                <div class='grid-text'></div>
+                <div class='grid-subtitle'></div>
+            </div>
+        </template>
     </div>
     
 </section>
