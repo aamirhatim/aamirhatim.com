@@ -1,0 +1,13 @@
+body {
+    display: flex;
+}
+
+main {
+    flex-grow: 1;
+}
+
+#article-panel {
+    border: 1px solid grey;
+    height: 100vh;
+    width: 400px;
+}
