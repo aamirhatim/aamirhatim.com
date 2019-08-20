@@ -13,7 +13,7 @@
     require 'modules/nav.html';         // Navigation
     require 'modules/landing.html';     // Landing page
     require 'modules/projects.html';    // Projects
-    require 'modules/footer.html';      // Footer       
+    require 'modules/footer.html';      // Footer
 
     ?>
 
