@@ -11,17 +11,12 @@
     justify-content: center;
 }
 
-.tile {
-    height: 200px;
-    width: 200px;
-}
-
 #accordion {
     display: flex;
     height: 400px;
     justify-content: center;
     min-width: 900px;
-    width: 80vw; 
+    width: 70vw; 
 }
 
 .proj-panel {
@@ -39,4 +34,16 @@
 
 .panel-contents {
     width: 400px;
+}
+
+#grid {
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    transition: display .3s;
+}
+
+.tile {
+    height: 170px;
+    width: 170px;
 }
