@@ -1,5 +1,6 @@
 function fill_accordion_template(data) {
     var t, item;
+    var path = 'projects/';
 
     // Get template
     t = document.querySelector('#panel-template').content;
@@ -9,6 +10,7 @@ function fill_accordion_template(data) {
     node.querySelector('.panel-title').textContent = data['title'];
     node.querySelector('.panel-subtitle').textContent = data['subtitle'];
     node.querySelector('.panel-text').textContent = data['description'];
+    node.querySelector('.panel-link').href = path.concat(data['name'], '.php');
 
     // Activate template
     document.querySelector('#accordion').appendChild(node);
@@ -16,6 +18,7 @@ function fill_accordion_template(data) {
 
 function fill_grid_template(data) {
     var t, item;
+    var path = 'projects/';
 
     // Get template
     t = document.querySelector('#grid-template').content;
@@ -25,6 +28,7 @@ function fill_grid_template(data) {
     node.querySelector('.grid-title').textContent = data['title'];
     node.querySelector('.grid-subtitle').textContent = data['subtitle'];
     node.querySelector('.grid-text').textContent = data['description'];
+    node.querySelector('.grid-link').href = path.concat(data['name'], '.php');
 
     // Activate template
     document.querySelector('#grid').appendChild(node);
@@ -50,7 +54,7 @@ function load_projects() {
         }
     };
 
-    xmlhttp.open("GET", "projects/project_info.php", true);
+    xmlhttp.open("GET", "projects/project_info.php?get_list=1", true);
     xmlhttp.send();
 };
 
@@ -84,9 +88,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    var toggle = false;
+    var toggle = true;
+    var grid = document.getElementById('grid');
+
     document.getElementById('more-proj').addEventListener('click', function() {
-        var grid = document.getElementById('grid');
+        
         if (toggle) {
             grid.style.display = 'flex';
             toggle = !toggle;
