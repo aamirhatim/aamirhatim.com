@@ -28,5 +28,4 @@ function article_panel($title, $description) {
 TITLE_PANEL;
 }
 
-
 ?>
