@@ -1,21 +1,27 @@
 #landing {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
     height: 100vh;
+    justify-content: space-between;
+    padding: 100px;
     width: 100%;
 }
 
 header {
     display: flex;
     width: 100%;
-    height: 70px;
 }
 
 #logo {
-    width: 70px;
+    box-sizing: border-box;
+    width: 80px;
+    padding: 5px;
 }
 
 #links {
+    align-items: center;
     display: flex;
-    height: 100%;
 }
 
 .landing-link {
