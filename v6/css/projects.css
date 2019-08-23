@@ -13,10 +13,10 @@
 
 #accordion {
     display: flex;
-    height: 400px;
+    height: 300px;
     justify-content: center;
     min-width: 900px;
-    width: 70vw; 
+    width: 60vw;
 }
 
 .proj-panel {
@@ -24,7 +24,8 @@
     flex-grow: 1;
     height: 100%;
     overflow: hidden;
-    width: 40px;
+    width: 20px;
+    transform: skewX(-5deg);
     transition: flex-grow .4s;
 }
 
@@ -33,7 +34,36 @@
 }
 
 .panel-contents {
-    width: 400px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.panel-title {
+    bottom: 0;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    width: 300px;
+}
+
+.panel-details {
+    height: 100%;
+    left: 40px;
+    width: 500px;
+    position: absolute;
+    transform: skewX(5deg);
+}
+
+.panel-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+}
+
+#more-proj {
+    text-align: center;
 }
 
 #grid {
@@ -43,7 +73,10 @@
     transition: display .3s;
 }
 
-.tile {
-    height: 170px;
-    width: 170px;
+.grid-tile {
+    box-sizing: border-box;
+    height: 200px;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
 }

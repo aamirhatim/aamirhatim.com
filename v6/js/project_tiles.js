@@ -65,28 +65,28 @@ document.addEventListener('DOMContentLoaded', function() {
     var selected_proj;
     if (base) {
         base.addEventListener('click', function(event) {
-            // Check if proper div was clicked
-            if (event.target.classList.contains('proj-panel')) {
-                // Show/hide panel depending on if it was already active or not
-                if (event.target.classList.contains('panel-active')) {
-                    event.target.style.flexGrow = '1';
-                    event.target.classList.remove('panel-active');
-                } else {
-                    event.target.style.flexGrow = '20';
-                    event.target.classList.add('panel-active');
-                }
-                
-                // Show panel if it was clicked again from hidden state
-                if (selected_proj) {
-                    if (selected_proj != event.target) {
-                        selected_proj.style.flexGrow = '1';
-                        selected_proj.classList.remove('panel-active');
-                    }
-                }
-                
-                // Update the selected_project object
-                selected_proj = event.target;
+            // Select the correct element to modify
+            var panel = event.target.closest('.proj-panel');
+
+            // Show/hide panel depending on if it was already active or not
+            if (panel.classList.contains('panel-active')) {
+                panel.style.flexGrow = '1';
+                panel.classList.remove('panel-active');
+            } else {
+                panel.style.flexGrow = '20';
+                panel.classList.add('panel-active');
             }
+            
+            // Show panel if it was clicked again from hidden state
+            if (selected_proj) {
+                if (selected_proj != panel) {
+                    selected_proj.style.flexGrow = '1';
+                    selected_proj.classList.remove('panel-active');
+                }
+            }
+            
+            // Update the selected_project object
+            selected_proj = panel;
         });
     }
 });
