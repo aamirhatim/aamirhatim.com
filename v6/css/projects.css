@@ -29,11 +29,12 @@
     overflow: hidden;
     width: 20px;
     transform: skewX(-5deg);
-    transition: flex-grow .4s;
+    transition: flex-grow .3s, height .4s;
 }
 
 .proj-panel:hover {
-    flex-grow: 1.05;
+    height: 310px;
+    transition: flex-grow .3s, height .2s;
 }
 
 .panel-contents {
