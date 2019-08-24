@@ -81,6 +81,51 @@ $PROJECT_LIST = array (
         'The current version of this site was made from scratch (and love) using HTML, CSS, PHP, and Javascript',
         'https://github.com/aamirhatim/aamirhatim.com',
         ''
+    ),
+
+    'kuka' => new ProjectInfo(
+        'kuka',
+        'Robotic Manipulation',
+        'ME449 Final (2017)',
+        'Using inverse kinematics and control laws to simulate the KUKA youBot, a 5R wheeled robot',
+        '',
+        'https://www.youtube.com/watch?time_continue=1&v=LQ2JJwoRYEQ'
+    ),
+
+    'neural' => new ProjectInfo(
+        'neural',
+        'Designing a Neural Network',
+        'EECS495 (2018)',
+        'Learning how to build a library from scratch to implement different kinds of neural networks',
+        '',
+        ''
+    ),
+
+    'rrt' => new ProjectInfo(
+        'rrt',
+        'Path Planning',
+        'MSR Orientation (2017)',
+        'Using RRTs to explore spaces and avoid collisions from a bitmap image and from randomly generated circles',
+        'https://github.com/aamirhatim/rrt',
+        ''
+    ),
+
+    'speakers' => new ProjectInfo(
+        'speakers',
+        'Desktop Speaker Set',
+        'Summer Project (2013)',
+        'A custom designed, 2.1 channel desktop speaker set that uses active filters to play music through two tweeters and a subwoofer',
+        '',
+        ''
+    ),
+
+    'splits' => new ProjectInfo(
+        'splits',
+        'Doing the Splits',
+        'ME 314 - Dynamics (2017)',
+        'Using Mathematica to simulate the dynamics of rigid bodies',
+        '',
+        ''
     )
 );
 

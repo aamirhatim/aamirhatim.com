@@ -1,4 +1,7 @@
 #projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -41,6 +44,7 @@
 
 .panel-title {
     bottom: 0;
+    padding: 8px 0;
     position: absolute;
     transform: rotate(-90deg);
     transform-origin: left top 0;
@@ -48,35 +52,53 @@
 }
 
 .panel-details {
+    box-sizing: border-box;
     height: 100%;
     left: 40px;
     width: 500px;
+    padding: 40px;
     position: absolute;
     transform: skewX(5deg);
 }
 
 .panel-link {
-    position: absolute;
     bottom: 0;
+    margin: 20px;
+    padding: 5px;
+    position: absolute;
     right: 0;
-    width: 50px;
+    text-align: center;
+    width: 100px;
 }
 
 #more-proj {
+    box-sizing: border-box;
+    margin: 40px;
+    padding: 10px;
     text-align: center;
 }
 
 #grid {
-    display: none;
     align-items: flex-start;
+    display: none;
+    flex-flow: row wrap;
     justify-content: center;
+    min-width: 400px;
     transition: display .3s;
+    width: 80%;
 }
 
 .grid-tile {
+    border: 1px solid grey;
     box-sizing: border-box;
     height: 200px;
-    margin: 5px;
+    margin: 10px;
     padding: 10px;
+    position: relative;
     width: 300px;
+}
+
+.grid-link {
+    bottom: 10px;
+    position: absolute;
 }
