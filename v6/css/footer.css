@@ -32,14 +32,14 @@ footer {
 
 #footer-links {
     bottom: 0;
-    left: 50px;
+    left: 70px;
     position: absolute;
 }
 
 #dev-icons {
     bottom: 0;
     position: absolute;
-    right: 50px;
+    right: 70px;
 }
 
 .footer-item {
