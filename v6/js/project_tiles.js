@@ -72,9 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (panel.classList.contains('panel-active')) {
                 panel.style.flexGrow = '1';
                 panel.classList.remove('panel-active');
+                panel.style.height = '300px';
             } else {
                 panel.style.flexGrow = '20';
                 panel.classList.add('panel-active');
+                panel.style.height = '310px';
             }
             
             // Show panel if it was clicked again from hidden state
@@ -82,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (selected_proj != panel) {
                     selected_proj.style.flexGrow = '1';
                     selected_proj.classList.remove('panel-active');
+                    selected_proj.style.height = '300px';
                 }
             }
             
