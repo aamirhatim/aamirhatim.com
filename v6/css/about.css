@@ -1,8 +1,16 @@
 #about {
+    align-items: center;
     display: flex;
+    justify-content: center;
     margin: 200px 0;
 }
 
 #about-img {
     width: 300px;
+}
+
+#about-text {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 45%;
 }
