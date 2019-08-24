@@ -1,0 +1,8 @@
+#about {
+    display: flex;
+    margin: 200px 0;
+}
+
+#about-img {
+    width: 300px;
+}
