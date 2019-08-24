@@ -4,7 +4,7 @@
     flex-flow: column;
     height: 100vh;
     justify-content: space-between;
-    padding: 100px;
+    padding: 80px;
     width: 100%;
 }
 
@@ -22,9 +22,11 @@ header {
 #links {
     align-items: center;
     display: flex;
+    margin-left: 30px;
 }
 
 .landing-link {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    margin: 0 5px;
+    width: 30px;
 }
