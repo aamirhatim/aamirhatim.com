@@ -1,0 +1,81 @@
+#skills {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#skills-bg {
+    /* background-color: rgba(0,0,255,0.4); */
+    height: 600px;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    z-index: -1;
+}
+
+.skill-box {
+    align-items: center;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 30px;
+    padding: 25px 0;
+    width: 225px;
+}
+
+.box-header {
+    margin: 0 0 30px 0;
+}
+
+.box-img {
+    height: 50px;
+    width: 50px;
+}
+
+.box-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-size: 12pt;
+    text-align: center;
+}
+
+.skillset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 85%;
+}
+
+.skill-item {
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 8pt;
+    margin: 3px;
+    padding: 6px;
+    transition: background-color .9s, color .9s;
+}
+
+.skill-item:hover {
+    background-color: grey;
+    color: white;
+    transition: background-color .3s, color .3s;
+}
+
+#code-skills {
+    box-shadow: -15px 15px rgba(0,0,0,0.5);
+}
+
+#concepts-skills {
+    box-shadow: 0 15px rgba(0,0,0,0.5);
+}
+
+#tools-skills {
+    box-shadow: 15px 15px rgba(0,0,0,0.5);
+}

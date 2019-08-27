@@ -2,15 +2,43 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 200px 0;
+    margin: 150px 0;
+}
+
+#about-details {
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: -15px 15px rgba(0,0,0,0.5);
+    padding: 10px;
 }
 
 #about-img {
-    width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 250px;
 }
 
 #about-text {
+    /* border: 1px solid grey; */
     box-sizing: border-box;
+    margin-left: 20px;
     padding: 30px;
-    width: 45%;
+    width: 40%;
+}
+
+.education {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.degree {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-size: 12pt;
+}
+
+.school {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 9pt;
 }

@@ -15,7 +15,7 @@ header {
 
 #logo {
     box-sizing: border-box;
-    width: 80px;
+    width: 100px;
     padding: 5px;
 }
 
@@ -29,4 +29,8 @@ header {
     height: 30px;
     margin: 0 5px;
     width: 30px;
+}
+
+#landing-text {
+    width: 90%;
 }
