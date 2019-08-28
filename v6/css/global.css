@@ -8,5 +8,47 @@ html, body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25pt;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20pt;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 9pt;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-family: 'Hepta Slab', serif;
+    font-size: 10pt;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
 }
