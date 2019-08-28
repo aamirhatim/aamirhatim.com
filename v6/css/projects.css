@@ -84,8 +84,18 @@
     padding: 6px;
 }
 
+#proj-fade {
+    background-image: linear-gradient(to top, white, rgba(0,0,0,0));
+    bottom: 170px;
+    position: relative;
+    height: 70px;
+    width: 100%;
+}
+
 #more-proj {
+    border: 1px solid grey;
     box-sizing: border-box;
+    box-shadow: 10px 10px grey;
     margin: 40px;
     padding: 10px;
     text-align: center;
@@ -95,16 +105,23 @@
     align-items: flex-start;
     display: none;
     flex-flow: row wrap;
+    height: 0;
     justify-content: center;
+    margin-bottom: 50px;
     min-width: 400px;
-    transition: display .3s;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.5s, opacity 1.0s;
     width: 80%;
 }
 
 .grid-tile {
     border: 1px solid grey;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     height: 250px;
+    justify-content: space-between;
     margin: 10px;
     padding: 25px;
     position: relative;
@@ -112,16 +129,21 @@
 }
 
 .grid-title {
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
-.grid-subtitle, .grid-text {
+.grid-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-description {
     font-size: 10pt;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-.grid-link {
-    bottom: 25px;
-    position: absolute;
-    right: 25px;
+.grid-extras {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }

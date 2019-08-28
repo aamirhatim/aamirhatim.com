@@ -1,9 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    // Function to add external links
+    function ext_link(link, type) {
+        var t;
+
+        // Get template
+        t = document.querySelector('#ext-template').content;
+        n = document.importNode(t, true);
+
+        // Populate
+        n.querySelector('a').href = link;
+        if (type == 'github') {
+            n.querySelector('.proj-ext').src = '/v6/img/github_128.svg';
+        } else if (type == 'video') {
+            n.querySelector('.proj-ext').src = '/v6/img/video_128.svg';
+        }
+
+        return n;
+    }
+
     // Function to populate a feature project left template
     function feature_project(data, direction) {
-        var t, item;
-        var path = 'projects/';
+        var t;
 
         // Get template
         if (direction == 'left') {
@@ -17,37 +35,17 @@ document.addEventListener('DOMContentLoaded', function() {
         node.querySelector('.proj-title').textContent = data['title'];
         node.querySelector('.proj-subtitle').textContent = data['subtitle'];
         node.querySelector('.proj-description').textContent = data['description'];
-        node.querySelector('a').href = path.concat(data['name'], '.php');
+        node.querySelector('a').href = '/v6/projects/' + data['name'] + '.php';
 
-        var path = '/v6/img/' + data['name'] + '.jpg';
-        node.querySelector('.proj-img').src = path;
+        var img_path = '/v6/img/' + data['name'] + '.jpg';
+        node.querySelector('.proj-img').src = img_path;
 
-        // Add Github link if present
+        // Add external links
         if (data['github'] != '') {
-            // Get template
-            g = document.querySelector('#ext-template').content;
-            n = document.importNode(g, true);
-
-            // Populate with link
-            n.querySelector('a').href = data['github'];
-            n.querySelector('.proj-ext').src = '/v6/img/github_128.svg';
-
-            // Activate
-            node.querySelector('.ext-links').appendChild(n);
+            node.querySelector('.ext-links').appendChild(ext_link(data['github'], 'github'));
         }
-
-        // Add video link if present
         if (data['video'] != '') {
-            // Get template
-            g = document.querySelector('#ext-template').content;
-            n = document.importNode(g, true);
-
-            // Populate with link
-            n.querySelector('a').href = data['video'];
-            n.querySelector('.proj-ext').src = '/v6/img/video_128.svg';
-
-            // Activate
-            node.querySelector('.ext-links').appendChild(n);
+            node.querySelector('.ext-links').appendChild(ext_link(data['video'], 'video'));
         }
 
         // Add keywords
@@ -70,6 +68,32 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('#highlights').appendChild(node);
     }
 
+    // Function to populate other projects
+    function project_grid(data) {
+        var t;
+
+        // Get template
+        t = document.querySelector('#grid-template').content;
+
+        // Populate template
+        node = document.importNode(t, true);
+        node.querySelector('.grid-title').textContent = data['title'];
+        node.querySelector('.proj-subtitle').textContent = data['subtitle'];
+        node.querySelector('.grid-description').textContent = data['description'];
+        node.querySelector('a').href = '/v6/projects/' + data['name'] + '.php';
+
+        // Add external links
+        if (data['github'] != '') {
+            node.querySelector('.ext-links').appendChild(ext_link(data['github'], 'github'));
+        }
+        if (data['video'] != '') {
+            node.querySelector('.ext-links').appendChild(ext_link(data['video'], 'video'));
+        }
+
+        // Activate template
+        document.querySelector('#grid').appendChild(node);
+    }
+
     // Function to load the project list
     function load_projects() {
         var xmlhttp = new XMLHttpRequest();
@@ -90,6 +114,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                         left = !left;
                         count += 1;
+                    } else {
+                        project_grid(value);
                     }
                 }
             }
@@ -101,5 +127,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Load projects into DOM
     load_projects();
+
+    // Toggle project grid
+    var toggle = true;
+    var grid = document.getElementById('grid');
+
+    document.getElementById('more-proj').addEventListener('click', function() {
+        var height;
+        // Toggle the "more projects" section when button is clicked
+        if (toggle) {
+            grid.style.display = 'flex';
+            grid.style.height = grid.scrollHeight.toString() + 'px';
+            grid.style.opacity = '1';
+            toggle = !toggle;
+            document.getElementById('more-proj').innerHTML = 'Show Less';
+        } else {
+            grid.style.height = '0px';
+            grid.style.opacity = '0';
+            window.setTimeout(function () {
+                grid.style.display = 'none';
+            }, 500);
+            toggle = !toggle;
+            document.getElementById('more-proj').innerHTML = 'See More Projects!';
+        }        
+    });
 
 });
