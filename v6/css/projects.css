@@ -6,71 +6,82 @@
     width: 100%;
 }
 
-#tiles {
-    display: flex;
-}
-
 #highlights {
+    width: 70%;
+}
+
+.proj-item {
     display: flex;
-    justify-content: center;
-}
-
-#accordion {
-    display: flex;
-    height: 300px;
-    justify-content: center;
-    min-width: 900px;
-    width: 60vw;
-}
-
-.proj-panel {
-    box-shadow: -10px 0 20px rgba(0,0,0,0.1);
-    flex-grow: 1;
-    height: 100%;
-    overflow: hidden;
-    width: 20px;
-    transform: skewX(-5deg);
-    transition: flex-grow .3s, height .4s;
-}
-
-.proj-panel:hover {
-    height: 310px;
-    transition: flex-grow .3s, height .2s;
-}
-
-.panel-contents {
-    height: 100%;
-    width: 100%;
+    flex-direction: column;
+    margin: 100px 10px;
+    min-height: 280px;
     position: relative;
 }
 
-.panel-title {
-    bottom: 0;
-    padding: 8px 0;
+.proj-img {
+    border-radius: 3px;
+    height: 280px;
     position: absolute;
-    transform: rotate(-90deg);
-    transform-origin: left top 0;
-    width: 300px;
+    top: 0;
+    z-index: -1;
 }
 
-.panel-details {
-    box-sizing: border-box;
-    height: 100%;
-    left: 40px;
-    width: 500px;
-    padding: 40px;
-    position: absolute;
-    transform: skewX(5deg);
+.proj-header {
+    margin-bottom: 20px;
 }
 
-.panel-link {
-    bottom: 0;
-    margin: 20px;
-    padding: 5px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 100px;
+.proj-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+}
+
+.proj-description {
+    border: 1px solid grey;
+    background-color: white;
+    padding: 20px;
+}
+
+.proj-extras {
+    align-items: center;
+    border: 1px solid grey;
+    border-top-width: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    position: relative;
+}
+
+.proj-link {
+    display: flex;
+    margin-left: 30px;
+}
+
+.proj-arrow {
+    margin-left: 5px;
+    width: 15px;
+}
+
+.proj-ext {
+    margin: 0 5px;
+    width: 18px;
+}
+
+.proj-keywords {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 0;
+    width: 85%;
+}
+
+.keyword {
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 8pt;
+    margin: 3px;
+    padding: 6px;
 }
 
 #more-proj {
@@ -93,14 +104,24 @@
 .grid-tile {
     border: 1px solid grey;
     box-sizing: border-box;
-    height: 200px;
+    height: 250px;
     margin: 10px;
-    padding: 10px;
+    padding: 25px;
     position: relative;
     width: 300px;
 }
 
+.grid-title {
+    font-size: 12pt;
+}
+
+.grid-subtitle, .grid-text {
+    font-size: 10pt;
+    margin-top: 10px;
+}
+
 .grid-link {
-    bottom: 10px;
+    bottom: 25px;
     position: absolute;
+    right: 25px;
 }

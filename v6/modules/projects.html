@@ -1,37 +1,96 @@
 <head>
     <link rel='stylesheet' href='/v6/css/projects.css'>
-    <script src='/v6/js/project_tiles.js'></script>
+    <!-- <script src='/v6/js/project_tiles.js'></script> -->
+    <script src='/v6/js/projects.js'></script>
 </head>
 
 <section id='projects'>
     <div id='highlights'>
+        <!-- <img id='left-panel-nav' class='panel-nav' src='/v6/img/panel_nav_left.svg'>
         <div id='accordion'>
             <template id='panel-template'>
                 <div class='proj-panel'>
                     <div class='panel-contents'>
-                        <div class='panel-title'></div>
-                        <div class='panel-details'>
-                            <div class='panel-text'></div>
-                            <div class='panel-subtitle'></div>
-                            <a class='panel-link' href='projects/sample.php'>Read more</a>
+                        <div class='panel-text'>
+                            <h1 class='panel-title'></h1>
+                            <h3 class='panel-description'></h3>
+                            <p class='panel-subtitle'></p>
+                            <h5 class='panel-link'>
+                                <a href='projects/sample.php'>Read More</a>
+                                <img class='panel-arrow' src='/v6/img/arrow_128.svg'>
+                            </h5>
                         </div>
+                        
                     </div>
                 </div>
             </template>
         </div>
+        <img id='right-panel-nav' class='panel-nav' src='/v6/img/panel_nav_right.svg'> -->
+
+        <template id=feature-proj-left>
+            <div class='proj-item' style='align-items: flex-start;'>
+                <img class='proj-img' src='' style='right: 0;'>
+                <div class='proj-header'>
+                    <h2 class='proj-title'></h2>
+                    <h3 class='proj-subtitle'></h3>
+                </div>
+                <div class='proj-text' style='align-items: flex-start;'>
+                    <p class='proj-description' style='box-shadow: -7px -7px grey;'></p>
+                    <div class='proj-extras' style='left: 10px;'>
+                        <div class='ext-links'></div>
+                        <h3 class='proj-link'>
+                            <a href='projects/sample.php'>Read More</a>
+                            <img class='proj-arrow' src='/v6/img/arrow_128.svg'>
+                        </h3>
+                    </div>
+                    <div class='proj-keywords' style='justify-content: flex-start;'></div>
+                </div>
+            </div>
+        </template>
+
+        <template id=feature-proj-right>
+                <div class='proj-item' style='align-items: flex-end;'>
+                    <img class='proj-img' src='' style='left: 0;'>
+                    <div class='proj-header'>
+                        <h2 class='proj-title'></h2>
+                        <h3 class='proj-subtitle'></h3>
+                    </div>
+                    <div class='proj-text' style='align-items: flex-end;'>
+                        <p class='proj-description' style='box-shadow: 7px -7px grey;'></p>
+                        <div class='proj-extras' style='right: 10px;'>
+                            <div class='ext-links'></div>
+                            <h3 class='proj-link'>
+                                <a href='projects/sample.php'>Read More</a>
+                                <img class='proj-arrow' src='/v6/img/arrow_128.svg'>
+                            </h3>
+                        </div>
+                        <div class='proj-keywords' style='justify-content: flex-end;'></div>
+                    </div>
+                </div>
+            </template>
+
+            <template id='ext-template'>
+                <a><img class='proj-ext' src=''></a>
+            </template>
+
+            <template id='keyword-template'>
+                <h3 class='keyword'></h3>
+            </template>
+
+
     </div>
 
-    <div id='more-proj'>See More</div>
+    <!-- <h5 id='more-proj'>See More</h5>
 
     <div id='grid'>
         <template id='grid-template'>
             <div class='grid-tile'>
-                <div class='grid-title'></div>
-                <div class='grid-text'></div>
-                <div class='grid-subtitle'></div>
-                <a class='grid-link' href='projects/sample.php'>Read more</a>
+                <h3 class='grid-title'></h3>
+                <h3 class='grid-text'></h3>
+                <h4 class='grid-subtitle'></h4>
+                <a class='grid-link' href='projects/sample.php'><h5>Read more</h5></a>
             </div>
         </template>
-    </div>
+    </div> -->
     
 </section>
