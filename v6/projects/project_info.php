@@ -107,7 +107,7 @@ $PROJECT_LIST = array (
         'Designing a Neural Network',
         'EECS495 (2018)',
         'Learning how to build a library from scratch to implement different kinds of neural networks',
-        '',
+        'https://github.com/aamirhatim/deep_learning',
         '',
         ['Python', 'CNN', 'RNN', 'Regression', 'Neural Networks', 'Machine Learning', 'Backpropagation']
     ),
