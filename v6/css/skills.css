@@ -1,17 +1,7 @@
 #skills {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
     position: relative;
-}
-
-#skills-bg {
-    /* background-color: rgba(0,0,255,0.4); */
-    height: 600px;
-    position: absolute;
-    top: 150px;
-    width: 100%;
-    z-index: -1;
 }
 
 .skill-box {

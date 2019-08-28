@@ -12,9 +12,9 @@
     
     require 'modules/nav.html';         // Navigation
     require 'modules/landing.html';     // Landing page
-    require 'modules/about.html';       // About
     require 'modules/skills.html';      // Skills
     require 'modules/projects.html';    // Projects
+    require 'modules/about.html';       // About
     require 'modules/footer.html';      // Footer
 
     ?>
