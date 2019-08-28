@@ -63,9 +63,18 @@
     width: 15px;
 }
 
-.proj-ext {
+.ext-links {
+    align-items: center;
+    display: flex;
+}
+
+.ext-links a {
+    display: flex;
     margin: 0 5px;
-    width: 18px;
+}
+
+.proj-ext {
+    width: 20px;
 }
 
 .proj-keywords {
