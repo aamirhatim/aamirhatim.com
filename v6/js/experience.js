@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var c = document.getElementById('company').content;
         var node = document.importNode(c, true);
         node.querySelector('#job-company').innerHTML = '@' + data['company'];
+        node.querySelector('a').href = data['company_link'];
         document.querySelector('#job-title').appendChild(node);
 
         // Reset then Populate job description
@@ -70,11 +71,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
                             // Populate reading pane
                             document.getElementById('job-text').style.color = 'white';
+                            document.querySelector('#job-title a').style.color = 'white';
                             document.getElementById('job-text').style.opacity = 0;
                             
                             window.setTimeout(function () {
                                 show_experience(data);
                                 document.getElementById('job-text').style.color = 'black';
+                                document.querySelector('#job-title a').style.color = 'black';
                                 document.getElementById('job-text').style.opacity = 1;
                             }, 200);
 

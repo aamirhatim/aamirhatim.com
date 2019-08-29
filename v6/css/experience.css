@@ -45,6 +45,10 @@
     transition: opacity .3s;
 }
 
+#job-title a {
+    color: black;
+}
+
 .job-active {
     border: 2px solid grey;
 }
