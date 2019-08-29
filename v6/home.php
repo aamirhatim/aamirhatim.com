@@ -15,6 +15,7 @@
     require 'modules/skills.html';      // Skills
     require 'modules/projects.html';    // Projects
     require 'modules/about.html';       // About
+    require 'modules/experience.html';  // Work experience
     require 'modules/footer.html';      // Footer
 
     ?>

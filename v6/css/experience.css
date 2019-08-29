@@ -1,0 +1,50 @@
+#experience {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#timeline {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    position: relative;
+    width: 45%;
+}
+
+#line {
+    border: 1px solid grey;
+    border-top-width: 0;
+    box-sizing: border-box;
+    height: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.job {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 40px;
+    box-sizing: border-box;
+    height: 65px;
+    padding: 5px;
+    width: 65px;
+    z-index: 1;
+}
+
+#job-window {
+    border: 1px solid grey;
+    box-shadow: 10px 10px grey;
+    height: 300px;
+    padding: 20px;
+    width: 50%;
+}
+
+#job-text {
+    transition: opacity .3s;
+}
+
+.job-active {
+    border: 2px solid grey;
+}
