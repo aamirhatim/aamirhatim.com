@@ -26,9 +26,8 @@ header {
 }
 
 .landing-link {
-    height: 30px;
-    margin: 0 5px;
-    width: 30px;
+    margin: 0 10px;
+    width: 25px;
 }
 
 #landing-text {
