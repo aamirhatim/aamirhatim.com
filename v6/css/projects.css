@@ -58,8 +58,12 @@
     margin-left: 30px;
 }
 
+.proj-link a {
+    color: black;
+}
+
 .proj-arrow {
-    margin-left: 5px;
+    margin-left: 10px;
     width: 15px;
 }
 
