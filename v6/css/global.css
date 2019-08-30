@@ -3,10 +3,10 @@
 }
 
 :root {
-    --accent-1: rgb(61, 72, 214);
-    --accent-2: rgb(61, 209, 172);
-    --accent-3: rgb(61, 209, 105);
-    --accent-4: rgb(61, 155, 209);
+    --accent-1: rgb(103, 80, 179);
+    --accent-2: rgb(80, 179, 154);
+    --accent-3: rgb(80, 179, 111);
+    --accent-4: rgb(80, 131, 179);
 }
 
 html, body {
