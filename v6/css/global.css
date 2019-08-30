@@ -2,6 +2,13 @@
     /* border: 1px solid grey; */
 }
 
+:root {
+    --accent-1: rgb(61, 72, 214);
+    --accent-2: rgb(61, 209, 172);
+    --accent-3: rgb(61, 209, 105);
+    --accent-4: rgb(61, 155, 209);
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -83,11 +90,12 @@ p {
     font-size: 8pt;
     margin: 3px;
     padding: 6px;
-    transition: background-color .9s, color .9s;
+    transition: background-color .9s, color .9s, border .3s;
 }
 
 .keyword:hover {
-    background-color: grey;
+    border: 1px solid var(--accent-1);
+    background-color: var(--accent-1);
     color: white;
-    transition: background-color .3s, color .3s;
+    transition: background-color .3s, color .3s, border .3s;
 }

@@ -10,9 +10,9 @@
 }
 
 #about-details {
-    border: 1px solid rgba(0,0,0,0.5);
+    border: 1px solid grey;
     border-radius: 5px;
-    box-shadow: -15px 15px rgba(0,0,0,0.5);
+    box-shadow: -15px 15px var(--accent-4);
     padding: 10px;
 }
 

@@ -34,7 +34,7 @@
 
 #job-window {
     border: 1px solid grey;
-    box-shadow: 10px 10px grey;
+    box-shadow: 10px 10px var(--accent-3);
     min-height: 300px;
     padding: 40px;
     width: 50%;
@@ -71,5 +71,5 @@
 }
 
 .job-active {
-    border: 2px solid grey;
+    border: 2px solid var(--accent-3);
 }

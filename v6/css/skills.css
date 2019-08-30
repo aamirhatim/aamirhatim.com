@@ -47,13 +47,28 @@
 }
 
 #code-skills {
-    box-shadow: -15px 15px rgba(0,0,0,0.5);
+    box-shadow: -15px 15px var(--accent-2);
+}
+
+#code-skills .keyword:hover {
+    border: 1px solid var(--accent-2);
+    background-color: var(--accent-2);
 }
 
 #concepts-skills {
-    box-shadow: 0 15px rgba(0,0,0,0.5);
+    box-shadow: 0 15px var(--accent-3);
+}
+
+#concepts-skills .keyword:hover {
+    border: 1px solid var(--accent-3);
+    background-color: var(--accent-3);
 }
 
 #tools-skills {
-    box-shadow: 15px 15px rgba(0,0,0,0.5);
+    box-shadow: 15px 15px var(--accent-4);
+}
+
+#tools-skills .keyword:hover {
+    border: 1px solid var(--accent-4);
+    background-color: var(--accent-4);
 }
