@@ -55,4 +55,22 @@ document.addEventListener('DOMContentLoaded', function() {
             img.style.top = dist/10 + 'px';
         }
     });
+
+    // Nav link anchor scrolling
+    function scrollTo(elem) {
+        elem.scrollIntoView({behavior: 'smooth'});
+    }
+
+    document.getElementById('nav-skills').addEventListener('click', function() {
+        scrollTo(document.getElementById('skills'));
+    });
+    document.getElementById('nav-projects').addEventListener('click', function() {
+        scrollTo(document.getElementById('projects'));
+    });
+    document.getElementById('nav-about').addEventListener('click', function() {
+        scrollTo(document.getElementById('about'));
+    });
+    document.getElementById('nav-resume').addEventListener('click', function() {
+        scrollTo(document.querySelector('footer'));
+    });
 });
