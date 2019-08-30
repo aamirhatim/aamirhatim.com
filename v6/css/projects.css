@@ -1,5 +1,6 @@
 #projects {
     flex-direction: column;
+    margin-bottom: 30vh;
     width: 100%;
 }
 
@@ -84,14 +85,6 @@
     flex-flow: row wrap;
     margin: 20px 0;
     width: 85%;
-}
-
-.keyword {
-    border: 1px solid grey;
-    border-radius: 5px;
-    font-size: 8pt;
-    margin: 3px;
-    padding: 6px;
 }
 
 #proj-fade {

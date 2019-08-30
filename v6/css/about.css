@@ -1,3 +1,14 @@
+#about {
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+#about-contents {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 #about-details {
     border: 1px solid rgba(0,0,0,0.5);
     border-radius: 5px;

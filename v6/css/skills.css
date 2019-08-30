@@ -1,6 +1,12 @@
 #skills {
-    margin: 150px 0;
+    flex-direction: column;
+    margin-bottom: 50vh;
     position: relative;
+}
+
+#skill-boxes {
+    align-items: center;
+    display: flex;
 }
 
 .skill-box {
@@ -38,24 +44,6 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 85%;
-}
-
-.skill-item {
-    border: 1px solid grey;
-    border-radius: 5px;
-    color: black;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    font-size: 8pt;
-    margin: 3px;
-    padding: 6px;
-    transition: background-color .9s, color .9s;
-}
-
-.skill-item:hover {
-    background-color: grey;
-    color: white;
-    transition: background-color .3s, color .3s;
 }
 
 #code-skills {

@@ -27,19 +27,4 @@ document.addEventListener('DOMContentLoaded', function() {
             scroll_count++;
         }
     });
-
-    // Change transparency of landing text with scroll
-    var landing_text = document.getElementById('landing-text');
-    window.addEventListener('scroll', function() {
-        // Scale the opacity value against scroll value
-        var scroll = document.documentElement.scrollTop;
-        var opacity = Math.max(0, 1 - scroll/600.0);
-        var padding = scroll/3.0;
-
-        // Set opacity
-        landing_text.style.opacity = opacity.toString();
-
-        // Set padding
-        landing_text.style.paddingBottom = padding.toString() + 'px';
-    });
 });

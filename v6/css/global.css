@@ -60,3 +60,34 @@ p {
     margin: 0;
     padding: 0;
 }
+
+.section-header {
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.section-header img {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+
+.keyword {
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 8pt;
+    margin: 3px;
+    padding: 6px;
+    transition: background-color .9s, color .9s;
+}
+
+.keyword:hover {
+    background-color: grey;
+    color: white;
+    transition: background-color .3s, color .3s;
+}

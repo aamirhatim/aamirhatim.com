@@ -23,7 +23,9 @@ footer {
 #footer-contents {
     display: flex;
     justify-content: space-between;
-    padding: 15px 70px;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 80%;
 }
 
 .footer-img {
