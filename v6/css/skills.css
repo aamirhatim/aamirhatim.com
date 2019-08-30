@@ -1,4 +1,5 @@
 #skills {
+    margin: 150px 0;
     position: relative;
 }
 
@@ -12,6 +13,7 @@
     justify-content: flex-start;
     margin: 0 30px;
     padding: 25px 0;
+    position: relative;
     width: 225px;
 }
 
