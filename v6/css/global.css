@@ -8,9 +8,17 @@ html, body {
 }
 
 body {
+    align-items: center;
     display: flex;
     flex-direction: column;
     width: 100vw;
+}
+
+section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
 }
 
 h1 {
