@@ -20,6 +20,7 @@
     margin: 0 30px;
     padding: 25px 0;
     position: relative;
+    transition: box-shadow .3s;
     width: 225px;
 }
 
@@ -50,6 +51,11 @@
     box-shadow: -15px 15px var(--accent-2);
 }
 
+#code-skills:hover {
+    box-shadow: -20px 20px var(--accent-2);
+    transition: box-shadow .3s;
+}
+
 #code-skills .keyword:hover {
     border: 1px solid var(--accent-2);
     background-color: var(--accent-2);
@@ -59,6 +65,11 @@
     box-shadow: 0 15px var(--accent-3);
 }
 
+#concepts-skills:hover {
+    box-shadow: 0 20px var(--accent-3);
+    transition: box-shadow .3s;
+}
+
 #concepts-skills .keyword:hover {
     border: 1px solid var(--accent-3);
     background-color: var(--accent-3);
@@ -66,6 +77,11 @@
 
 #tools-skills {
     box-shadow: 15px 15px var(--accent-4);
+}
+
+#tools-skills:hover {
+    box-shadow: 20px 20px var(--accent-4);
+    transition: box-shadow .3s;
 }
 
 #tools-skills .keyword:hover {

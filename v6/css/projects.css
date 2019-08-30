@@ -102,6 +102,14 @@
     margin: 40px;
     padding: 10px;
     text-align: center;
+    transition: border .3s, box-shadow .3s, color .3s;
+}
+
+#more-proj:hover {
+    border: 1px solid var(--accent-1);
+    box-shadow: 15px 15px var(--accent-1);
+    color: var(--accent-1);
+    transition: border .3s, box-shadow .3s, color .3s;
 }
 
 #grid {
