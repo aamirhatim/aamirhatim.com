@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
         var w = document.getElementById('job-window');
 
         // Populate
-        w.querySelector('#job-title').innerHTML = data['position'];
-        w.querySelector('#job-location').innerHTML = data['location'];
-        w.querySelector('#job-time').innerHTML = data['date'];
+        w.querySelector('#job-title').textContent = data['position'];
+        w.querySelector('#job-location').textContent = data['location'];
+        w.querySelector('#job-time').textContent = data['date'];
 
         // Populate company name
         var c = document.getElementById('company').content;
         var node = document.importNode(c, true);
-        node.querySelector('#job-company').innerHTML = '@' + data['company'];
+        node.querySelector('#job-company').textContent = '@ ' + data['company'];
         node.querySelector('a').href = data['company_link'];
         document.querySelector('#job-title').appendChild(node);
 
@@ -70,14 +70,14 @@ document.addEventListener('DOMContentLoaded', function() {
                             var data = experiences_json[this.id];
 
                             // Populate reading pane
-                            document.getElementById('job-text').style.color = 'white';
-                            document.querySelector('#job-title a').style.color = 'white';
+                            // document.getElementById('job-text').style.color = 'white';
+                            // document.querySelector('#job-title a').style.color = 'white';
                             document.getElementById('job-text').style.opacity = 0;
                             
                             window.setTimeout(function () {
                                 show_experience(data);
-                                document.getElementById('job-text').style.color = 'black';
-                                document.querySelector('#job-title a').style.color = 'black';
+                                // document.getElementById('job-text').style.color = 'black';
+                                // document.querySelector('#job-title a').style.color = 'black';
                                 document.getElementById('job-text').style.opacity = 1;
                             }, 200);
 
