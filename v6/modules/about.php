@@ -5,7 +5,7 @@
 
 <section id='about'>
     <div class='section-header' id='about-header'>
-        <img src='/v6/img/about_128.svg'>
+        <?php echo file_get_contents('img/nav_about.svg'); ?>
     </div>
 
     <div id='about-contents'>

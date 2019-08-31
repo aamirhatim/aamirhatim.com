@@ -15,11 +15,11 @@
         <div id='job-text'>
             <h2 id='job-title'></h2>
             <div class='job-details'>
-                <img src='/v6/img/pin_128.svg'>
+                <?php echo file_get_contents('img/map_pin.svg'); ?>
                 <h3 id='job-location'></h3>
             </div>
             <div class='job-details'>
-                <img src='/v6/img/calendar_128.svg'>
+                <?php echo file_get_contents('img/calendar.svg'); ?>
                 <h3 id='job-time'></h3>
             </div>
             <ul id='job-description'></ul>

@@ -5,18 +5,18 @@
 
 <section id='landing'>
     <header>
-        <img id='logo' src='img/logo_black_square.svg'>
+        <?php echo file_get_contents('img/logo_block.svg'); ?>
         <div id='links'>
             <a class='landing-link' href='https://www.linkedin.com/in/aamirhatim/'>
-                <img class='icon' src='img/linkedin_128.svg'>
+                <?php echo file_get_contents('img/linkedin.svg'); ?>
             </a>
 
             <a class='landing-link' href='https://github.com/aamirhatim'>
-                <img class='icon' src='img/github_128.svg'>
+                <?php echo file_get_contents('img/github.svg'); ?>
             </a>
 
             <a class='landing-link' href='https://instagram.com/aamirhatim'>
-                <img class='icon' src='img/insta_128.svg'>
+                <?php echo file_get_contents('img/insta.svg'); ?>
             </a>
         </div>
     </header>

@@ -1,21 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Function to add external links
-    function ext_link(link, type) {
-        var t;
+    // Github template
+    function github_link(link) {
+        var t = document.querySelector('#github-link').content;
+        var n = document.importNode(t, true);
 
-        // Get template
-        t = document.querySelector('#ext-template').content;
-        n = document.importNode(t, true);
-
-        // Populate
         n.querySelector('a').href = link;
-        if (type == 'github') {
-            n.querySelector('.proj-ext').src = '/v6/img/github_128.svg';
-        } else if (type == 'video') {
-            n.querySelector('.proj-ext').src = '/v6/img/video_128.svg';
-        }
+        return n;
+    }
 
+    // Video template
+    function video_link(link) {
+        var t = document.querySelector('#video-link').content;
+        var n = document.importNode(t, true);
+
+        n.querySelector('a').href = link;
         return n;
     }
 
@@ -42,10 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Add external links
         if (data['github'] != '') {
-            node.querySelector('.ext-links').appendChild(ext_link(data['github'], 'github'));
+            node.querySelector('.ext-links').appendChild(github_link(data['github']));
         }
         if (data['video'] != '') {
-            node.querySelector('.ext-links').appendChild(ext_link(data['video'], 'video'));
+            node.querySelector('.ext-links').appendChild(video_link(data['video']));
         }
 
         // Add keywords
@@ -84,10 +83,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Add external links
         if (data['github'] != '') {
-            node.querySelector('.ext-links').appendChild(ext_link(data['github'], 'github'));
+            node.querySelector('.ext-links').appendChild(github_link(data['github']));
         }
         if (data['video'] != '') {
-            node.querySelector('.ext-links').appendChild(ext_link(data['video'], 'video'));
+            node.querySelector('.ext-links').appendChild(video_link(data['video']));
         }
 
         // Activate template

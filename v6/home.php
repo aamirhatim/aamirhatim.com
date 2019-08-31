@@ -11,13 +11,13 @@
 <body>
     <?php
     
-    require 'modules/nav.html';         // Navigation
-    require 'modules/landing.html';     // Landing page
-    require 'modules/skills.html';      // Skills
-    require 'modules/projects.html';    // Projects
-    require 'modules/about.html';       // About
-    require 'modules/experience.html';  // Work experience
-    require 'modules/footer.html';      // Footer
+    require 'modules/nav.php';         // Navigation
+    require 'modules/landing.php';     // Landing page
+    require 'modules/skills.php';      // Skills
+    require 'modules/projects.php';    // Projects
+    require 'modules/about.php';       // About
+    require 'modules/experience.php';  // Work experience
+    require 'modules/footer.php';      // Footer
 
     ?>
 </body>

@@ -75,7 +75,7 @@ p {
     width: 100%;
 }
 
-.section-header img {
+.section-header svg {
     position: relative;
     height: 50px;
     width: 50px;
@@ -108,4 +108,8 @@ p {
 .icon:hover {
     opacity: 1;
     transition: opacity .3s;
+}
+
+svg, object {
+    fill: red;
 }

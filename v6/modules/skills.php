@@ -4,13 +4,13 @@
 
 <section id='skills'>
     <div class='section-header' id='skills-header'>
-        <img src='/v6/img/skills_128.svg'>
+        <?php echo file_get_contents('img/nav_skills.svg'); ?>
     </div>
 
     <div id='skill-boxes'>
         <div id='code-skills' class=skill-box>
             <div class='box-header'>
-                <img class='box-img' src='/v6/img/skills_code_128.svg'>
+                <?php echo file_get_contents('img/skills_code.svg'); ?>
                 <div class='box-title'>Code</div>
             </div>
             
@@ -29,7 +29,7 @@
 
         <div id='concepts-skills' class=skill-box>
             <div class='box-header'>
-                <img class='box-img' src='/v6/img/skills_concepts_128.svg'>
+                <?php echo file_get_contents('img/skills_concepts.svg'); ?>
                 <div class='box-title'>Concepts</div>
             </div>
             
@@ -49,7 +49,7 @@
 
         <div id='tools-skills' class=skill-box>
             <div class='box-header'>
-                <img class='box-img' src='/v6/img/skills_tools_128.svg'>
+                <?php echo file_get_contents('img/skills_tools.svg'); ?>
                 <div class='box-title'>Tools</div>
             </div>
             

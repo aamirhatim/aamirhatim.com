@@ -61,7 +61,7 @@
     color: black;
 }
 
-.proj-arrow {
+.proj-link svg {
     margin-left: 10px;
     width: 15px;
 }
@@ -76,7 +76,7 @@
     margin: 0 5px;
 }
 
-.proj-ext {
+.ext-links svg {
     width: 20px;
 }
 

@@ -5,7 +5,7 @@
 
 <section id='projects'>
     <div class='section-header' id='projects-header'>
-        <img src='/v6/img/portfolio_128.svg'>
+        <?php echo file_get_contents('img/nav_projects.svg'); ?>
     </div>
 
     <div id='highlights'>
@@ -22,7 +22,7 @@
                         <div class='ext-links'></div>
                         <h3 class='proj-link'>
                             <a href='projects/sample.php'>Read More</a>
-                            <img class='proj-arrow' src='/v6/img/arrow_128.svg'>
+                            <?php echo file_get_contents('img/arrow.svg'); ?>
                         </h3>
                     </div>
                     <div class='proj-keywords' style='justify-content: flex-start;'></div>
@@ -43,7 +43,7 @@
                             <div class='ext-links'></div>
                             <h3 class='proj-link'>
                                 <a href='projects/sample.php'>Read More</a>
-                                <img class='proj-arrow' src='/v6/img/arrow_128.svg'>
+                                <?php echo file_get_contents('img/arrow.svg'); ?>
                             </h3>
                         </div>
                         <div class='proj-keywords' style='justify-content: flex-end;'></div>
@@ -51,8 +51,12 @@
                 </div>
             </template>
 
-            <template id='ext-template'>
-                <a><img class='proj-ext icon' src=''></a>
+            <template id='github-link'>
+                <a><?php echo file_get_contents('img/github.svg'); ?></a>
+            </template>
+
+            <template id='video-link'>
+                <a><?php echo file_get_contents('img/video.svg'); ?></a>
             </template>
 
             <template id='keyword-template'>
@@ -74,7 +78,7 @@
                     <div class='ext-links'></div>
                     <h3 class='proj-link'>
                         <a href='projects/sample.php'>Read More</a>
-                        <img class='proj-arrow' src='/v6/img/arrow_128.svg'>
+                        <?php echo file_get_contents('img/arrow.svg'); ?>
                     </h3>
                 </div>
             </div>
