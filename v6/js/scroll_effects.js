@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Nav link anchor scrolling
     function scrollTo(elem) {
-        elem.scrollIntoView({behavior: 'smooth'});
+        elem.scrollIntoView();
     }
 
     document.getElementById('nav-skills').addEventListener('click', function() {
