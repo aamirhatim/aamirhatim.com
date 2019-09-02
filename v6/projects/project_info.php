@@ -58,7 +58,7 @@ $PROJECT_LIST = array (
         'ME495 Final (2017)',
         'An introductory ROS project that uses Rethink Robotics\' Baxter to manipulate objects via speech commands',
         'https://github.com/aamirhatim/InspectorBaxter',
-        'https://www.youtube.com/watch?v=Mkh_P828sVU',
+        'https://youtube.com/embed/Mkh_P828sVU',
         ['ROS', 'Python', 'C++', 'Point Clouds', 'Robotic Manipulation', 'Computer Vision', 'Coordinate Transforms']
     ),
 
@@ -98,7 +98,7 @@ $PROJECT_LIST = array (
         'ME449 Final (2017)',
         'Using inverse kinematics and control laws to simulate the KUKA youBot, a 5R wheeled robot',
         '',
-        'https://www.youtube.com/watch?time_continue=1&v=LQ2JJwoRYEQ',
+        'https://www.youtube.com/embed/LQ2JJwoRYEQ',
         ['Mathematica', 'Feedforward Control', 'Feedback Control', 'V-REP', 'Coordinate Transforms', 'URDF', 'Forward/Inverse Kinematics', 'Odometry']
     ),
 
