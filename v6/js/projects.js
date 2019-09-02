@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         node.querySelector('.proj-title').textContent = data['title'];
         node.querySelector('.proj-subtitle').textContent = data['subtitle'];
         node.querySelector('.proj-description').textContent = data['description'];
-        node.querySelector('a').href = '/v6/projects/' + data['name'] + '.php';
+        node.querySelector('a').href = '/v6/projects/article.php?project=' + data['name'];
 
         var img_path = '/v6/img/' + data['name'] + '.jpg';
         node.querySelector('.proj-img').src = img_path;
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         node.querySelector('.grid-title').textContent = data['title'];
         node.querySelector('.proj-subtitle').textContent = data['subtitle'];
         node.querySelector('.grid-description').textContent = data['description'];
-        node.querySelector('a').href = '/v6/projects/' + data['name'] + '.php';
+        node.querySelector('a').href = '/v6/projects/article.php?project=' + data['name'];
 
         // Add external links
         if (data['github'] != '') {

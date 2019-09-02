@@ -9,7 +9,7 @@ $project_name = $_GET['project'];
 if (array_key_exists($project_name, $PROJECT_LIST)) {
     $project = $PROJECT_LIST[$project_name];
 } else {
-    header('Location: /v6/home.php');
+    header('Location: v6/home.php');
     exit();
 }
 
@@ -56,7 +56,7 @@ GITHUB;
 <body>
     <section id='article-panel'>
         <nav>
-            <a href='../home.php'><?php echo file_get_contents('../img/logo_block.svg'); ?></a>
+            <a href='../home.php#projects'><?php echo file_get_contents('../img/logo_block.svg'); ?></a>
             <?php add_github($project->github); ?>
         </nav>
         <div id='panel-contents'>
