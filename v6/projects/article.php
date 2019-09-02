@@ -56,17 +56,20 @@ GITHUB;
 <body>
     <section id='article-panel'>
         <nav>
-            <?php echo file_get_contents('../img/logo_block.svg'); ?>
+            <a href='../home.php'><?php echo file_get_contents('../img/logo_block.svg'); ?></a>
             <?php add_github($project->github); ?>
         </nav>
+        <div id='panel-contents'>
+            <div id='article-title'>
+                <h1><?php echo $project->title; ?></h1>
+                <h3><?php echo $project->subtitle; ?></h3>
+            </div>
 
-        <h1><?php echo $project->title; ?></h1>
-        <h3><?php echo $project->subtitle; ?></h3>
+            <?php add_video($project); ?>
 
-        <?php add_video($project); ?>
-
-        <div id=keywords>
-            <?php add_keywords($project->keywords); ?>
+            <div id=keywords>
+                <?php add_keywords($project->keywords); ?>
+            </div>
         </div>
     </section>
 
