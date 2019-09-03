@@ -40,6 +40,11 @@ GITHUB;
     }
 }
 
+function open_article($name) {
+    $article_contents = file_get_contents('../../projects/' . $name . '/writeup.php');
+    echo $article_contents;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -75,6 +80,7 @@ GITHUB;
 
     <main id='article-content'>
         <h3 id='summary'><?php echo $project->description; ?></h3>
+        <div id='writeup'><?php open_article($project->name); ?></div>
     </main>
 </body>
 

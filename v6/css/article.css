@@ -29,18 +29,6 @@ nav svg {
     height: 60px;
 }
 
-main {
-    align-items: flex-start;
-    box-sizing: border-box;
-    display: flex;
-    flex-grow: 1;
-    height: 100vh;
-    justify-content: center;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    padding: 50px 0;
-}
-
 #article-panel {
     background-color: var(--accent-1);
     box-shadow: 2px 0 7px rgba(0,0,0,0.3);
@@ -90,9 +78,27 @@ main {
     color: var(--accent-1);
 }
 
+main {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 50px 0;
+}
+
 #summary {
     border: 1px solid var(--accent-1);
     box-shadow: 15px -15px var(--accent-1);
     padding: 25px;
     width: 60%;
+}
+
+#writeup {
+    margin: 80px 0;
+    width: 80%;
 }
