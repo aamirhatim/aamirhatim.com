@@ -19,7 +19,7 @@
     </p>
 
     <div class = "info-box">
-        <h3>Key Components for the Mobile Base</h3>
+        <h4>Key Components for the Mobile Base</h4>
         <ul>
             <li>12V 18Ah SLA batteries (x2)</li>
             <li>Intel NUC7i7BNH PC</li>
