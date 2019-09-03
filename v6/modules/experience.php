@@ -3,7 +3,7 @@
     <script src='/v6/js/experience.js'></script>
 </head>
 
-<section id='experience'>
+<section id='experience' class='home-section'>
     <div id='timeline'>
         <div id='line'></div>
         <template id='timeline-block'>

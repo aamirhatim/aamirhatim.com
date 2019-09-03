@@ -3,7 +3,7 @@
     <script src='/v6/js/about.js'></script>
 </head>
 
-<section id='about'>
+<section id='about' class='home-section'>
     <div class='section-header' id='about-header'>
         <?php echo file_get_contents('img/nav_about.svg'); ?>
     </div>

@@ -3,7 +3,7 @@
     <script src='/v6/js/rainbow.js'></script>
 </head>
 
-<section id='landing'>
+<section id='landing' class='home-section'>
     <header>
         <?php echo file_get_contents('img/logo_block.svg'); ?>
         <div id='links'>

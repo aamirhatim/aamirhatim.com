@@ -2,7 +2,7 @@
     <link rel='stylesheet' href='/v6/css/skills.css'>
 </head>
 
-<section id='skills'>
+<section id='skills' class='home-section'>
     <div class='section-header' id='skills-header'>
         <?php echo file_get_contents('img/nav_skills.svg'); ?>
     </div>
