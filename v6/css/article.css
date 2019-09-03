@@ -106,3 +106,17 @@ main {
     margin: 50px 0;
     width: 80%;
 }
+
+.info-box {
+    border: 1px solid var(--accent-4);
+    box-shadow: -10px 10px var(--accent-4);
+    box-sizing: border-box;
+    margin: 40px auto;
+    min-width: 300px;
+    padding: 25px 35px;
+    width: 60%;
+}
+
+.info-box h4 {
+    text-align: center;
+}
