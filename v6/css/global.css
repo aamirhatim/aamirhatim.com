@@ -137,7 +137,3 @@ figcaption {
     opacity: 1;
     transition: opacity .3s;
 }
-
-svg, object {
-    fill: red;
-}
