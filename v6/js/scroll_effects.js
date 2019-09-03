@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             boxes[1].style.top = offset + 'px';
             boxes[2].style.left = offset + 'px';
 
-            var img = document.querySelector('#skills-header img');
+            var img = document.querySelector('#skills-header svg');
             img.style.top = dist/10 + 'px';
         }
     });
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var dist = highlights.getBoundingClientRect().top;
 
         if (dist >= 0) {
-            var img = document.querySelector('#projects-header img');
+            var img = document.querySelector('#projects-header svg');
             img.style.top = dist/10 + 'px';
         }
     });
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var dist = about.getBoundingClientRect().top;
 
         if (dist >= 0) {
-            var img = document.querySelector('#about-header img');
+            var img = document.querySelector('#about-header svg');
             img.style.top = dist/10 + 'px';
         }
     });
