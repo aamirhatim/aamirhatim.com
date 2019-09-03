@@ -78,6 +78,10 @@ nav svg {
     color: var(--accent-1);
 }
 
+section {
+    margin: 40px 0;
+}
+
 main {
     align-items: center;
     box-sizing: border-box;
@@ -88,7 +92,7 @@ main {
     justify-content: flex-start;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 #summary {
@@ -99,6 +103,6 @@ main {
 }
 
 #writeup {
-    margin: 80px 0;
+    margin: 50px 0;
     width: 80%;
 }

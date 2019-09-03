@@ -25,13 +25,6 @@ body {
     width: 100vw;
 }
 
-section {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-}
-
 h1 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 25pt;
@@ -44,21 +37,37 @@ h2 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 20pt;
     font-weight: normal;
-    margin: 0;
+    margin: 15px 0;
     padding: 0;
 }
 
 h3 {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    font-size: 9pt;
-    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    font-weight: bolder;
+    margin: 15px 0 10px 0;
+    padding: 0;
+}
+
+h4 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 13pt;
+    font-weight: normal;
+    margin: 10px 0 5px 0;
     padding: 0;
 }
 
 h5 {
-    font-family: 'Hepta Slab', serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
     font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+h6 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 8pt;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -70,6 +79,21 @@ p {
     font-weight: normal;
     margin: 0;
     padding: 0;
+}
+
+figcaption {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9pt;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.home-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 
 .section-header {
