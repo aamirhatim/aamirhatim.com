@@ -11,7 +11,7 @@
         <div id='code-skills' class=skill-box>
             <div class='box-header'>
                 <?php echo file_get_contents('img/skills_code.svg'); ?>
-                <div class='box-title'>Code</div>
+                <h4>Code</h4>
             </div>
             
             <div class='skillset'>
@@ -30,7 +30,7 @@
         <div id='concepts-skills' class=skill-box>
             <div class='box-header'>
                 <?php echo file_get_contents('img/skills_concepts.svg'); ?>
-                <div class='box-title'>Concepts</div>
+                <h4>Concepts</h4>
             </div>
             
             <div class='skillset'>
@@ -50,7 +50,7 @@
         <div id='tools-skills' class=skill-box>
             <div class='box-header'>
                 <?php echo file_get_contents('img/skills_tools.svg'); ?>
-                <div class='box-title'>Tools</div>
+                <h4>Tools</h4>
             </div>
             
             <div class='skillset'>

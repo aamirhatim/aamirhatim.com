@@ -67,7 +67,7 @@ function open_article($name) {
         <div id='panel-contents'>
             <div id='article-title'>
                 <h1><?php echo $project->title; ?></h1>
-                <h3><?php echo $project->subtitle; ?></h3>
+                <h5><?php echo $project->subtitle; ?></h5>
             </div>
 
             <?php add_video($project); ?>

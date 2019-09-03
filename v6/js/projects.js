@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Populate template
         node = document.importNode(t, true);
-        node.querySelector('.proj-title').textContent = data['title'];
-        node.querySelector('.proj-subtitle').textContent = data['subtitle'];
+        node.querySelector('h2').textContent = data['title'];
+        node.querySelector('h5').textContent = data['subtitle'];
         node.querySelector('.proj-description').textContent = data['description'];
         node.querySelector('a').href = '/v6/projects/article.php?project=' + data['name'];
 
@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Populate template
         node = document.importNode(t, true);
-        node.querySelector('.grid-title').textContent = data['title'];
-        node.querySelector('.proj-subtitle').textContent = data['subtitle'];
+        node.querySelector('h4').textContent = data['title'];
+        node.querySelector('h6').textContent = data['subtitle'];
         node.querySelector('.grid-description').textContent = data['description'];
         node.querySelector('a').href = '/v6/projects/article.php?project=' + data['name'];
 

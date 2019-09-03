@@ -13,14 +13,14 @@
 
     <div id='job-window'>
         <div id='job-text'>
-            <h2 id='job-title'></h2>
+            <h3 id='job-title'></h3>
             <div class='job-details'>
                 <?php echo file_get_contents('img/map_pin.svg'); ?>
-                <h3 id='job-location'></h3>
+                <h6 id='job-location'></h6>
             </div>
             <div class='job-details'>
                 <?php echo file_get_contents('img/calendar.svg'); ?>
-                <h3 id='job-time'></h3>
+                <h6 id='job-time'></h6>
             </div>
             <ul id='job-description'></ul>
         </div>

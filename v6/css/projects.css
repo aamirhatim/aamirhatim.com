@@ -138,17 +138,12 @@
     width: 300px;
 }
 
-.grid-title {
-    font-size: 14pt;
-}
-
 .grid-text {
     display: flex;
     flex-direction: column;
 }
 
 .grid-description {
-    font-size: 10pt;
     margin-top: 20px;
 }
 
