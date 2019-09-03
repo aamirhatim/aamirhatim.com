@@ -59,7 +59,7 @@ function open_article($name) {
 </head>
 
 <body>
-    <section id='article-panel'>
+    <aside id='article-panel'>
         <nav>
             <a href='../home.php#projects'><?php echo file_get_contents('../img/logo_block.svg'); ?></a>
             <?php add_github($project->github); ?>
@@ -76,10 +76,10 @@ function open_article($name) {
                 <?php add_keywords($project->keywords); ?>
             </div>
         </div>
-    </section>
+    </aside>
 
-    <main id='article-content'>
-        <h3 id='summary'><?php echo $project->description; ?></h3>
+    <main>
+        <h5 id='summary'><?php echo $project->description; ?></h5>
         <div id='writeup'><?php open_article($project->name); ?></div>
     </main>
 </body>
