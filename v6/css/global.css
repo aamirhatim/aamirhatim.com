@@ -91,8 +91,10 @@ figcaption {
     font-family: 'Roboto Mono', monospace;
     font-size: 9pt;
     font-weight: normal;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 400px;
     padding: 0;
+    text-align: center;
 }
 
 .home-section {
