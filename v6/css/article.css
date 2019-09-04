@@ -121,6 +121,14 @@ main {
     text-align: center;
 }
 
+.info-box dt {
+    font-size: 10pt;
+}
+
+.info-box dd {
+    margin: 5px 0 15px 20px;
+}
+
 .article-table {
     display: flex;
     justify-content: center;

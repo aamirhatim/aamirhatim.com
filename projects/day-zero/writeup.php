@@ -63,43 +63,33 @@
     <dl>
       <dt>Total land cultivated (%)</dt>
       <dd>Percentage of the total land area of the country that has been cultivated</dd>
-      <br>
 
       <dt>Annual precipitation (mm/yr)</dt>
       <dd>Total depth of precipitation per year</dd>
-      <br>
 
       <dt>Rainwater harvesting awareness</dt>
       <dd>True/False value determined by whether or not rainwater harvesting is widely practiced</dd>
-      <br>
 
       <dt>Water consumption per capita (m^3/year/inhabitant)</dt>
       <dd>Total amount of water withdrawn per capita</dd>
-      <br>
 
       <dt>Total renewable water resources per capita (m^3/year/inhabitant)</dt>
       <dd>The maximum theoretical yearly amount of water available per person for a country at a given moment</dd>
-      <br>
 
       <dt>Desalination capacity (km^3/year)</dt>
       <dd>Fresh water produced using brackish or salt water</dd>
-      <br>
 
       <dt>Water dependency ratio (%)</dt>
       <dd>Percentage of water that comes from other countries</dd>
-      <br>
 
       <dt>Agricultural water withdrawal (%)</dt>
       <dd>Percentage of total water withdrawn used for agriculture</dd>
-      <br>
 
       <dt>Industrial water withdrawal (%)</dt>
       <dd>Percentage of total water withdrawn used for industrial purposes</dd>
-      <br>
 
       <dt>Municipal water withdrawal (%)</dt>
       <dd>Percentage of total water withdrawn used for municipal purposes</dd>
-      <br>
 
       <dt>Water stress level (%)</dt>
       <dd>Water stress level measured by dividing total water withdrawal by the total water available minus any water needed for environmental flow. This was used to determine the class label for each sample</dd>
@@ -127,72 +117,74 @@
     The target attribute that is used to train the machine learning model is water stress for a particular country and for a particular year. Using the randomly generated training and testing sets, we ran a series of tests to find the best algorithm that would classify the data. Given the type of inputs and outputs, we suspected using a decision tree or some instance based learner would be effective in classifying the data. We also predicted that a multilayer perceptron may do well with our wide range of attributes because of its flexibility. The results of several machine algorithms are shown below.
   </p>
 
-  <table class = "thin">
-    <tr style = "font-weight: 500;">
-      <td>Algorithm</td>
-      <td>Accuracy</td>
-    </tr>
+  <div class='article-table'>
+    <table>
+      <tr>
+        <td>Algorithm</td>
+        <td>Accuracy</td>
+      </tr>
 
-    <tr>
-      <td>IBk</td>
-      <td>88.26%</td>
-    </tr>
+      <tr>
+        <td>IBk</td>
+        <td>88.26%</td>
+      </tr>
 
-    <tr>
-      <td>KStar</td>
-      <td>89.28%</td>
-    </tr>
+      <tr>
+        <td>KStar</td>
+        <td>89.28%</td>
+      </tr>
 
-    <tr>
-      <td>RandomForest</td>
-      <td>88.26%</td>
-    </tr>
+      <tr>
+        <td>RandomForest</td>
+        <td>88.26%</td>
+      </tr>
 
-    <tr>
-      <td>RandomTree</td>
-      <td>84.69%</td>
-    </tr>
+      <tr>
+        <td>RandomTree</td>
+        <td>84.69%</td>
+      </tr>
 
-    <tr>
-      <td>MultiClassClassifier</td>
-      <td>86.22%</td>
-    </tr>
+      <tr>
+        <td>MultiClassClassifier</td>
+        <td>86.22%</td>
+      </tr>
 
-    <tr>
-      <td>J48</td>
-      <td>84.69%</td>
-    </tr>
+      <tr>
+        <td>J48</td>
+        <td>84.69%</td>
+      </tr>
 
-    <tr>
-      <td>LogitBoost</td>
-      <td>84.69%</td>
-    </tr>
+      <tr>
+        <td>LogitBoost</td>
+        <td>84.69%</td>
+      </tr>
 
-    <tr>
-      <td>BayesNet</td>
-      <td>85.00%</td>
-    </tr>
+      <tr>
+        <td>BayesNet</td>
+        <td>85.00%</td>
+      </tr>
 
-    <tr>
-      <td>NaiveBayes</td>
-      <td>67.85%</td>
-    </tr>
+      <tr>
+        <td>NaiveBayes</td>
+        <td>67.85%</td>
+      </tr>
 
-    <tr>
-      <td>AdaBoostM1</td>
-      <td>75.51%</td>
-    </tr>
+      <tr>
+        <td>AdaBoostM1</td>
+        <td>75.51%</td>
+      </tr>
 
-    <tr>
-      <td>ZeroR</td>
-      <td>75.51%</td>
-    </tr>
+      <tr>
+        <td>ZeroR</td>
+        <td>75.51%</td>
+      </tr>
 
-    <tr>
-      <td>MLP</td>
-      <td>75.51%</td>
-    </tr>
-  </table>
+      <tr>
+        <td>MLP</td>
+        <td>75.51%</td>
+      </tr>
+    </table>
+  </div>
 
   <figcaption>
     NOTE: All models were generated using 10-Fold cross validation in Weka
