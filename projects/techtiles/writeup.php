@@ -119,5 +119,8 @@
 
   <figure>
     <img src = "/projects/techtiles/img/phone.svg" width = "200px">
+    <figcaption>
+      Dashboard display of Techtiles mobile app.
+    </figcaption>
   </figure>
 </section>
