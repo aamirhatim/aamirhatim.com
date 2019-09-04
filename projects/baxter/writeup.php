@@ -3,22 +3,6 @@
   <p>
     The goal of this project was to have Baxter identify objects using a point cloud and classify them by their shape. The project has three phases: a training phase where Baxter learns the objects, a fetching phase where Baxter picks up objects that are asked for by the user, and a sorting phase where Baxter sorts objects based on their classification. Below is a general description of the four basic components of this project: a master node that coordinates communication, a speech processing node, a point cloud processing node, and a movement node.
   </p>
-
-  <div class = "info-box">
-    <h4>Code Structure</h4>
-    <table class = "info-box-table">
-      <tr>
-        <th>5</th>
-        <th>5</th>
-        <th>4</th>
-      </tr>
-      <tr>
-        <td>nodes</td>
-        <td>topics</td>
-        <td>custom messages</td>
-      </tr>
-    </table>
-  </div>
 </section>
 
 <section>
