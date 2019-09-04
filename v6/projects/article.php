@@ -56,6 +56,7 @@ function open_article($name) {
     <link rel='stylesheet' href='/v6/css/global.css'>
     <link rel='stylesheet' href='/v6/css/article.css'>
     <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Open+Sans|Titillium+Web|Roboto+Mono:300&display=swap" rel="stylesheet">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
     <script src='/v6/js/article.js'></script>
 </head>
 
