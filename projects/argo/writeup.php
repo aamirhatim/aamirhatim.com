@@ -34,21 +34,6 @@
   </p>
 
   <div class = "info-box">
-    <h4>Code Structure</h4>
-    <table class = "info-box-table">
-      <tr>
-        <th>9</th>
-        <th>3</th>
-        <th>1</th>
-      </tr>
-      <tr>
-        <td>nodes</td>
-        <td>launch files</td>
-        <td>service</td>
-      </tr>
-    </table>
-    <br><br>
-
     <h4>ROS Topics</h4>
     <ul>
       <li>/raspicam_node/camera_raw</li>
@@ -103,10 +88,10 @@
   <h2>Timeline (Jan 15 - Apr 14, 2018)</h2>
   <table style= "width: 120%; margin: 0 auto; table-layout: fixed; position: relative; right: 10%;">
     <tr>
-      <th><h6>January</h6></th>
-      <th><h6>February</h6></th>
-      <th><h6>March</h6></th>
-      <th><h6>April</h6></th>
+      <th><h4>January</h4></th>
+      <th><h4>February</h4></th>
+      <th><h4>March</h4></th>
+      <th><h4>April</h4></th>
     </tr>
 
     <tr style = "vertical-align: top;">
