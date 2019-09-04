@@ -97,6 +97,10 @@ figcaption {
     text-align: center;
 }
 
+a {
+    color: black;
+}
+
 ul {
     list-style-image: url('/v6/img/arrow.svg');
 }
