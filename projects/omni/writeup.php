@@ -43,7 +43,7 @@
     </p>
 
     <figure>
-        <img src = "img/omni_block_diagram.svg" width = "600px">
+        <img src = "/projects/omni/img/omni_block_diagram.svg" width = "600px">
         <figcaption>
             High level diagram of the communication connections on a single omni robot.
         </figcaption>
@@ -68,7 +68,7 @@
     </p>
 
     <figure>
-        <img src = "img/omni_control_setup.svg" width = "300px">
+        <img src = "/projects/omni/img/omni_control_setup.svg" width = "300px">
         <figcaption>
             High level diagram of multi-robot control.
         </figcaption>
@@ -85,7 +85,7 @@
     </p>
 
     <figure>
-        <img src = "img/omni_control_modes.svg" width = "500px">
+        <img src = "/projects/omni/img/omni_control_modes.svg" width = "500px">
         <figcaption>
             Left: Rigid body control - input twists for a specified pivot point are translated to different twists for each robot to maintain a formation. Right: Freeform control - input twist is executed by all robots relative to their own positions.
         </figcaption>
@@ -97,7 +97,7 @@
     </p>
 
     <figure>
-        <img src = "img/tracking_omni_1.png" width = "800px">
+        <img src = "/projects/omni/img/tracking_omni_1.png" width = "800px">
         <figcaption>
             Left: Visualization of wheel odometry and AR-tag tracking. Right: Difference in x, y, and theta over time.
         </figcaption>
@@ -110,7 +110,7 @@
     </p>
 
     <figure>
-        <img src = "img/twist_filter_diagram.svg" width = "600px">
+        <img src = "/projects/omni/img/twist_filter_diagram.svg" width = "600px">
         <figcaption>
             A twist is read from an input source, filtered to satisfy acceleration and speed constraints, and then sent as an output twist to the omni robot.
         </figcaption>
