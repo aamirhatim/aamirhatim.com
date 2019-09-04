@@ -1,16 +1,3 @@
-<style>
-#code-block{
-  background-color: #f2f4f7;
-  border: 1px solid #b6bcc4;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-code{
-  font-size: 10pt;
-}
-</style>
-
 <section>
   <h2>The Power of Neural Networks</h2>
   <p>
@@ -51,7 +38,7 @@ code{
     The library can be used to construct a neural network and plot its performance on a given dataset. See the sample code below for proper syntax in Python 3.6.
   </p>
 
-  <div id = "code-block">
+  <div class='code-block'>
     <code>
       # Import deep learning library<br>
       from dl_lib import deep_learner as DL<br>

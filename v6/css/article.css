@@ -172,3 +172,10 @@ figure img {
 .article-table tr:nth-child(even) {
     background-color: var(--highlight-4);
 }
+
+.code-block {
+    background-color: var(--highlight-4);
+    margin: 40px auto;
+    padding: 25px;
+    width: 80%;
+}
