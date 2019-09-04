@@ -97,6 +97,10 @@ figcaption {
     text-align: center;
 }
 
+ul {
+    list-style-image: url('/v6/img/arrow.svg');
+}
+
 .home-section {
     align-items: center;
     display: flex;

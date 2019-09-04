@@ -121,6 +121,12 @@ main {
     text-align: center;
 }
 
+.info-box li {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9pt;
+    margin: 5px 0;
+}
+
 .info-box dt {
     font-size: 10pt;
 }
