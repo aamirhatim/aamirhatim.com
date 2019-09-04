@@ -120,3 +120,29 @@ main {
 .info-box h4 {
     text-align: center;
 }
+
+.article-table {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.article-table table {
+    border: 1px solid var(--accent-4);
+    border-collapse: collapse;
+    box-shadow: -10px -10px var(--accent-4);
+}
+
+.article-table td, .article-table th {
+    padding: 10px 20px;
+}
+
+.article-table th {
+    border-bottom: 1px solid var(--accent-4);
+    color: var(--accent-4);
+    font-size: 11pt;
+}
+
+.article-table tr:nth-child(even) {
+    background-color: var(--highlight-4);
+}

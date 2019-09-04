@@ -8,61 +8,44 @@
     To help raise awareness to this situation, we used machine learning to develop a model to predict the water stress level of a country given a particular set of attributes. We divided the raw stress values (a scale from 0-100) into 6 categories:
   </p>
 
-  <style>
-  table{
-    border-collapse: collapse;
-    margin: 0 auto;
-  }
+  <div class='article-table'>
+    <table>
+      <tr>
+        <th>Stress Value</th>
+        <th>Stress Category</th>
+      </tr>
 
-  td{
-    padding: 10px;
-  }
+      <tr>
+        <td>0 - 20</td>
+        <td>None</td>
+      </tr>
 
-  table, tr, td{
-    border: 1px solid #303030;
-  }
+      <tr>
+        <td>21 - 40</td>
+        <td>Low</td>
+      </tr>
 
-  dl{
-    font-size: 13pt;
-  }
-  </style>
+      <tr>
+        <td>41 - 60</td>
+        <td>Medium</td>
+      </tr>
 
-  <table class = "thin">
-    <tr style = "font-weight: 500;">
-      <td>Stress Value</td>
-      <td>Stress Category</td>
-    </tr>
+      <tr>
+        <td>61 - 80</td>
+        <td>Alert</td>
+      </tr>
 
-    <tr>
-      <td>0 - 20</td>
-      <td>None</td>
-    </tr>
+      <tr>
+        <td>81 - 100</td>
+        <td>High</td>
+      </tr>
 
-    <tr>
-      <td>21 - 40</td>
-      <td>Low</td>
-    </tr>
-
-    <tr>
-      <td>41 - 60</td>
-      <td>Medium</td>
-    </tr>
-
-    <tr>
-      <td>61 - 80</td>
-      <td>Alert</td>
-    </tr>
-
-    <tr>
-      <td>81 - 100</td>
-      <td>High</td>
-    </tr>
-
-    <tr>
-      <td>> 100</td>
-      <td>Critical</td>
-    </tr>
-  </table>
+      <tr>
+        <td>> 100</td>
+        <td>Critical</td>
+      </tr>
+    </table>
+  </div>
 
   <p>
     Though we do not have enough data to go down to the city level, viewing things from a larger perspective can certainly provide insight into how a nation should work as a whole to prevent reaching a Day Zero situation.
