@@ -32,7 +32,7 @@
   </p>
 
   <figure>
-    <img src = "/img/icontrol.png" width = "550px">
+    <img src = "/projects/motor/img/icontrol.png">
     <figcaption>Performance of the current controller. Blue is the desired output and orange is the actual result.</figcaption>
   </figure>
 
@@ -44,7 +44,7 @@
   </p>
 
   <figure>
-    <img src = "/img/pos_control.png" width = "550px">
+    <img src = "/projects/motor/img/pos_control.png">
     <figcaption>Performance of the position controller for a cubic trajectory. Blue is the desired output and orange is the actual result.</figcaption>
   </figure>
 

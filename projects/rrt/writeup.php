@@ -16,7 +16,7 @@
   <h2>Path Planning with Collision Objects</h2>
 
   <figure>
-    <img src = "/img/circles.jpg" width = "500px">
+    <img src = "/projects/rrt/img/circles.jpg">
     <figcaption>RRT with obstacle avoidance for randomly generated circles. The Image on the right shows a successful run and the image on the left shows a failure to find a path.</figcaption>
   </figure>
 
@@ -35,7 +35,7 @@
   <h2>Path Planning with Arbitrary Shapes</h2>
 
   <figure>
-    <img src = "/img/bitmap_rrt.jpg" width = "500px">
+    <img src = "/projects/rrt/img/bitmap_rrt.jpg">
     <figcaption>RRT with obstacle avoidance for a bitmap image. The Image on the right shows a successful run and the image on the left shows a failure to find a path.</figcaption>
   </figure>
 

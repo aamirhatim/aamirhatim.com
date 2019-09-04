@@ -5,7 +5,7 @@
   </p>
 
   <figure>
-    <img src = "/img/splits.gif" width = "300px">
+    <img src = "/projects/splits/img/splits.gif" width = "300px">
     <figcaption>Animation of the simulated trajectory followed by the biped.<figcaption>
   </figure>
 </section>

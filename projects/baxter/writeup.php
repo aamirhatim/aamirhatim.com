@@ -28,7 +28,7 @@
 <section>
   <h2>Computer Vision</h2>
   <figure>
-    <img class = "proj-img" src = "/img/point_clouds.png" width = "600px">
+    <img class = "proj-img" src = "/projects/baxter/img/point_clouds.png">
     <figcaption>
       Sample point cloud data from the depth sensor along with the location of each object's centroid (denoted by the reference frame). For the image above, the cluster extraction node is hard coded to recognize a maximum of four objects.
     </figcaption>
@@ -45,12 +45,12 @@
       <dd>
         Filters out any points that are not within a specified volume. This filter was used to remove any points outside of the table with objects on it.
       </dd>
-      <br>
+
       <dt>VoxelGrid</dt>
       <dd>
         Down-samples a set of points by averaging the points within a specified unit volume into a single point. This filter reduces the resolution of the data, making data processing less computationally intensive.
       </dd>
-      <br>
+
       <dt>StatisticalOutlierRemoval</dt>
       <dd>
         Removes any random stray points to produce cleaner data.

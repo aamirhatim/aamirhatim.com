@@ -1,3 +1,29 @@
+<style>
+
+.techtiles-table:first-child {
+  margin-bottom: 50px;
+}
+
+.techtiles-table table {
+  display: flex;
+  justify-content: center;
+}
+
+.techtiles-table img {
+  width: 25px;
+}
+
+.techtiles-table tr {
+  text-align: center;
+}
+
+.techtiles-table td {
+  padding: 0 10px;
+  vertical-align: top;
+}
+
+</style>
+
 <section>
   <h2>Overview</h2>
   <p>
@@ -11,49 +37,50 @@
 
 <section>
   <h2>Hardware & Design</h2>
+  <div class = "info-box" style = "width: 70%;">
+    <div class='techtiles-table'>
+      <h4>Sensors Used</h4>
+      <table>
+        <tr>
+          <th><img src = "/projects/techtiles/img/accelerometer.svg"></th>
+          <th><img src = "/projects/techtiles/img/ecg.svg"></th>
+          <th><img src = "/projects/techtiles/img/resistor.svg"></th>
+        </tr>
+        <tr>
+          <td>Accelerometer</td>
+          <td>ECG</td>
+          <td>Fabric Stretch Sensor</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class='techtiles-table'>
+      <h4>Extracted Data</h4>
+      <table>
+        <tr>
+          <th><img src = "/projects/techtiles/img/heart.svg"></th>
+          <th><img src = "/projects/techtiles/img/lungs.svg"></th>
+          <th><img src = "/projects/techtiles/img/steps.svg"></th>
+          <th><img src = "/projects/techtiles/img/distance.svg"></th>
+          <th><img src = "/projects/techtiles/img/flame.svg"></th>
+        </tr>
+        <tr>
+          <td>Heart Rate</td>
+          <td>Breathing Rate</td>
+          <td>Steps</td>
+          <td>Distance</td>
+          <td>Energy Expended</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
   <p>
     The Hardware subsystem included choosing the fabric for the shirt (as well as any stitching), designing the analog filters used for the ECG and breathing sensor, building a custom circuit board, and designing a housing for the non-washable electronic components. The final design for the device is the sleeveless, moisture wicking compression shirt shown below with its electronic housing attachment.
   </p>
 
-  <div class = "info-box" style = "width: 70%;">
-    <h4>Sensors Used</h4>
-    <br>
-    <table class = "info-box-table">
-      <tr>
-        <td><img src = "/img/accelerometer.svg"></td>
-        <td><img src = "/img/ecg.svg"></td>
-        <td><img src = "/img/resistor.svg"></td>
-      </tr>
-      <tr>
-        <td>Accelerometer</td>
-        <td>ECG</td>
-        <td>Fabric Stretch Sensor</td>
-      </tr>
-    </table>
-    <br><br>
-
-    <h4>Extracted Data</h4>
-    <br>
-    <table class = "info-box-table">
-      <tr>
-        <td><img src = "/img/heart.svg"></td>
-        <td><img src = "/img/lungs.svg"></td>
-        <td><img src = "/img/steps.svg"></td>
-        <td><img src = "/img/distance.svg"></td>
-        <td><img src = "/img/flame.svg"></td>
-      </tr>
-      <tr>
-        <td>Heart Rate</td>
-        <td>Breathing Rate</td>
-        <td>Steps</td>
-        <td>Distance</td>
-        <td>Energy Expended</td>
-      </tr>
-    </table>
-  </div>
-
   <figure>
-    <img src = "/img/hardware.png" width = "400px">
+    <img src = "/projects/techtiles/img/hardware.png" width = "400px">
     <figcaption>
       (Top) Compression shirt with respiration sensors and ECG electrodes. (Bottom) Final PCB with Arduino Due and Bluetooth shield connected, placed inside 3D printed housing.
     </figcaption>
@@ -77,7 +104,7 @@
   </p>
 
   <figure>
-    <img src = "/img/respiration.png" width = "400px">
+    <img src = "/projects/techtiles/img/respiration.png" width = "400px">
     <figcaption>
       Sample data for respiration. As the user breathes in, the resitance of the sensor changes, resulting in the waveform above. The observed peaks were used in determining repiration rate.
     </figcaption>
@@ -91,6 +118,6 @@
   </p>
 
   <figure>
-    <img src = "/img/phone.svg" width = "200px">
+    <img src = "/projects/techtiles/img/phone.svg" width = "200px">
   </figure>
 </section>
