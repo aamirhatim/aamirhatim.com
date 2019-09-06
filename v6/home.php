@@ -4,6 +4,7 @@
 
 <head>
     <title>Aamir Husain</title>
+    <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
     <link rel='stylesheet' href='/v6/css/global.css'>
     <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Open+Sans|Titillium+Web|Roboto+Mono:300&display=swap" rel="stylesheet">
     <script src='/v6/js/scroll_effects.js'></script>
