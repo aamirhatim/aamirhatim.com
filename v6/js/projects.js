@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
     
-        xmlhttp.open("GET", "projects/project_info.php?get_list=1", true);
+        xmlhttp.open("GET", "/v6/projects/project_info.php?get_list=1", true);
         xmlhttp.send();
     };
 

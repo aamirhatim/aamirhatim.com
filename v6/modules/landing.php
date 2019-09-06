@@ -1,5 +1,5 @@
 <head>
-    <link rel='stylesheet' href='css/landing.css'>
+    <link rel='stylesheet' href='/v6/css/landing.css'>
     <script src='/v6/js/rainbow.js'></script>
 </head>
 
